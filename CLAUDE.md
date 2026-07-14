@@ -5,6 +5,8 @@ Produktová řada digitálních turistických průvodců (PDF e-booky s tipy a "
 Kompletní fázový proces (research → psaní → design → QA → prodej → PPC → škálování), včetně toho, co je automatizované skills/loops/MCP/hooks/agenty a co zůstává na člověku, je popsaný v plánu:
 `C:\Users\42073\.claude\plans\chci-vytvo-it-digi-ln-produkt-rosy-yeti.md`
 
+Živý přehled toho, co z automatizace už reálně existuje (vs. je jen naplánováno) a kde přesně leží, je v `docs/automation-registry.md` — tam se dívej, pokud potřebuješ najít konkrétní skill/agenta/hook/loop.
+
 Aktuálně: pilot na 1 destinaci, PDF formát, obsah i data od nuly.
 
 ## Struktura repozitáře
