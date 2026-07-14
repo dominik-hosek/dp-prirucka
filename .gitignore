@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Exported binaries (regenerated, not source of truth)
+*.pdf
+design/**/*.png
+design/**/*.jpg
+
+# Secrets / local config
+.env
+.env.local
