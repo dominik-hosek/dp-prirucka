@@ -13,7 +13,7 @@ Umístění: `.claude/skills/<název>/SKILL.md`
 | Skill | Účel | Fáze | Umístění | Stav |
 |---|---|---|---|---|
 | `/validate-destination` | Research poptávky/konkurence pro výběr destinace | 0 | `.claude/skills/validate-destination/` | ⚪ |
-| `/research-topic` | Sběr dat k jednomu tématu/kapitole destinace + zdroje | 1 | `.claude/skills/research-topic/` | ⚪ |
+| `/research-topic` | Sběr dat k jednomu tématu/kapitole destinace + zdroje | 1 | `.claude/skills/research-topic/` | 🟢 |
 | `/write-chapter` | Napsání kapitoly z research databáze (ne z paměti modelu) | 2 | `.claude/skills/write-chapter/` | ⚪ |
 | `/layout-guide` | Sazba textu + vizuálů do PDF šablony | 3 | `.claude/skills/layout-guide/` | ⚪ |
 | `/qa-checklist` | Kontrolní seznam před vydáním produktu | 4 | `.claude/skills/qa-checklist/` | ⚪ |
@@ -30,7 +30,7 @@ Umístění: `.claude/agents/<název>.md` (frontmatter: model, dostupné nástro
 | Agent | Účel | Fáze | Umístění | Stav |
 |---|---|---|---|---|
 | Market Research | Prohledá web, shrne poptávku/konkurenci/mezery na trhu | 0 | `.claude/agents/market-research.md` | ⚪ |
-| Researcher (per kapitola) | Paralelní sběr dat k jedné kapitole osnovy | 1 | `.claude/agents/researcher.md` | ⚪ |
+| Researcher (per kapitola) | Paralelní sběr dat k jedné kapitole osnovy | 1 | `.claude/agents/researcher.md` | 🟢 |
 | Writer | Píše kapitoly z research databáze | 2 | `.claude/agents/writer.md` | ⚪ |
 | Fact-Checker | Nezávisle ověřuje tvrzení v textu proti research datům | 2 | `.claude/agents/fact-checker.md` | ⚪ |
 | Design | Připravuje požadavky/prompty pro vizuály a layout | 3 | `.claude/agents/design.md` | ⚪ |
