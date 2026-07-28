@@ -1,34 +1,54 @@
 # dp-prirucka
 
-Produktová řada digitálních turistických průvodců (PDF e-booky s tipy a "deep knowledge"). Každá destinace = samostatný prodejný produkt. Prodej přes vlastní web + Meta/Google Ads.
+Produktová řada digitálních turistických průvodců (PDF e-booky s tipy a "deep knowledge"). Každá
+destinace = samostatný prodejný produkt. Prodej přes vlastní web + Meta/Google Ads. Obsah i data
+od nuly.
 
-Kompletní fázový proces (research → psaní → design → QA → prodej → PPC → škálování), včetně toho, co je automatizované skills/loops/MCP/hooks/agenty a co zůstává na člověku, je popsaný v plánu:
-`C:\Users\42073\.claude\plans\chci-vytvo-it-digi-ln-produkt-rosy-yeti.md`
+**Aktuální pilot: Lloret de Mar a okolí.** Albánie byla původní pilotní destinace, ale je
+pozastavená (text má neuzavřené nálezy z fact-checku) — Lloret ji předběhl s čistým výsledkem.
+Detail a aktuální stav napříč fázemi je v `docs/stav-projektu.md`.
 
-Živý přehled toho, co z automatizace už reálně existuje (vs. je jen naplánováno) a kde přesně leží, je v `docs/automation-registry.md` — tam se dívej, pokud potřebuješ najít konkrétní skill/agenta/hook/loop.
+Tento root je od 2026-07-17 jen **řídící složka** — reálná práce žije ve 3 samostatných
+projektových podsložkách, rozdělených podle fáze procesu. Každá podsložka má vlastní `CLAUDE.md`,
+`.claude/agents+skills+hooks/` a `docs/automation-registry.md` — informace se mezi nimi
+neduplikují, jen na sebe odkazují.
 
-Aktuálně: pilot na 1 destinaci, PDF formát, obsah i data od nuly.
+## 3 projekty
 
-## Struktura repozitáře
+| Složka | Fáze | Co dělá |
+|---|---|---|
+| `01-tvorba-textu/` | 0+1+2 | Výběr destinace, research, psaní kapitol. Funguje dobře. |
+| `02-tvorba-vizualu/` | 3 | Design a sazba do PDF. **Blokováno otevřeným rozhodnutím** o vizuálním procesu. |
+| `03-komercializace/` | 4–9 | QA, prodejní web, PPC, post-launch, škálování. Zatím jen naplánováno. |
 
-```
-content/
-  _template/          # šablona struktury pro novou destinaci (research/text/assets)
-  <destinace>/         # jedna složka = jedna destinace/produkt
-    research/          # Fáze 1 – surová strukturovaná data (fakta, tipy, zdroje, datum ověření)
-    text/               # Fáze 2 – hotové kapitoly průvodce (markdown)
-    assets/             # Fáze 3 – obrázky/ilustrace použité v PDF
+## Které dokumenty v rootu k čemu jsou
 
-design/                # Fáze 3 – design šablony, brand kit reference (Canva), export skripty
-landing-page/          # Fáze 5 – copy a struktura prodejní stránky
-ads/                    # Fáze 6 – reklamní kreativy a texty pro Meta/Google Ads
-docs/                   # Fáze 0/4/8/9 – briefy destinací, QA checklisty, pilot log, vyhodnocení
-.claude/skills/         # projektové skills (research, psaní, QA, ads, evaluace pilotu...)
-```
+| Soubor | Role | Kdy se mění |
+|---|---|---|
+| `plan.md` | **Proces** — kompletní popis Fází 0–9 a co v nich lze automatizovat. Destinačně neutrální. | Zřídka — jen když se mění samotný postup. |
+| `docs/stav-projektu.md` | **Stav** — kde přesně jsme, co je hotové, co je další krok, otevřená rozhodnutí. | Průběžně, po každém dokončeném kroku. |
+| `docs/project-split-plan.md` | **Rozhodnutí** o rozpadu na 3 projekty a jejich vzájemné napojení. | Zřídka — jen při změně architektury projektů. |
 
-## Konvence
+Dokud fyzický rozpad na 3 samostatné repozitáře neproběhne, projekty na sebe odkazují relativními
+cestami (`../01-tvorba-textu/...` apod.) — viz "Napojení na ostatní projekty" v CLAUDE.md každého
+projektu.
 
-- `research/` je zdroj pravdy pro `text/` — kapitoly se píšou z dat, ne z volné paměti modelu (mitigace halucinací).
-- Každý research záznam má zdroj a datum ověření (ceny/otevírací doby se mění).
-- Nová destinace se zakládá zkopírováním `content/_template/`.
-- Vygenerované binárky (PDF exporty, obrázky z designu) se negitují — zdroj pravdy je text + design zdroje, PDF je build output.
+## Konvence platné napříč projekty
+
+- Nová destinace se zakládá zkopírováním `_template/` v příslušném projektu (research/text v
+  Projektu 1, assets v Projektu 2) — viz `01-tvorba-textu/content/_template/README.md`.
+- Vygenerované binárky (PDF exporty, obrázky z designu) se negitují — zdroj pravdy je text/design
+  zdroje, PDF je build output. Výjimka: `02-tvorba-vizualu/design/inspirace/` (moodboard) a
+  `design/*/wireframes/` (návrhové kostry) jsou zdroje, ty se gitují.
+- Každá informace má **jedno** místo. Než něco někam připíšeš, ověř podle tabulky výše a podle
+  sekce "Co se nemá opakovat" v `docs/project-split-plan.md`, jestli to nepatří jinam.
+- **Cesty v dokumentech se píšou od kořene projektu, ne od umístění souboru.** V dokumentu uvnitř
+  `02-tvorba-vizualu/docs/` tedy `docs/design-brief-albanie.md` znamená soubor ve stejné složce,
+  `.claude/agents/design.md` je o úroveň výš a `../01-tvorba-textu/...` míří do vedlejšího projektu.
+  V dokumentech v tomto rootu se stejně tak čte `docs/...` a `plan.md` od `dp-prirucka/`.
+
+## Zásada práce s destinacemi
+
+Plán počítá s pilotem na **jedné** destinaci — teprve po jeho vyhodnocení (Fáze 9) se škáluje na
+další. Rozpracované destinace mimo aktuální pilot se nerozšiřují, jen se drží zmrazené; jejich stav
+je v `docs/stav-projektu.md`.

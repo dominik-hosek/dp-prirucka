@@ -5,8 +5,11 @@ Thumbs.db
 
 # Exported binaries (regenerated, not source of truth)
 *.pdf
-design/**/*.png
-design/**/*.jpg
+02-tvorba-vizualu/design/**/*.png
+02-tvorba-vizualu/design/**/*.jpg
+
+# ...ale moodboard/reference pro grafický styl je ZDROJ, ne build output
+!02-tvorba-vizualu/design/inspirace/**
 
 # Secrets / local config
 .env
