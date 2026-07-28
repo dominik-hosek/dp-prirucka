@@ -1,7 +1,6 @@
 > **⚠️ Pozastaveno 2026-07-17.** Postup popsaný v tomto dokumentu (v2 — `design_type: "poster"` +
-> Canva vlastní stock fotky) se nepoužívá. Čím se nahradí, není rozhodnuto — varianty a doporučení
-> jsou v `brief-vizualni-proces.md`, rozhodnutí je vedené jako otevřené #1 v
-> `../docs/stav-projektu.md`. Nepokračovat v produkci kapitol tímto postupem.
+> Canva vlastní stock fotky) se nepoužívá. Od 2026-07-29 ho nahradilo generování stránek v Nano
+> Banana 2 / GPT Image podle připravených promptů — viz `prompt-guide.md`.
 > Tento dokument zůstává jako historický záznam Canva technického postupu a jeho omezení (v1 i v2)
 > **a jako platný zdroj vizuálního stylu** (paleta, typografie, layout) — ten se rozhodnutím
 > o procesu nemění.

@@ -10,8 +10,19 @@ jen stav.
 
 ## 👉 Další krok
 
-**Rozhodnout #1 níže** (varianta vizuálního procesu). Je to jediná věc, která teď brání postupu —
-Fáze 0–2 pilotu jsou hotové, Fáze 3 na tom rozhodnutí stojí a všechno dál navazuje na ni.
+**Vygenerovat obálku a 5 stránek kapitoly 01 Lloretu** podle promptů v
+`02-tvorba-vizualu/prompts/lloret-de-mar/`. Postup, styl blok a kontrolní seznamy jsou
+v `02-tvorba-vizualu/docs/prompt-guide.md`, prázdné šablony textových stránek
+v `02-tvorba-vizualu/prompts/_sablony-stranek.md`.
+
+Než se pojede dál, projít první kapitolu společně — když bude potřeba doladit styl nebo postup,
+je lepší předělat 5 stránek než 40.
+
+**Nejdřív ale dvě drobnosti:**
+- Potvrdit název a podnázev produktu (návrh je v `prompts/lloret-de-mar/00-obalka.md`) — obálka se
+  generuje s ním a přegenerovávat ji kvůli změněnému podtitulku je zbytečné.
+- Ověřit si na jednom odstavci, jak si tvůj nástroj poradí s českou diakritikou — na tom stojí
+  rozdělení stránek na vizuální a textové.
 
 ✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
 ✅ *Hotovo 2026-07-29: `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` — 18 otevřených otázek
@@ -19,21 +30,21 @@ z 8 research souborů seskupených podle toho, co s nimi má udělat QA ve Fázi
 
 ---
 
-## Otevřená rozhodnutí (blokují postup)
+## Otevřená rozhodnutí
 
-### #1 — Jakým procesem vyrobit vizuální PDF? ⛔ blokuje celou Fázi 3
+### ✅ #1 — Jakým procesem vyrobit vizuální PDF? *(rozhodnuto 2026-07-29)*
 
-Dosavadní plně automatický postup přes Canva MCP je pozastavený (limity API + generické fotky,
-které s destinací nemají nic společného). Tři varianty jsou rozepsané v
-`02-tvorba-vizualu/docs/brief-vizualni-proces.md`:
+Stránky generuje člověk v **Nano Banana 2 / GPT Image** podle promptů připravených agentem. Canva
+se nepoužívá (skill i agent odstavené). Stránky se dělí na vizuální (text se generuje) a textové
+(generuje se jen prázdný rám, fact-checked text se vkládá až potom) — důvod je nespolehlivá sazba
+české diakritiky obrázkovými modely.
 
-| Varianta | Podstata | Poznámka |
-|---|---|---|
-| A | Dál automatizovat přes Canva MCP | Autor analýzy nedoporučuje — narazí na stejné limity |
-| B | Hybrid: shot list → wireframe → fotky (reálná místa = placený stock, náladové = AI) → ruční sazba v Canvě | **Doporučeno** |
-| C | Opustit Canvu, sázet v DTP nástroji (Affinity/InDesign) | Nejvyšší kvalita, nejde automatizovat |
+Detail: `02-tvorba-vizualu/docs/prompt-guide.md`. Rozhodnutí a jeho kontext:
+`docs/project-split-plan.md`.
 
-Dokud rozhodnutí nepadne, v žádné variantě se nepokračuje.
+**Známé riziko, se kterým se do toho jde:** u fotek konkrétních pojmenovaných míst model vygeneruje
+věrohodné, ale smyšlené místo. Řešení v prompt guide — buď licencovaná fotka, nebo místo
+v popisku nepojmenovávat.
 
 ### #2 — Notion jako centrální databáze destinací? (neblokuje)
 
@@ -51,7 +62,7 @@ Legenda: ✅ hotovo · ◐ rozpracováno · ⛔ blokováno · ⬜ nezačato
 | 0 | Validace destinace, persona, cena, osnova | 01 | ✅ pro Lloret i Albánii |
 | 1 | Research "deep knowledge" dat | 01 | ✅ pro Lloret (8 témat) · ✅ pro Albánii |
 | 2 | Psaní kapitol + fact-check | 01 | ✅ Lloret (8/8 `Stav: OK` a aktuální, 8/8 shot listů aktuálních) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
-| 3 | Vizuál a sazba PDF | 02 | ⛔ blokováno rozhodnutím #1 |
+| 3 | Vizuál a sazba PDF | 02 | ◐ postup rozhodnutý, prompty pro obálku + kap. 01 Lloretu hotové, generování nezačalo |
 | 4 | QA a finalizace produktu | 03 | ⬜ čeká na PDF z Fáze 3 |
 | 5 | Prodejní web | 03 | ⬜ |
 | 6 | Příprava PPC kampaní | 03 | ⬜ |

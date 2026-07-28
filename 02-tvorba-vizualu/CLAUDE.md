@@ -6,13 +6,13 @@ proměnu hotového textu ve vizuálně kvalitní, prodejný PDF produkt.
 Celý fázový proces je popsaný v `../plan.md`. Živý stav skills/agentů patřících sem je v
 `docs/automation-registry.md`.
 
-> **⛔ Tento projekt je blokovaný otevřeným rozhodnutím.** Dosavadní postup (Canva `poster`
-> design_type + Canva vlastní stock fotky, zdokumentovaný v `docs/design-brief-albanie.md` a
-> `.claude/skills/layout-guide/`) je od 2026-07-17 pozastavený kvůli limitům Canva MCP API a
-> generickým fotkám. Čím se nahradí, **není rozhodnuto** — tři varianty a doporučení jsou
-> v `docs/brief-vizualni-proces.md`, rozhodnutí je vedené jako otevřené #1 v
-> `../docs/stav-projektu.md`. Do rozhodnutí se nepokračuje v žádné variantě ani na dalších
-> kapitolách/destinacích.
+> **Postup rozhodnutý 2026-07-29: stránky PDF generuje člověk v Nano Banana 2 / GPT Image podle
+> připravených promptů.** Canva se nepoužívá — dosavadní postup (`docs/design-brief-albanie.md`,
+> `.claude/skills/layout-guide/`, `.claude/agents/design.md`) je odstavený, zůstává jen jako
+> historie. Vizuální styl z design briefu (paleta, typografie, prvky) platí dál.
+>
+> Jak se pracuje: `docs/prompt-guide.md`. Šablony stránek: `prompts/_sablony-stranek.md`.
+> Prompty destinace: `prompts/<destinace>/`.
 
 ## Struktura
 
@@ -20,15 +20,21 @@ Celý fázový proces je popsaný v `../plan.md`. Živý stav skills/agentů pat
 content/
   _template/assets/       # šablona – místo pro fotky/ilustrace nové destinace
   <destinace>/assets/     # fotky/ilustrace použité v PDF (research a text jsou v Projektu 1)
+prompts/
+  _sablony-stranek.md     # znovupoužitelné šablony textových stránek (T1–T4)
+  <destinace>/            # prompty po kapitolách + obálka
 design/
   <destinace>/
+    sablony/              # vygenerované prázdné šablony stránek
+    pages/                # hotové vygenerované stránky – build output, negituje se
     wireframes/           # návrhové kostry stránek (SVG) – ZDROJ, gituje se
-    pdf-parts/, preview/, proof-*/   # exporty a náhledy – build output, negituje se
+    pdf-parts/, preview/, proof-*/   # starší Canva exporty – build output, negituje se
   inspirace/              # moodboard/reference pro grafický styl – ZDROJ, gituje se
 docs/
-  design-brief-<destinace>.md   # styl, barvy, fonty, layout, historie Canva pokusů (v1/v2)
-  brief-vizualni-proces.md      # analýza variant nového procesu + doporučení (čeká na rozhodnutí)
-.claude/
+  prompt-guide.md               # JAK se pracuje – styl blok, typy stránek, kontrolní seznamy
+  design-brief-<destinace>.md   # CO má vzniknout – paleta, typografie, layout (+ historie Canvy)
+  brief-vizualni-proces.md      # historie: analýza variant, ze které se rozhodovalo
+.claude/                        # odstavené, popisuje starý Canva postup
   agents/design.md
   skills/layout-guide/
 ```

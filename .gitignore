@@ -8,8 +8,13 @@ Thumbs.db
 02-tvorba-vizualu/design/**/*.png
 02-tvorba-vizualu/design/**/*.jpg
 
-# ...ale moodboard/reference pro grafický styl je ZDROJ, ne build output
+# ...ale tyhle obrázky jsou ZDROJ, ne build output — gitují se:
+# - inspirace/ = moodboard pro grafický styl
+# - pages/ + sablony/ = stránky vygenerované v Nano Banana / GPT Image. Nejsou reprodukovatelné!
+#   Stejný prompt podruhé vrátí jiný obrázek, takže schválená stránka je nenahraditelná.
 !02-tvorba-vizualu/design/inspirace/**
+!02-tvorba-vizualu/design/*/pages/**
+!02-tvorba-vizualu/design/*/sablony/**
 
 # Secrets / local config
 .env

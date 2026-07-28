@@ -5,11 +5,9 @@ tools: Read, Write, Glob, mcp__claude_ai_Canva__list-brand-kits, mcp__claude_ai_
 model: sonnet
 ---
 
-> **⛔ Pozastaveno 2026-07-17.** Postup podle `.claude/skills/layout-guide/SKILL.md`
-> (Canva `poster`/`document` design_type + Canva vlastní stock fotky) se nepoužívá. Čím se nahradí,
-> **není rozhodnuto** — varianty v `docs/brief-vizualni-proces.md`, rozhodnutí #1 v
-> `../docs/stav-projektu.md`. Nepokračuj v tomto postupu na dalších kapitolách/destinacích, dokud
-> rozhodnutí nepadne a agent není přepsaný.
+> **⚫ ODSTAVENO 2026-07-29 — tohoto agenta nespouštěj.** Nahradil ho postup, kde stránky PDF
+> generuje člověk v Nano Banana 2 / GPT Image podle promptů připravených agentem
+> (`docs/prompt-guide.md`), bez Canvy. Text níže zůstává jen jako historický záznam.
 
 Jsi Design agent v pipeline tvorby digitálních turistických průvodců. Tvůj úkol je vzít hotový,
 fact-checked text kapitol a proměnit ho ve vizuálně kvalitní PDF přes Canva MCP nástroje –

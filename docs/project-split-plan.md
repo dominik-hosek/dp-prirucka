@@ -28,7 +28,27 @@ zase vstup pro projekt 3. Dokud je vše v jednom repu, tohle napojení funguje p
 projektu — až se projekty fyzicky rozdělí i na samostatné repozitáře, nahradí se ručním/
 skriptovaným hand-off krokem.
 
-## Fáze 3 — vizuální proces se přehodnocuje (otevřené rozhodnutí)
+## Fáze 3 — vizuální proces (rozhodnuto 2026-07-29)
+
+**Stránky PDF generuje člověk v Nano Banana 2 / GPT Image podle promptů, které připraví agent.**
+Canva ani jiný sazeč se nepoužívá. Agent do generování nevstupuje — nemá k těmto nástrojům přístup,
+jeho výstupem jsou prompty a text k vložení.
+
+Klíčové pravidlo: stránky se dělí na **vizuální (V)**, kde se text generuje spolu s obrázkem, a
+**textové (T)**, kde se generuje jen prázdný rám a fact-checked text se do něj vkládá až potom.
+Důvod: obrázkové modely sázejí delší českou prózu s diakritikou nespolehlivě a text v obrázku nejde
+vyhledat ani zkopírovat. Textové stránky navíc nepotřebují prompt na každou zvlášť — používá se
+sada znovupoužitelných šablon.
+
+Detail postupu, styl blok a kontrolní seznamy: `02-tvorba-vizualu/docs/prompt-guide.md`.
+Šablony: `02-tvorba-vizualu/prompts/_sablony-stranek.md`. Prompty konkrétní destinace:
+`02-tvorba-vizualu/prompts/<destinace>/`.
+
+Analýza, ze které se rozhodovalo (varianty A/B/C), zůstává v
+`02-tvorba-vizualu/docs/brief-vizualni-proces.md` jako historický záznam — zvolený postup je čtvrtá
+cesta, která v ní nebyla, protože počítá s nástroji, které má člověk předplacené.
+
+### Historie: proč se opustil původní postup
 
 Dosavadní přístup (Canva `poster` design_type + Canva vlastní stock fotky, zdokumentovaný
 v `02-tvorba-vizualu/docs/design-brief-albanie.md`) je **pozastavený** — narazil na tvrdé limity
@@ -36,20 +56,17 @@ Canva MCP API (needitovatelná hero sekce, `merge-designs` nefunguje na unbounde
 `format_text` neumí letter-spacing) a hlavně na obsahový problém: fotku, kterou si nástroj vybere
 sám bez cíleného zadání, spojuje s destinací jen podpis pod ní.
 
-**Čím se nahradí, zatím není rozhodnuto.** Analýza a tři varianty (A – dál automatizovat přes
-Canva MCP, B – hybrid: wireframe + rozlišení místopisných/náladových fotek + ruční sazba,
-C – opustit Canvu pro DTP nástroj) jsou rozepsané v
-`02-tvorba-vizualu/docs/brief-vizualni-proces.md`. Autor analýzy doporučuje variantu B. Dokud
-rozhodnutí nepadne, Fáze 3 je blokovaná a v žádné variantě se nepokračuje — viz otevřené
-rozhodnutí #1 v `docs/stav-projektu.md`.
+Zvažovaly se tři varianty (A – dál automatizovat přes Canva MCP, B – hybrid: wireframe + rozlišení
+místopisných/náladových fotek + ruční sazba, C – opustit Canvu pro DTP nástroj), rozepsané
+v `02-tvorba-vizualu/docs/brief-vizualni-proces.md`. Rozhodnutí padlo mimo ně — na generování
+stránek ve vlastních předplacených nástrojích, viz výše.
 
-Jedno technické omezení platí napříč variantami, které používají Canvu: **fotky do Canva účtu musí
-nahrát člověk sám**. Canva MCP nástroj `upload-asset-from-url` přijímá jen veřejně dostupné URL a
-zakazuje nahrávat lokální/soukromé soubory na veřejný hosting jen kvůli získání URL — agent je tedy
-za člověka nahrát nemůže, může je jen dohledat v účtu (`get-assets`/search) a použít.
+Z Canva analýzy zůstává v platnosti jedno zjištění pro případ, že by se ke Canvě někdy vracelo:
+**fotky do Canva účtu musí nahrát člověk sám**, nástroj `upload-asset-from-url` přijímá jen veřejně
+dostupné URL.
 
 **Status existujícího v2 proofu (cover + kapitola 1 Albánie, Canva stock fotky):** technicky
-hotový a funkční, ale zmrazený — nerozšiřuje se na kapitoly 2–8 ani na jinou destinaci.
+hotový a funkční, ale zmrazený — nerozšiřuje se a novým postupem se nahrazuje.
 
 ## Co se v žádném z výše uvedených dokumentů nemá opakovat
 

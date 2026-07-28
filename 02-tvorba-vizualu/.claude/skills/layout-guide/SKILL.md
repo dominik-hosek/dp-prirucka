@@ -5,10 +5,9 @@ description: Naskládá hotový, fact-checked text kapitol dané destinace do Ca
 
 # Layout guide
 
-> **⛔ Pozastaveno 2026-07-17.** Postup níže (Canva `poster`/`document` design_type + Canva vlastní
-> stock fotky) se nepoužívá. Čím se nahradí, **není rozhodnuto** — varianty v
-> `docs/brief-vizualni-proces.md`, rozhodnutí #1 v `../docs/stav-projektu.md`. Nepoužívat tento
-> skill na další destinace/kapitoly, dokud rozhodnutí nepadne a skill není přepsaný.
+> **⚫ ODSTAVENO 2026-07-29 — tento skill nespouštěj.** Nahradil ho postup, kde stránky PDF generuje
+> člověk v Nano Banana 2 / GPT Image podle připravených promptů (`docs/prompt-guide.md`), bez Canvy.
+> Text níže zůstává jen jako historický záznam Canva postupu a jeho limitů.
 
 Tento skill proměňuje hotový text (Fáze 2, `../01-tvorba-textu/content/<destinace>/text/*.md`) ve vizuální PDF
 produkt pomocí Canva MCP nástrojů, ve stylu definovaném v design briefu (editorialní travel guide
