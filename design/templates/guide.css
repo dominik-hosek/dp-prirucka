@@ -1,0 +1,500 @@
+/* Sazební systém průvodce — destinačně nezávislý.
+   Barvy přicházejí z tokens-<destinace>.css, který se linkuje PŘED tímto souborem.
+   Cílový výstup: A4 na výšku, PDF přes WeasyPrint. */
+
+/* ---------- Fonty ---------- */
+
+/* Všechny tři jsou variabilní fonty. WeasyPrint neumí rozsah vah v @font-face,
+   proto se rodina deklaruje jednou a konkrétní řez se vybírá vlastností
+   font-variation-settings u jednotlivých prvků (viz proměnné níže). */
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/Archivo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../fonts/SourceSerif4.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf") format("truetype");
+}
+
+/* ---------- Stránka ---------- */
+
+@page {
+  size: A4 portrait;
+  margin: 22mm 18mm 20mm 18mm;
+  background: var(--barva-papir);
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Inter", sans-serif;
+    font-size: 8pt;
+    color: var(--barva-text-tlumeny);
+    margin-top: 4mm;
+  }
+
+  @top-center {
+    content: string(nazev-kapitoly);
+    font-family: "Inter", sans-serif;
+    font-size: 7.5pt;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--barva-text-tlumeny);
+    margin-bottom: 6mm;
+  }
+}
+
+/* Obálka, předěly kapitol a celostránkové obrazy nemají hlavičku ani číslo */
+@page :first { margin: 0; @bottom-center { content: none; } @top-center { content: none; } }
+@page obalka { margin: 0; @bottom-center { content: none; } @top-center { content: none; } }
+@page predel { margin: 0; @bottom-center { content: none; } @top-center { content: none; } }
+@page obraz  { margin: 0; @bottom-center { content: none; } @top-center { content: none; } }
+
+/* Vnitřní okraj o něco širší kvůli hřbetu při tisku */
+@page :left  { margin-right: 22mm; }
+@page :right { margin-left: 22mm; }
+
+/* ---------- Základ ---------- */
+
+html {
+  font-size: 10.5pt;
+}
+
+body {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.58;
+  color: var(--barva-text);
+  background: var(--barva-papir);
+  hyphens: auto;
+  text-align: justify;
+}
+
+:lang(cs) { hyphens: auto; }
+
+/* ---------- Typografická stupnice ---------- */
+
+h1, h2, h3, h4 {
+  font-family: "Archivo", "Helvetica Neue", sans-serif;
+  color: var(--barva-primarni);
+  text-align: left;
+  hyphens: none;
+  break-after: avoid;
+}
+
+h1 { /* název kapitoly */
+  font-size: 30pt;
+  font-weight: 800;
+  font-variation-settings: "wght" 800, "wdth" 112;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 0 0 2mm 0;
+  string-set: nazev-kapitoly content();
+}
+
+h2 {
+  font-size: 15pt;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 9mm 0 2.5mm 0;
+}
+
+h3 {
+  font-size: 11.5pt;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 6mm 0 1.5mm 0;
+  color: var(--barva-text);
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--barva-text-tlumeny);
+  margin: 5mm 0 1.5mm 0;
+}
+
+p {
+  margin: 0;
+  orphans: 2;
+  widows: 2;
+}
+
+p + p {
+  text-indent: 4.5mm;
+}
+
+/* První odstavec po nadpisu bez odsazení, s verzálkou */
+h1 + p, h2 + p, h3 + p {
+  text-indent: 0;
+}
+
+h1 + p::first-line {
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+a {
+  color: var(--barva-primarni);
+  text-decoration: none;
+  border-bottom: 0.4pt solid var(--barva-sekundarni);
+}
+
+/* ---------- Struktura kapitoly ---------- */
+
+/* Výchozí je REŽIM OBRAZOVKY: produkt se čte v PDF čtečce, takže se nevynucuje
+   začátek na pravé stránce a nevznikají prázdné vakáty.
+   Pro tisk přidej na <body> třídu "rezim-tisk" — viz blok na konci souboru. */
+
+.kapitola {
+  break-before: page;
+}
+
+/* Předěl kapitoly — celostránkový obraz s názvem */
+.predel {
+  page: predel;
+  break-before: page;
+  break-after: page;
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+}
+
+.predel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ztmavovací přechod pod textem — nahrazuje text-shadow, který WeasyPrint neumí,
+   a je i typograficky čistší: text sedí na řízené ploše, ne na náhodném pozadí. */
+.predel .stin {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to bottom, rgba(14, 58, 83, 0), rgba(14, 58, 83, 0.82));
+}
+
+.predel .popis {
+  position: absolute;
+  left: 18mm;
+  right: 18mm;
+  bottom: 24mm;
+  color: var(--barva-papir);
+}
+
+.predel .cislo {
+  font-family: "Inter", sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 3mm;
+}
+
+.predel h1 {
+  color: var(--barva-papir);
+  font-size: 38pt;
+}
+
+/* ---------- Obrázky ---------- */
+
+figure {
+  margin: 0 0 6mm 0;
+  break-inside: avoid;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  font-family: "Inter", sans-serif;
+  font-size: 7.5pt;
+  line-height: 1.35;
+  color: var(--barva-text-tlumeny);
+  text-align: left;
+  hyphens: none;
+  margin-top: 1.5mm;
+  padding-left: 2mm;
+  border-left: 1.2pt solid var(--barva-akcent);
+}
+
+/* Celostránkový obraz na spad */
+figure.obraz-cela-strana {
+  page: obraz;
+  break-before: page;
+  break-after: page;
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+}
+
+figure.obraz-cela-strana img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pásový obraz přes celou šířku sazby */
+figure.obraz-pas img { height: 98mm; object-fit: cover; }
+
+/* Poloviční obraz vpravo, text obtéká */
+figure.obraz-vpravo {
+  float: right;
+  width: 48%;
+  margin: 0 0 4mm 6mm;
+}
+
+/* ---------- Vysazené prvky ---------- */
+
+/* Tip / insider box — nosný prvek "deep knowledge" produktu */
+.tip {
+  break-inside: avoid;
+  background: var(--barva-plocha);
+  border-left: 2.5pt solid var(--barva-akcent);
+  padding: 4mm 5mm;
+  margin: 5mm 0;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.tip .stitek {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--barva-akcent);
+  margin-bottom: 1.5mm;
+}
+
+/* Varování / pozor */
+.pozor {
+  border-left-color: var(--barva-primarni);
+}
+.pozor .stitek { color: var(--barva-primarni); }
+
+/* Fakta na okraji (ceny, časy, vzdálenosti) */
+.fakta {
+  font-family: "Inter", sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.45;
+  text-align: left;
+  border-top: 1.2pt solid var(--barva-primarni);
+  border-bottom: 0.4pt solid var(--barva-linka);
+  padding: 2.5mm 0;
+  margin: 5mm 0;
+  break-inside: avoid;
+}
+
+.fakta dl { margin: 0; display: flex; flex-wrap: wrap; }
+.fakta dt {
+  width: 32%;
+  font-weight: 600;
+  color: var(--barva-text-tlumeny);
+  padding: 0.8mm 0;
+}
+.fakta dd {
+  width: 68%;
+  margin: 0;
+  padding: 0.8mm 0;
+}
+
+/* Tabulky */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  font-size: 8.5pt;
+  margin: 5mm 0;
+  break-inside: avoid;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--barva-papir);
+  background: var(--barva-primarni);
+  padding: 2mm 2.5mm;
+}
+
+td {
+  padding: 1.8mm 2.5mm;
+  border-bottom: 0.4pt solid var(--barva-linka);
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) td { background: rgba(241, 235, 223, 0.55); }
+
+/* Seznamy */
+ul, ol {
+  margin: 3mm 0;
+  padding-left: 6mm;
+  text-align: left;
+}
+
+li { margin-bottom: 1.2mm; }
+
+ul li::marker { color: var(--barva-akcent); }
+ol li::marker { color: var(--barva-akcent); font-weight: 600; }
+
+/* ---------- Obálka ---------- */
+
+.obalka {
+  page: obalka;
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  break-after: page;
+}
+
+.obalka img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.obalka .stin {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 62%;
+  background: linear-gradient(to bottom, rgba(14, 58, 83, 0.78), rgba(14, 58, 83, 0));
+}
+
+.obalka .titulek {
+  position: absolute;
+  left: 16mm;
+  right: 16mm;
+  top: 22mm;
+  color: var(--barva-papir);
+}
+
+.obalka .nadtitul {
+  font-family: "Inter", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 4mm;
+}
+
+.obalka h1 {
+  color: var(--barva-papir);
+  font-size: 52pt;
+  font-weight: 900;
+  font-variation-settings: "wght" 900, "wdth" 118;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.obalka .podtitul {
+  font-family: "Source Serif 4", serif;
+  font-size: 13pt;
+  font-style: italic;
+  margin-top: 5mm;
+  max-width: 70%;
+}
+
+/* ---------- Obsah ---------- */
+
+.obsah {
+  break-before: page;
+  break-after: page;
+}
+
+.obsah h1 { margin-bottom: 8mm; }
+
+.obsah ol {
+  list-style: none;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 10pt;
+}
+
+.obsah li {
+  display: flex;
+  align-items: baseline;
+  padding: 2.2mm 0;
+  border-bottom: 0.4pt solid var(--barva-linka);
+}
+
+.obsah .cislo {
+  width: 10mm;
+  font-weight: 700;
+  color: var(--barva-akcent);
+}
+
+.obsah .nazev { flex: 1; }
+
+.obsah a::after {
+  content: target-counter(attr(href), page);
+  font-weight: 600;
+  color: var(--barva-primarni);
+  margin-left: 4mm;
+}
+
+.obsah a { border-bottom: none; }
+
+/* ---------- Mapy a infografiky ---------- */
+
+.mapa {
+  break-inside: avoid;
+  margin: 6mm 0;
+  position: relative;
+}
+
+.mapa img, .mapa svg { width: 100%; display: block; }
+
+.mapa .legenda {
+  font-family: "Inter", sans-serif;
+  font-size: 7.5pt;
+  color: var(--barva-text-tlumeny);
+  margin-top: 2mm;
+}
+
+/* ---------- Tiráž ---------- */
+
+.tiraz {
+  break-before: page;
+  font-family: "Inter", sans-serif;
+  font-size: 8pt;
+  line-height: 1.5;
+  color: var(--barva-text-tlumeny);
+  text-align: left;
+}
+
+/* ---------- Režim tisku ---------- */
+
+/* Zapne se přidáním třídy "rezim-tisk" na <body>. Kapitoly a předěly pak
+   začínají vždy na pravé (liché) stránce, jak se sluší na vazbu — za cenu
+   prázdných vakátů, které jsou v tisku správně, ale na obrazovce ruší. */
+
+body.rezim-tisk .kapitola,
+body.rezim-tisk .predel,
+body.rezim-tisk .obsah {
+  break-before: right;
+}

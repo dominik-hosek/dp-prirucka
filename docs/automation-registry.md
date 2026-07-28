@@ -15,7 +15,10 @@ Umístění: `.claude/skills/<název>/SKILL.md`
 | `/validate-destination` | Research poptávky/konkurence pro výběr destinace | 0 | `.claude/skills/validate-destination/` | ⚪ |
 | `/research-topic` | Sběr dat k jednomu tématu/kapitole destinace + zdroje | 1 | `.claude/skills/research-topic/` | ⚪ |
 | `/write-chapter` | Napsání kapitoly z research databáze (ne z paměti modelu) | 2 | `.claude/skills/write-chapter/` | ⚪ |
-| `/layout-guide` | Sazba textu + vizuálů do PDF šablony | 3 | `.claude/skills/layout-guide/` | ⚪ |
+| `/guide-style` | Vizuální DNA průvodce: paleta, fonty, foto jazyk, 5-komponentové prompt šablony. Destinačně nezávislé jádro + profil destinace | 3 | `.claude/skills/guide-style/` | 🟢 |
+| `/illustration` | Série ilustrací a obálka se zachováním jednotného stylu (kotva série) | 3 | `.claude/skills/illustration/` | 🟢 |
+| `/map-infographic` | Mapy a infografiky; text se sází vektorově, negeneruje se modelem | 3 | `.claude/skills/map-infographic/` | 🟢 |
+| `/layout` | Sazba textu + vizuálů do PDF přes WeasyPrint. **Naplňuje roli plánovaného `/layout-guide`** | 3 | `.claude/skills/layout/` | 🟢 |
 | `/qa-checklist` | Kontrolní seznam před vydáním produktu | 4 | `.claude/skills/qa-checklist/` | ⚪ |
 | `/build-landing-page` | Generování struktury/copy prodejní stránky | 5 | `.claude/skills/build-landing-page/` | ⚪ |
 | `/generate-ad-variants` | Sada headlinů/textů/CTA pro PPC A/B test | 6 | `.claude/skills/generate-ad-variants/` | ⚪ |
@@ -34,6 +37,8 @@ Umístění: `.claude/agents/<název>.md` (frontmatter: model, dostupné nástro
 | Writer | Píše kapitoly z research databáze | 2 | `.claude/agents/writer.md` | ⚪ |
 | Fact-Checker | Nezávisle ověřuje tvrzení v textu proti research datům | 2 | `.claude/agents/fact-checker.md` | ⚪ |
 | Design | Připravuje požadavky/prompty pro vizuály a layout | 3 | `.claude/agents/design.md` | ⚪ |
+| consistency-reviewer | Read-only. Kontroluje, že ilustrace #N sedí ke stylu kotvy #1; vrací k přegenerování | 3 | `.claude/agents/consistency-reviewer.md` | ⚪ |
+| text-qa | Read-only. Kontroluje správnost a diakritiku textu v mapách a infografikách | 3 | `.claude/agents/text-qa.md` | ⚪ |
 | Copywriter (landing page) | Prodejní texty webu z "value proof" | 5 | `.claude/agents/copywriter.md` | ⚪ |
 | Ads Copywriter | Varianty reklamních textů/headlinů | 6 | `.claude/agents/ads-copywriter.md` | ⚪ |
 | Campaign Analyst | Interpretuje metriky kampaní, navrhuje úpravy | 7 | `.claude/agents/campaign-analyst.md` | ⚪ |
@@ -57,6 +62,21 @@ Spouští se přes `/loop` (interval nebo self-paced), definice promptu typicky 
 | Zpracování zbývajících kapitol | dokud nejsou všechny hotové | Postupné psaní kapitol přes `/write-chapter` | 2 | ⚪ |
 | Pilot log | týdně (jen v testovacím období pilotu) | Průběžný sběr metrik pilotu pro pozdější vyhodnocení | 9 | ⚪ |
 | Weekly ads report | týdně | Pravidelný report výkonu PPC kampaní | 7 | ⚪ |
+
+## Design systém (Fáze 3)
+
+Neautomatizované, ale závazné zdroje pravdy pro vizuál:
+
+| Co | Kde | Stav |
+|---|---|---|
+| Sazební systém (A4, mřížka, prvky) | `design/templates/guide.css` | 🟢 |
+| Barevné tokeny destinace | `design/templates/tokens-<slug>.css` | 🟢 (lloret-de-mar) |
+| Referenční kostra sazby | `design/templates/page-skeleton.html` | 🟢 |
+| Fonty (Archivo, Source Serif 4, Inter) | `design/fonts/` | 🟢 |
+| Profil destinace | `.claude/skills/guide-style/destinations/<slug>.md` | 🟢 (lloret-de-mar) |
+
+Sazba běží přes **WeasyPrint** (`pip install weasyprint`), ověřeno renderem
+kostry: 7 stran, vložené fonty, správná česká diakritika a dělení slov.
 
 ---
 

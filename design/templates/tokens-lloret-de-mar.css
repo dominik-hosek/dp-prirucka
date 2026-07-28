@@ -1,0 +1,20 @@
+/* Barevné tokeny destinace — Lloret de Mar
+   Zdroj pravdy: .claude/skills/guide-style/destinations/lloret-de-mar.md
+   Nová destinace = kopie tohoto souboru s jinými hodnotami. Nic jiného se nemění. */
+
+:root {
+  --barva-primarni:   #0E3A53; /* Hlubina */
+  --barva-sekundarni: #1B9AAA; /* Tyrkys zátok */
+  --barva-akcent:     #E76F51; /* Korálový západ */
+  --barva-doplnek-1:  #F4A261; /* Slunce / písek */
+  --barva-doplnek-2:  #3F6B4F; /* Piniová zeleň */
+  --barva-text:       #1C2321; /* Inkoust */
+  --barva-papir:      #FAF7F0; /* Teplá bílá */
+
+  /* Odvozené odstíny pro plochy a linky */
+  --barva-text-tlumeny: #5A615E;
+  --barva-linka:        #D9D2C5;
+  --barva-plocha:       #F1EBDF;
+
+  --destinace-nazev: "Lloret de Mar";
+}
