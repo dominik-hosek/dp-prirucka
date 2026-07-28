@@ -8,16 +8,14 @@ jen stav.
 
 ---
 
-## 👉 Další kroky (v tomto pořadí)
+## 👉 Další krok
 
-1. **Doplnit `01-tvorba-textu/docs/open-questions-lloret-de-mar.md`** — soupis toho, co se
-   v researchu Lloretu nepodařilo spolehlivě ověřit nebo si zdroje odporovaly. Pro Albánii takový
-   soubor existuje a Fáze 4 (QA) z něj čerpá; pro pilot chybí, takže by se do QA vstupovalo bez
-   seznamu rizikových tvrzení. Podklad už v researchi je — sekce "Otevřené otázky" v jednotlivých
-   souborech, stačí je posbírat do jednoho přehledu.
-2. **Rozhodnout #1 níže** — bez něj se Fáze 3 nepohne a produkt nemůže vzniknout.
+**Rozhodnout #1 níže** (varianta vizuálního procesu). Je to jediná věc, která teď brání postupu —
+Fáze 0–2 pilotu jsou hotové, Fáze 3 na tom rozhodnutí stojí a všechno dál navazuje na ni.
 
 ✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
+✅ *Hotovo 2026-07-29: `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` — 18 otevřených otázek
+z 8 research souborů seskupených podle toho, co s nimi má udělat QA ve Fázi 4.*
 
 ---
 
@@ -76,9 +74,12 @@ Plán počítá s pilotem na jedné destinaci — další se rozjíždějí až 
 - **Fáze 2:** hotovo — všech 8 kapitol má aktuální fact-check se `Stav: OK` i aktuální shot list.
   Kapitola 01 prošla 2026-07-28 přeověřením (4 kola: neshoda měny u eSIM, ztracená opatrnost u ceny
   autobusu z Girony, nepodložená tvrzení o placení kartou) — všechny nálezy opravené.
-- **Chybí:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (viz Další kroky), design brief pro Lloret
-  (vizuální styl je společný a definovaný v `02-tvorba-vizualu/docs/design-brief-albanie.md` —
-  pro Lloret stačí doplnit barevný akcent a fotky, až padne rozhodnutí #1).
+- **Otevřené otázky pro QA:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (2026-07-29).
+  Pozor, sekce 1 (ceny dopravy, ubytování, vstupné) se má doověřovat **až těsně před vydáním**, ne
+  dopředu — jinak čísla znovu zastarají.
+- **Chybí:** design brief pro Lloret. Vizuální styl je společný a definovaný
+  v `02-tvorba-vizualu/docs/design-brief-albanie.md` — pro Lloret stačí doplnit barevný akcent
+  a fotky, až padne rozhodnutí #1.
 - **Fáze 3 a dál:** nezačato.
 
 ### ❄️ Albánie — zmrazená
