@@ -4,20 +4,20 @@ Jediné místo, kde je vidět, kde v procesu jsme a co je další krok. Aktualiz
 dokončeném kroku. Popis samotného procesu (co se v které fázi dělá) je v `plan.md`, sem patří
 jen stav.
 
-**Poslední aktualizace: 2026-07-28**
+**Poslední aktualizace: 2026-07-29**
 
 ---
 
 ## 👉 Další kroky (v tomto pořadí)
 
-1. **Znovu spustit fact-check na `01-tvorba-textu/content/lloret-de-mar/text/01-prakticke-zaklady.md`.** Kapitola byla
-   upravená až po svém fact-checku (13:33 vs. 02:06), takže její záznam už neplatí pro aktuální
-   znění. Zbylých 7 kapitol je ověřených a aktuálních.
-2. **Doplnit `01-tvorba-textu/docs/open-questions-lloret-de-mar.md`** — soupis toho, co se
+1. **Doplnit `01-tvorba-textu/docs/open-questions-lloret-de-mar.md`** — soupis toho, co se
    v researchu Lloretu nepodařilo spolehlivě ověřit nebo si zdroje odporovaly. Pro Albánii takový
    soubor existuje a Fáze 4 (QA) z něj čerpá; pro pilot chybí, takže by se do QA vstupovalo bez
-   seznamu rizikových tvrzení.
-3. **Rozhodnout #1 níže** — bez něj se Fáze 3 nepohne a produkt nemůže vzniknout.
+   seznamu rizikových tvrzení. Podklad už v researchi je — sekce "Otevřené otázky" v jednotlivých
+   souborech, stačí je posbírat do jednoho přehledu.
+2. **Rozhodnout #1 níže** — bez něj se Fáze 3 nepohne a produkt nemůže vzniknout.
+
+✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
 
 ---
 
@@ -52,7 +52,7 @@ Legenda: ✅ hotovo · ◐ rozpracováno · ⛔ blokováno · ⬜ nezačato
 |---|---|---|---|
 | 0 | Validace destinace, persona, cena, osnova | 01 | ✅ pro Lloret i Albánii |
 | 1 | Research "deep knowledge" dat | 01 | ✅ pro Lloret (8 témat) · ✅ pro Albánii |
-| 2 | Psaní kapitol + fact-check | 01 | ◐ Lloret (8/8 `Stav: OK`, shot listy hotové; kapitola 01 upravená po fact-checku → potřebuje přeověřit) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
+| 2 | Psaní kapitol + fact-check | 01 | ✅ Lloret (8/8 `Stav: OK` a aktuální, 8/8 shot listů aktuálních) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
 | 3 | Vizuál a sazba PDF | 02 | ⛔ blokováno rozhodnutím #1 |
 | 4 | QA a finalizace produktu | 03 | ⬜ čeká na PDF z Fáze 3 |
 | 5 | Prodejní web | 03 | ⬜ |
@@ -71,10 +71,11 @@ Plán počítá s pilotem na jedné destinaci — další se rozjíždějí až 
 
 - **Fáze 0:** brief potvrzený (`01-tvorba-textu/docs/brief-lloret-de-mar.md`) — persona "Nezávislý
   plánovač", cena 199 Kč, osnova 8 kapitol.
-- **Fáze 1:** research hotový, 8 souborů, datum sběru 2026-07-17.
-- **Fáze 2:** všech 8 kapitol napsaných a fact-checknutých na `Stav: OK`, shot listy vygenerované.
-  Jediná výhrada: kapitola 01 byla po svém fact-checku ještě upravená, takže její záznam se
-  nevztahuje k aktuálnímu znění — viz krok 1 nahoře.
+- **Fáze 1:** research hotový, 8 souborů, datum sběru 2026-07-17. Sekce o penězích v
+  `prakticke-zaklady.md` doplněná 2026-07-28 (karty vs. hotovost, chiringuita, limity).
+- **Fáze 2:** hotovo — všech 8 kapitol má aktuální fact-check se `Stav: OK` i aktuální shot list.
+  Kapitola 01 prošla 2026-07-28 přeověřením (4 kola: neshoda měny u eSIM, ztracená opatrnost u ceny
+  autobusu z Girony, nepodložená tvrzení o placení kartou) — všechny nálezy opravené.
 - **Chybí:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (viz Další kroky), design brief pro Lloret
   (vizuální styl je společný a definovaný v `02-tvorba-vizualu/docs/design-brief-albanie.md` —
   pro Lloret stačí doplnit barevný akcent a fotky, až padne rozhodnutí #1).

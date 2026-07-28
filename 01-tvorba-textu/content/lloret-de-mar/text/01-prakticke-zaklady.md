@@ -17,21 +17,29 @@ Nejbližší je letiště Girona-Costa Brava (GRO), odkud je to do Lloretu asi 3
 Alternativa je letiště Barcelona-El Prat (BCN), transfer trvá zhruba 1-1,5 hodiny.
 
 Z Girony jezdí přímá autobusová linka (Sagalés 613) do Lloretu za cca 35 minut, jednosměrná jízdenka
-vychází orientačně na 10 EUR. K létu 2026 jezdí spoje poměrně často, ale jízdní řád i cena se mohou
-mezi sezónami měnit — ověř si aktuální spojení těsně před odletem. Taxi ze stejné trasy vyjde
+vychází orientačně na 10 EUR. Pozor ale na to, že se zdroje v ceně dost rozcházejí — podle dopravce
+(Sagalés, Sarfa, Flixbus) se objevují částky až kolem 23 EUR, takže s dvojnásobkem raději počítej.
+K létu 2026 jezdí spoje poměrně často, ale jízdní řád i cena se mohou mezi sezónami měnit — ověř si
+aktuální spojení i cenu těsně před odletem. Taxi ze stejné trasy vyjde
 výrazně dráž (viz kapitola Rozpočet) — v sezóně navíc doporučujeme rezervovat autobus/transfer
 předem, oblíbené spoje bývají vyprodané.
 
 ### Peníze
 
-Ve Španělsku se platí eurem. Karty jsou běžně přijímané všude, i tak se vyplatí mít u sebe drobnou
-hotovost na pláž, chiringuito nebo taxi. Orientační ceny běžných výdajů najdeš v kapitole Rozpočet.
+Ve Španělsku se platí eurem. Kartou zaplatíš ve městech prakticky všude a do 50 EUR bezkontaktně
+i bez PINu — ale nespoléhej na to úplně: podnik ve Španělsku kartu přijmout **nemusí**, cash-only bar
+nebo obchod je tu naprosto legální a hotovostí pořád projde víc než polovina plateb v kamenných
+obchodech. Drobná hotovost se proto vyplatí mít u sebe pořád, hlavně na pláži, na trhu a v menších
+provozovnách — část plážových barů (chiringuit) bere jen hotovost. U taxíku se radši předem zeptej,
+jestli kartu vezme. V malých obchodech a trafikách můžeš navíc narazit na minimální částku pro
+placení kartou — pokud ji podnik má, musí na ni předem viditelně upozornit. Orientační ceny běžných
+výdajů najdeš v kapitole Rozpočet.
 
 ### SIM a internet
 
 Fyzická SIM karta (Orange, Vodafone, Movistar) s velkým datovým balíčkem na měsíc vyjde orientačně
 kolem 10 EUR. Alternativou je eSIM, kterou si aktivuješ ještě před odletem — ceny se pohybují zhruba
-od 4 do 12 EUR podle množství dat. Ceny u eSIM poskytovatelů se mění častěji než u klasických SIM,
+od 4 do 12 USD podle množství dat. Ceny u eSIM poskytovatelů se mění častěji než u klasických SIM,
 takže konkrétní nabídku zkontroluj až těsně před cestou.
 
 ### Bezpečnost
@@ -50,6 +58,7 @@ relevantní hlavně pro případný výlet autem do centra Barcelony.
 
 - Nejteplejší, ale nejnabitější měsíce: červenec, srpen. Kompromis klid/teplo: konec května, začátek
   června, září.
-- Z letiště Girona autobusem (~35 min, ~10 EUR) je výrazně levnější a rychlejší než z Barcelony.
+- Z letiště Girona autobusem (~35 min, cca 10–23 EUR podle dopravce) je výrazně levnější a rychlejší
+  než z Barcelony.
 - EHIC + cestovní pojištění, DROZD registrace, SIM/eSIM — vše shrnuté i v kapitole Checklist před
   odjezdem.

@@ -44,6 +44,17 @@ repozitáře root definice zanikne.
 | Fact-check po uložení kapitoly | `PostToolUse` (Write\|Edit) na souboru v `content/*/text/*.md` | Dá Claudovi v session najevo, ať spustí Fact-Checker subagenta pro danou kapitolu, pokud pro ni ještě není aktuální fact-check | 2 | `.claude/hooks/fact-check-on-save.js` | 🟢 |
 | Shot-list po dokončení fact-checku destinace | `PostToolUse` (Write\|Edit) na souboru v `content/*/text/_fact-check/*.md` | Když mají všechny kapitoly destinace `Stav: OK` a shot-list chybí/je starší než text, dá Claudovi v session najevo, ať spustí Shot-List-Creator subagenta pro každou kapitolu destinace | 2 | `.claude/hooks/fact-check-on-save.js` (stejný skript, druhá větev) | 🟢 |
 
+## Známá omezení
+
+- **Fact-checker nekonverguje na jeden běh.** Ověřeno 2026-07-28 na kapitole 01 Lloretu: čtyři po
+  sobě jdoucí běhy nad prakticky stejným textem našly pokaždé jinou sadu nálezů (kolo 1 měnu u eSIM,
+  kolo 2 cenu autobusu, kolo 3 tvrzení o placení kartou, kolo 4 chybějící výhradu u slabého zdroje).
+  `Stav: OK` proto neznamená "text je čistý", jen "tenhle běh nic nenašel". Má to dva důsledky:
+  u důležité kapitoly se vyplatí pustit fact-check víckrát, a `Stav: OK` jako spouštěč shot listů
+  (hook níže) je spíš procesní milník než záruka kvality.
+- Pomáhá dát agentovi v promptu explicitní pokyn projít kapitolu systematicky sekci po sekci —
+  bez něj má tendenci prohledat jen část textu.
+
 ## Loops
 
 | Loop | Interval | Účel | Fáze | Stav |
