@@ -10,11 +10,12 @@ jen stav.
 
 ## 👉 Další krok
 
-**Dogenerovat zbytek kapitoly 01 Lloretu** (sekce SIM a internet, Rychlé shrnutí) a opravit dvě
-nalezené tiché změny textu — viz `02-tvorba-vizualu/kontrola/lloret-de-mar/01-prakticke-zaklady.md`.
-Pak projít kapitolu jako celek, teprve potom kapitola 02.
+**Vygenerovat kapitolu 02 (Doprava po okolí)** — kontrolní list je připravený v
+`02-tvorba-vizualu/kontrola/lloret-de-mar/02-doprava-po-okoli.md`, postup v
+`02-tvorba-vizualu/docs/prompt-guide.md`.
 
-Postup je v `02-tvorba-vizualu/docs/prompt-guide.md`.
+Kapitola 01 je hotová (2026-07-29): 6 sekcí, text ověřený proti zdroji, bez nálezů — na tři běhy.
+Zbývá 6 kapitol (03–08).
 
 **Otevřené k rozhodnutí (neblokuje generování):** podtitul obálky vyšel jako „COSTA BRAVA,
 ŠPANĚLSKO", tedy čistě místopisný, bez příslibu hodnoty pro personu. Jestli tam má být i něco jako
@@ -58,7 +59,7 @@ Legenda: ✅ hotovo · ◐ rozpracováno · ⛔ blokováno · ⬜ nezačato
 | 0 | Validace destinace, persona, cena, osnova | 01 | ✅ pro Lloret i Albánii |
 | 1 | Research "deep knowledge" dat | 01 | ✅ pro Lloret (8 témat) · ✅ pro Albánii |
 | 2 | Psaní kapitol + fact-check | 01 | ✅ Lloret (8/8 `Stav: OK` a aktuální, 8/8 shot listů aktuálních) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
-| 3 | Vizuál a sazba PDF | 02 | ◐ postup ověřený v praxi — hotová obálka a část kapitoly 01 Lloretu |
+| 3 | Vizuál a sazba PDF | 02 | ◐ hotová obálka a kapitola 01 Lloretu (1/8), zbývá 02–08 |
 | 4 | QA a finalizace produktu | 03 | ⬜ čeká na PDF z Fáze 3 |
 | 5 | Prodejní web | 03 | ⬜ |
 | 6 | Příprava PPC kampaní | 03 | ⬜ |

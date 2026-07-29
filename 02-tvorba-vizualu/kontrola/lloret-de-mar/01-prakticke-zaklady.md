@@ -1,5 +1,9 @@
 # Kontrolní list — kapitola 01: Praktické základy
 
+**✅ Hotovo 2026-07-29** — všech 6 sekcí vygenerovaných, text ověřený proti zdroji, bez nálezů.
+Trvalo to 3 běhy (historie níže). Jediná zbylá odchylka: slovo „nemusí" v sekci Peníze ztratilo
+tučné zvýraznění, které zdroj má — ponecháno, přegenerování kvůli tomu nestojí za riziko.
+
 Zdroj: `../../../01-tvorba-textu/content/lloret-de-mar/text/01-prakticke-zaklady.md`
 
 Postup generování je v `../../docs/prompt-guide.md`. Tenhle list slouží ke **kontrole vygenerovaných
@@ -59,6 +63,10 @@ Historie:
 |---|---|
 | 1 | „podnik **se** Španělsku" + celá část o polovině plateb vypadla |
 | 2 | předložka opravena, ale doplňovaná část se slepila do nesmyslu: „je tu **naprosti** plateb v kamenných obchodech" |
+| 3 | ✅ správně a kompletně |
+
+Ponaučení: prosté přegenerování stačilo, zdrojovou kapitolu nebylo nutné zkracovat. Jde o loterii,
+ne o systematickou neschopnost modelu — ale u téhle věty počítej s víc pokusy.
 
 Proč zrovna tahle: je dlouhá, má vloženou vedlejší větu a nese číselný údaj (podíl hotovostních
 plateb podle Banco de España), kvůli kterému se dělal doplňkový research.
@@ -78,6 +86,6 @@ kratší věty a nechat kapitolu znovu fact-checknout je spolehlivější než d
 
 ## Fotky
 
-- Žádná čitelná cedule s názvem konkrétního podniku. V prvním běhu vznikla vymyšlená
-  „CHIRINGUITO SA BOADELLA".
+- Žádná čitelná cedule s názvem konkrétního podniku. V prvních dvou bězích vznikla vymyšlená
+  „CHIRINGUITO SA BOADELLA", ve třetím už jen generické „CHIRINGUITO" — tak je to správně.
 - Pojmenovaná místa (Cala Boadella, hrad Sant Joan) nepodepisovat — model je nevygeneruje věrně.
