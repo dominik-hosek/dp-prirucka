@@ -45,6 +45,26 @@ historické centrum.
   zvířat 2x denně (papoušci 10:30 a 17:00, lachtani 11:30 a 16:00, delfíni 12:00 a 16:30) — ověř si
   aktuální program před návštěvou.
 
+### Co má nejlepší hodnocení
+
+Než si podle předchozích sekcí naplánuješ dny, mrkni na jedno srovnání. Porovnali jsme hodnocení
+místních atrakcí na Googlu a Tripadvisoru a pořadí je jiné, než by čekal ten, kdo se řídí velikostí
+cedule u vchodu.
+
+- **Zahrady Santa Clotilde** — z velkých atrakcí Lloretu ta nejlépe hodnocená: **4,5 z 5 na Googlu**
+  (přes 9 000 hodnocení) a **4,4 na Tripadvisoru** (přes 2 500). Podrobnosti a nejlepší čas
+  návštěvy jsou v kapitole Off the beaten path.
+- **Pláže Sa Boadella a Santa Cristina** — obě **4,6 na Googlu**, tedy nejlíp hodnocené z pláží,
+  ke kterým se hodnocení podařilo dohledat. Nejsou to ty hlavní, ke kterým vede promenáda.
+- **Water World** — **4,1 na Googlu a 3,9 na Tripadvisoru**, což je z porovnávaných míst nejnižší
+  hodnocení. Zároveň jde o nejdražší položku v tomhle průvodci (37,20 EUR na osobu). Neznamená to,
+  že tam nemáš jet — s dětmi je to pořád zážitek na celý den. Ale při plánování rozpočtu je dobré
+  vědět, že za tuhle cenu dostaneš hůř hodnocenou atrakci než za zlomek peněz v zahradách Santa
+  Clotilde.
+
+Porovnání vychází z veřejných hodnocení k **červenci 2026** a zahrnuje jen místa s dostatečným
+počtem recenzí. **Nikdo si tady umístění nezaplatil.** Hodnocení se v čase mění.
+
 ### Itinerář: 3 dny v Lloretu a okolí
 
 Vhodné, pokud máš krátký pobyt a chceš vidět jádro toho, co Lloret a nejbližší okolí nabízí.

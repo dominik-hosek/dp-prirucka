@@ -11,14 +11,15 @@ stránek proti zdroji**.
 
 ## Sekce (počet, pořadí, nadpisy)
 
-Kapitola má **6 podsekcí** v tomto pořadí:
+Kapitola má **7 podsekcí** v tomto pořadí:
 
 1. Pláže v Lloret de Mar
 2. Tossa de Mar
 3. Girona
 4. Rodinné atrakce
-5. Itinerář: 3 dny v Lloretu a okolí
-6. Itinerář: 5 dní s výletem do Girony
+5. Co má nejlepší hodnocení
+6. Itinerář: 3 dny v Lloretu a okolí
+7. Itinerář: 5 dní s výletem do Girony
 
 Plus úvodní odstavec pod nadpisem kapitoly, bez vlastního podnadpisu, a jedna závěrečná věta úplně
 na konci (odkaz na kapitolu Doprava po okolí).
@@ -54,6 +55,9 @@ Struktura uvnitř sekcí, která musí zůstat:
 | Marineland — papoušci | **10:30 a 17:00** |
 | Marineland — lachtani | **11:30 a 16:00** |
 | Marineland — delfíni | **12:00 a 16:30** |
+| Zahrady Santa Clotilde — hodnocení | **4,5** na Googlu (přes **9 000** hodnocení) · **4,4** na Tripadvisoru (přes **2 500**) |
+| Sa Boadella a Santa Cristina — hodnocení | obě **4,6** na Googlu |
+| Water World — hodnocení | **4,1** na Googlu · **3,9** na Tripadvisoru |
 
 **Nejrizikovější místo: časy vystoupení v Marinelandu.** Šest časů ve dvou závorkách za sebou, ve
 stejném formátu, bez ničeho, co by je od sebe odlišilo — přesně ten typ konstrukce, na které model
@@ -61,6 +65,33 @@ prohazuje hodnoty. Kontroluj je po dvojicích a proti tabulce výše, ne z pamě
 
 Druhé nejrizikovější: **37,20 EUR** (desetinná čárka) a **16,5 EUR** (jedno desetinné místo, ne
 16,50). A datumy Water Worldu — čtyři datumy ve dvou různých rolích (sezóna vs. vrchol sezóny).
+
+## Sekce „Co má nejlepší hodnocení" — nejcitlivější místo kapitoly
+
+Doplněno 2026-07-29 podle `../../../01-tvorba-textu/docs/metodika-hodnoceni.md`. Je to jediné místo
+v celém průvodci, kde se o jmenované atrakci píše, že je hodnocená hůř než ostatní — a taky největší
+argument, proč si čtenář průvodce koupil místo běžného seznamu „co dělat v Lloretu".
+
+Proto se tu hlídají věci, které jinde nehrozí:
+
+- **Ladění o Water Worldu musí zůstat neutrální.** Text uvádí čísla, výslovně dodává, že to
+  **neznamená, že tam nemáš jet**, a nabízí srovnání s levnější alternativou. Když z toho model
+  udělá varování („radši tam nechoď", „zklamání"), vzniká negativní tvrzení o jmenované firmě —
+  metodika to výslovně zakazuje.
+- **Věta „neznamená to, že tam nemáš jet — s dětmi je to pořád zážitek na celý den" nesmí vypadnout.**
+  Je to jediná protiváha v celém odstavci. Bez ní zbude jen nejnižší známka a nejvyšší cena vedle
+  sebe.
+- **Zahrady Santa Clotilde jsou „z velkých atrakcí ta nejlépe hodnocená", ne „nejlépe hodnocené
+  místo Lloretu".** Přesně tenhle superlativ fact-check 2026-07-29 opravoval — pláže mají 4,6, tedy
+  víc. Když se superlativ vrátí, kapitola si odporuje sama se sebou o dva řádky níž.
+- **U pláží musí zůstat „z pláží, ke kterým se hodnocení podařilo dohledat".** Hodnocení hlavní
+  pláže Platja de Lloret se najít nepodařilo, takže srovnání není úplné a bez téhle výhrady jde
+  o tvrzení bez opory.
+- **Dodatek o původu výběru** (veřejná hodnocení k červenci 2026, jen místa s dost recenzemi,
+  **„nikdo si tady umístění nezaplatil"**, hodnocení se mění) musí zůstat celý.
+- **Modernistický hřbitov se tu nesmí objevit.** Má sice nejlepší známky v okolí, ale žádný další
+  research k němu není — žádná otevírací doba, vstupné ani poloha. Kdyby ho model doplnil, vzniklo
+  by doporučení bez jakéhokoliv podkladu.
 
 ## Opatrné formulace — nesmí se z nich stát tvrzení najisto
 
@@ -94,12 +125,21 @@ nejsnáz vypadne.
   vygeneruje věrohodné, ale smyšlené místo, a u tak známé siluety jako Vila Vella to čtenář pozná.
 - U mapy vzdáleností nesmí vzniknout vymyšlené názvy obcí kolem trasy.
 - Ikona modré vlajky je v pořádku, ale nesmí být doplněná jmény pláží, které v seznamu nejsou.
+- **Sekce s hodnocením je čistě grafická** — srovnávací graf a porovnání ceny s hodnocením, žádná
+  fotka. Grafika musí ukázat obě platformy zvlášť, ne zprůměrovanou známku.
 
 ## Poznámka k obsahu
 
-Fact-check kapitoly je `Stav: OK`, přeověřeno 2026-07-29. Otevřené otázky z Fáze 1 (ceník lodní
-linky do Tossy, vstupné a otevírací doby atrakcí pro další sezónu) jsou vedené
-v `../../../01-tvorba-textu/docs/open-questions-lloret-de-mar.md` a řeší se **až před vydáním**.
+Fact-check kapitoly je `Stav: OK`, třetí kolo 2026-07-29 po doplnění sekce s hodnocením — 2 nálezy,
+oba opravené (superlativ u zahrad Santa Clotilde, chybějící výhrada u pláží).
+
+Otevřené otázky z Fáze 1 (ceník lodní linky do Tossy, vstupné a otevírací doby atrakcí pro další
+sezónu) jsou vedené v `../../../01-tvorba-textu/docs/open-questions-lloret-de-mar.md` a řeší se
+**až před vydáním**. Nově k nim přibylo hodnocení Platja de Lloret a případné doplnění
+modernistického hřbitova.
+
+**Hodnocení se přeověřuje před každým vydáním** — u Water Worldu zvlášť, protože jeho nízká známka
+je v textu použitá jako konkrétní tvrzení.
 
 Sezónní údaje Water Worldu jsou v textu explicitně označené jako **sezóna 2026** — kdyby se guide
 vydával později, tohle je první místo, které zastará.

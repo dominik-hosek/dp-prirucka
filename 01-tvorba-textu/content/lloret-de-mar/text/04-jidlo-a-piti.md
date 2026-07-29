@@ -34,6 +34,27 @@ dne — orientačně za 20-25 EUR podle podniku. Objednávej ho v poledne, ne ve
 dražší a jiná. Je to standardní katalánský zvyk, ne specifikum Lloretu, takže funguje spolehlivě
 téměř kdekoliv v regionu.
 
+### Tři nejlépe hodnocené restaurace
+
+Tohle je jediné místo v kapitole, kde jmenujeme konkrétní podniky — a stojí za tím čísla, ne náš
+dojem.
+
+- **La Parrilla** — grilované maso, paella, středomořská kuchyně. Nejlepší výsledek v Lloretu:
+  **4,7 z 5 na Googlu i na Tripadvisoru** současně, a to při víc než dvou tisících hodnocení jen na
+  Tripadvisoru.
+- **Restaurant Al Freskito** — rýžové pokrmy a paella. **4,7 na Googlu** při víc než třech tisících
+  hodnocení a **4,6 na Tripadvisoru**.
+- **Bodega Manolo Cotano** — španělská tapas a vinný bar, tedy jiný typ večera než předchozí dva.
+  **4,7 na Googlu, 4,6 na Tripadvisoru**.
+
+Výběr vychází z veřejných hodnocení na Google Maps a Tripadvisoru k **červenci 2026**, a to jen
+z podniků se španělskou, katalánskou nebo středomořskou kuchyní, které mají dost hodnocení, aby
+šlo o víc než pár náhodných dojmů. **Nikdo si tady umístění nezaplatil** a nemáme s uvedenými
+podniky žádný vztah. Hodnocení se v čase mění a podnik může zavřít — před cestou se na aktuální
+stav mrkni.
+
+Rezervaci si u všech tří rozmysli dopředu, hlavně v červenci a srpnu.
+
 ### Tip navíc
 
 Vzdal se od hlavní pláže a promenády o pár ulic dovnitř města — nižší ceny a menší podíl vyloženě

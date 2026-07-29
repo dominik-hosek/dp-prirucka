@@ -27,8 +27,9 @@ doověřovat až těsně před vydáním — když ji vysázíš brzy, bude se d
 ✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
 ✅ *Hotovo 2026-07-29: `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` — 18 otevřených otázek
 z 8 research souborů seskupených podle toho, co s nimi má udělat QA ve Fázi 4.*
-✅ *Hotovo 2026-07-29: přeověření kapitol 02–08 + kontrolní listy 03–08 — text Lloretu je tím
-finálně uzavřený pro Fázi 3 (viz Fáze 2 níže).*
+✅ *Hotovo 2026-07-29: přeověření kapitol 02–08 + kontrolní listy 03–08 (viz Fáze 2 níže).*
+✅ *Hotovo 2026-07-29: žebříčky konkrétních hotelů, restaurací a atrakcí podle recenzí v kapitolách
+03, 04 a 05 — nová metodika `01-tvorba-textu/docs/metodika-hodnoceni.md`.*
 
 ---
 
@@ -92,9 +93,16 @@ Plán počítá s pilotem na jedné destinaci — další se rozjíždějí až 
   kapitola 01 ho nesla, kapitola 07 ne) a sloučení fyzické SIM s eSIM do jedné částky v EUR, ačkoli
   eSIM ceníky jsou v USD. Druhý nález vznikl už v `research/rozpocet.md`, opraven proto i tam.
   **Pozor: záměna EUR/USD je jediná chyba, která v projektu vznikla dvakrát nezávisle na sobě.**
+- **Konkrétní podniky podle recenzí (2026-07-29):** kapitoly 03, 04 a 05 nově jmenují konkrétní
+  hotely, restaurace a atrakce vybrané podle doložené metody
+  (`01-tvorba-textu/docs/metodika-hodnoceni.md` — dvě nezávislé platformy, prahy na počet recenzí,
+  povinný dodatek „nikdo si tady umístění nezaplatil"). Data v research souborech dané kapitoly.
+  **Žebříčky se přeověřují před každým vydáním** — podniky zavírají a známky se mění.
 - **Otevřené otázky pro QA:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (2026-07-29).
   Pozor, sekce 1 (ceny dopravy, ubytování, vstupné) se má doověřovat **až těsně před vydáním**, ne
-  dopředu — jinak čísla znovu zastarají.
+  dopředu — jinak čísla znovu zastarají. Soubor zatím **neobsahuje** nové otázky ze sběru hodnocení
+  (Google rating pro ALEGRIA Fenals Mar, Booking pro Hotel Santa Marta, hodnocení Platja de Lloret,
+  research k modernistickému hřbitovu) — ty jsou zatím jen v research souborech.
 - **Chybí:** design brief pro Lloret. Vizuální styl je společný a definovaný
   v `02-tvorba-vizualu/docs/design-brief-albanie.md` — pro Lloret stačí doplnit barevný akcent
   a fotky, až padne rozhodnutí #1.

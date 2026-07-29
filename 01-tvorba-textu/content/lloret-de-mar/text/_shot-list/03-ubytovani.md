@@ -34,6 +34,18 @@
 - Typ: fotografie
 - Účel: ukázat přírodní charakter oblasti jako protipól rušnému centru
 
+## Nejlépe hodnocené hotely podle čtvrti
+
+### Srovnávací tabulka hotelů po čtvrtích s hodnocením na Googlu a Booking.com
+- Typ: infografika
+- Účel: Hlavní vizuál sekce — tři sloupce podle čtvrtí (centrum / Fenals / směr Cala Boadella) s hotely a oběma známkami, aby bylo vidět, že jde o měřitelný výběr, a zároveň aby zůstala zachovaná vazba na rozhodování o čtvrti z předchozích sekcí.
+- **Pozor: žádná fotografie jmenovaných hotelů.** Model reálný hotel nevygeneruje věrně — vznikla by smyšlená budova vydávaná za konkrétní podnik. Sekce je čistě grafická.
+- Ve sloupci Fenals jsou záměrně jen dva hotely a ve sloupci Cala Boadella žádný — grafika to nesmí "dorovnat" doplněním třetího jména.
+
+### Ikona/piktogram vysvětlující, proč se u hotelů používá Booking.com
+- Typ: ikona
+- Účel: Vizuálně podpořit klíčový argument důvěryhodnosti — na Booking.com hodnotí jen ten, kdo v hotelu skutečně bydlel.
+
 ## Typ ubytování
 
 ### Wide shot bazénu klasického all-inclusive hotelu v odpoledním slunci

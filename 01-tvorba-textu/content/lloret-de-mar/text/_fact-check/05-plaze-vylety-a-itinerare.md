@@ -2,30 +2,52 @@
 
 Stav: OK
 
-Přeověřeno 2026-07-29 (druhé kolo, před předáním do Fáze 3). Beze změny — žádné nové nálezy.
+Přeověřeno 2026-07-29 (druhé kolo). Třetí kolo **2026-07-29** po doplnění sekce „Co má nejlepší
+hodnocení" — 2 nálezy, oba opravené.
 
 ## Nálezy
 
-Žádné nálezy po opravě. Původní verze zahrnovala do itineráře Dne 1 doporučení navštívit zahrady
-Santa Clotilde navečer "za zlatého světla" — toto tvrzení pochází z research podkladu k jinému
-tématu (`research/off-the-beaten-path.md`), ne z `research/plaze-vylety-a-itinerare.md` — opraveno
-nahrazením obecným programem a explicitním odkazem na kapitolu Off the beaten path. Ostatní fakta
-(pláže, Tossa de Mar, Girona, Water World, Marineland) odpovídají vlastnímu research souboru tématu.
-Itineráře po dnech jsou syntézou ověřených faktů (vzdálenosti, otevírací doby), ne novým faktickým
-tvrzením.
+### 1. [nepodložené tvrzení] „Nejlépe hodnocené místo Lloretu s odstupem" — opraveno
 
-## Poznámky (bez nálezu, ověřeno v pořádku)
+O zahradách Santa Clotilde (Google 4,5) to neplatí. Vyšší známku na Google mají **Sa Boadella
+(4,6)**, **Santa Cristina (4,6)** i **modernistický hřbitov (4,6)**. Tvrzení si navíc odporovalo
+s odrážkou o dvě řádky níž, která u pláží uvádí 4,6 — rozpor uvnitř jedné sekce.
 
-- Fenals cca 700 m, Santa Cristina necelých 500 m, Cala Canyelles jako nejvzdálenější pláž od centra
-  — souhlasí s `research/plaze-vylety-a-itinerare.md`.
-- Modrá vlajka pro Lloret, Fenals, Sa Boadella a Santa Cristina — souhlasí, seznam je úplný a nic
-  navíc si nepřidal.
-- Pobřežní stezka Cala Canyelles–Santa Cristina cca 11 km — souhlasí.
-- Tossa de Mar 12 km, Vila Vella (pevnost ze 12. století, přestavba 1387), maják z roku 1917,
-  plavba lodí cca 30 minut — souhlasí.
-- Water World: sezóna 23. 5.–13. 9., 10:00-18:00 / 10:00-19:00 (8. 7.–31. 8.), vstupné 37,20 EUR
-  nad 1,2 m — souhlasí včetně data. Text správně dodává, že se ceny a doby mezi sezónami mění.
-- Marineland: 23 / 16,5 EUR / zdarma do 4 let, časy vystoupení papoušků, lachtanů a delfínů —
-  souhlasí, opatrnost („ověř si aktuální program") zachovaná.
-- Girona „asi půl hodiny cesty" — souhlasí; text neuvádí cenu ani jízdní řád, takže se otevřená
-  otázka z `research/doprava-po-okoli.md` k lince na Gironu nepropsala do tvrzení.
+Opraveno na „z velkých atrakcí Lloretu ta nejlépe hodnocená", což sedí: mezi místy s tisíci
+hodnocení má Santa Clotilde nejvyšší známku (4,5/4,4 oproti Water World 4,1/3,9 a Castell de Sant
+Joan 4,3/3,8).
+
+### 2. [ztracená opatrnost] „Nejlépe hodnocené pláže v okolí" — opraveno
+
+Hodnocení **hlavní pláže Platja de Lloret se nepodařilo dohledat**, takže srovnání není úplné
+a tvrzení o „nejlepších plážích v okolí" nemá plnou oporu. Opraveno na „nejlíp hodnocené z pláží,
+ke kterým se hodnocení podařilo dohledat", a chybějící údaj je zapsaný mezi otevřené otázky.
+
+## Poznámky k nové sekci (ověřeno v pořádku)
+
+- **Zahrady Santa Clotilde** — Google 4,5 (9 006 → „přes 9 000"), Tripadvisor 4,4 (2 546 → „přes
+  2 500") ✓. Zaokrouhlení odpovídá pravidlu 5 metodiky.
+- **Sa Boadella a Santa Cristina** — obě Google 4,6 (2 926 a 2 905) ✓.
+- **Water World** — Google 4,1 (9 216), Tripadvisor 3,9 (2 083) ✓, nejnižší ve vzorku. Vstupné
+  37,20 EUR souhlasí se zbytkem kapitoly i s kapitolou Rozpočet.
+- **Formulace o Water Worldu je neutrální**, jak vyžaduje sekce „Co se nesmí" v
+  `docs/metodika-hodnoceni.md`: uvádí číslo, výslovně dodává „neznamená to, že tam nemáš jet"
+  a srovnává s levnější alternativou. Není to varování ani hodnotící soud.
+- Odkaz na kapitolu Off the beaten path u zahrad Santa Clotilde je správně — detail o návštěvě
+  navečer patří tam, ne sem (viz dřívější nález u téhle kapitoly).
+- **Dodatek o původu výběru** je přítomný, včetně data (červenec 2026), prahu na počet recenzí
+  a „nikdo si tady umístění nezaplatil".
+- **Modernistický hřbitov se v textu neobjevuje** — správně. Má sice nejlepší známky (4,6/4,5), ale
+  chybí k němu jakýkoliv jiný research (otevírací doba, vstupné, poloha), takže by šlo o tvrzení bez
+  podkladu. Vedeno jako otevřená otázka k doplnění.
+
+## Poznámky k původnímu textu (beze změny, ověřeno v pořádku)
+
+- Fenals cca 700 m, Santa Cristina necelých 500 m, Cala Canyelles nejvzdálenější ✓.
+- Modrá vlajka: Lloret, Fenals, Sa Boadella, Santa Cristina — výčet úplný ✓.
+- Pobřežní stezka 11 km, Tossa 12 km, Vila Vella (12. století, přestavba 1387), maják 1917, plavba
+  30 minut ✓.
+- Water World: sezóna 23. 5.–13. 9., 10:00-18:00 / 10:00-19:00 (8. 7.–31. 8.), 37,20 EUR nad 1,2 m ✓.
+- Marineland: 23 / 16,5 EUR / zdarma do 4 let, časy vystoupení ✓.
+- Girona „asi půl hodiny cesty" ✓, bez ceny a jízdního řádu.
+- Itineráře zůstaly beze změny; nová sekce je před nimi a odkazuje se na ni jen obecně.

@@ -58,6 +58,17 @@
 - Typ: infografika
 - Účel: přehledně shrnout dvě klíčová praktická čísla/pravidla (cenové rozmezí a doporučený čas objednávky), aby si je čtenář snadno zapamatoval
 
+## Tři nejlépe hodnocené restaurace
+
+### Srovnávací tabulka tří podniků s hodnocením na Googlu a Tripadvisoru
+- Typ: infografika
+- Účel: Hlavní vizuál sekce — přehledně postavit tři podniky vedle sebe s oběma známkami, aby bylo na první pohled vidět, že výběr stojí na číslech, ne na dojmu.
+- **Pozor: žádná fotografie jmenovaných podniků.** Model konkrétní restauraci nevygeneruje věrně a vznikl by smyšlený interiér vydávaný za reálný podnik. Tahle sekce je čistě grafická.
+
+### Ikony tří typů večera (gril / rýžové pokrmy / tapas bar)
+- Typ: ikona
+- Účel: Odlišit tři doporučené podniky podle toho, jaký typ jídla nabízí, aby si čtenář vybral podle chuti, ne jen podle známky.
+
 ## Tip navíc
 
 ### Mapa: hlavní pláž a promenáda vs. boční uličky pár bloků do vnitrozemí

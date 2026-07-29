@@ -7,13 +7,14 @@ stránek proti zdroji**.
 
 ## Sekce (počet, pořadí, nadpisy)
 
-Kapitola má **5 podsekcí** v tomto pořadí:
+Kapitola má **6 podsekcí** v tomto pořadí:
 
 1. Co ochutnat
 2. Kde jíst
 3. Menu del día
-4. Tip navíc
-5. Otevřít oči na ceny
+4. Tři nejlépe hodnocené restaurace
+5. Tip navíc
+6. Otevřít oči na ceny
 
 Plus úvodní odstavec pod nadpisem kapitoly, bez vlastního podnadpisu.
 
@@ -44,9 +45,17 @@ kde model rád uklouzne.
 | Údaj | Správně |
 |---|---|
 | Menu del día | orientačně **20-25 EUR** podle podniku |
+| La Parrilla | **4,7** na Googlu · **4,7** na Tripadvisoru · víc než **2 000** hodnocení na Tripadvisoru |
+| Restaurant Al Freskito | **4,7** na Googlu · **4,6** na Tripadvisoru · víc než **3 000** hodnocení na Googlu |
+| Bodega Manolo Cotano | **4,7** na Googlu · **4,6** na Tripadvisoru |
 
-Jediné číslo v celé kapitole. Tím pádem se na něj při kontrole snadno zapomene — a zároveň je to
-jediné místo, kde může vzniknout cenový nesmysl.
+Všechny známky jsou **z 5** na obou platformách — tady na rozdíl od kapitoly 03 stupnice nekolidují.
+Zato jsou si čísla podobná až k nerozeznání: **třikrát 4,7 na Googlu**, pak **4,7 / 4,6 / 4,6** na
+Tripadvisoru. Záměna se pozná jen porovnáním se zdrojem, protože každá kombinace vypadá věrohodně.
+
+U počtů hodnocení hlídej, aby zůstaly **u správného podniku a u správné platformy** — „přes 2 000"
+patří k La Parrilla na Tripadvisoru, „přes 3 000" k Al Freskito na Googlu. Prohozením vznikne
+tvrzení, které neprošlo fact-checkem.
 
 ## Opatrné formulace — nesmí se z nich stát tvrzení najisto
 
@@ -58,26 +67,61 @@ jediné místo, kde může vzniknout cenový nesmysl.
 - Poslední sekce („Otevřít oči na ceny") je celá jen odkaz do kapitoly Rozpočet. Když ji model
   „vylepší" konkrétním číslem, je to nález.
 
-## Žádné konkrétní restaurace
+## Jména restaurací — přesně tato tři a žádné jiné
 
-Research jednu restauraci jmenuje (Can Guidet), ale do textu se vědomě nedostala — chybí ověření
-z víc zdrojů. Totéž platí pro chiringuita: research výslovně říká psát obecně o typu podniku, ne
-o konkrétních jménech.
+Od 2026-07-29 kapitola konkrétní restaurace **jmenuje**, na základě doloženého výběru podle
+`../../../01-tvorba-textu/docs/metodika-hodnoceni.md`. Pravidlo se tím obrací: nehlídá se, aby
+žádné jméno neproniklo dovnitř, ale aby jich bylo **přesně těchto tři**.
 
-Jakékoliv jméno restaurace, baru nebo chiringuita, které se objeví na stránce — v textu i na fotce —
-je nález.
+1. **La Parrilla**
+2. **Restaurant Al Freskito**
+3. **Bodega Manolo Cotano**
+
+Na co si dát pozor:
+
+- **`Al Freskito`** — psáno s „k", ne „Fresquito". Je to vlastní jméno podniku, ne španělské slovo,
+  takže model bude chtít „opravit" pravopis na správnou španělštinu.
+- **`Bodega Manolo Cotano`** — tři slova, žádné z nich nezkracovat.
+- **`La Parrilla`** — dvě „l" uprostřed.
+- **Žádné čtvrté jméno.** Research zná další podniky (Can Guidet, Via Amalfi, La Fusta, Bodega Sa
+  Xarxa, La Lonja, Can Sabata) a **žádný z nich do textu nepatří** — buď neprošly prahem, nebo
+  filtrem na kuchyni. Zvlášť **Can Guidet** je riziko: objevuje se v research souboru jako
+  „autentická restaurace" z dřívějšího sběru a při ověření dvěma platformami se do top 3 nedostal.
+- Chiringuita se pořád **nejmenují**. Sběr 2026-07-29 pro ně použitelná data nenašel, takže tady
+  původní pravidlo platí beze změny.
+
+## Dodatek o původu výběru — musí zůstat celý
+
+Odstavec pod trojicí říká, odkud výběr pochází a **že si tam nikdo umístění nezaplatil**. Bez toho
+vypadá seznam jako placená reklama.
+
+Musí v něm zůstat všech pět částí:
+
+1. platformy (Google Maps a Tripadvisor),
+2. datum (červenec 2026),
+3. filtr — jen španělská, katalánská nebo středomořská kuchyně a dost hodnocení,
+4. **„nikdo si tady umístění nezaplatil"** a že s podniky nemáme vztah,
+5. že se hodnocení mění a podnik může zavřít.
 
 ## Fotky
 
+- **Jmenované restaurace se nefotí.** Model konkrétní podnik nevygeneruje věrně — vznikl by smyšlený
+  interiér vydávaný za reálnou restauraci, podle které čtenář utratí peníze. Sekce s trojicí je
+  čistě grafická (srovnávací tabulka známek), viz shot list.
 - **Nejrizikovější kapitola z hlediska cedulí.** Jídlo se fotí v podnicích a model má silnou tendenci
   domalovat ceduli, menu ve výloze nebo logo na markýze. Přesně tak vznikla vymyšlená „CHIRINGUITO
-  SA BOADELLA" v kapitole 01.
+  SA BOADELLA" v kapitole 01. Teď je riziko větší, protože na stránce **skutečná jména podniků
+  jsou** — model je může chtít přenést na ceduli v obrázku.
 - Žádné čitelné menu s cenami na fotce — vzniklo by tím cenové tvrzení, které neprošlo fact-checkem.
 - Generická cedule („CHIRINGUITO", „TAPAS") je v pořádku, konkrétní jméno ne.
 - Talíře a jídlo se fotí bez problému — riziko je jen tam, kde je v záběru kus interiéru nebo ulice.
 
 ## Poznámka k obsahu
 
-Fact-check kapitoly je `Stav: OK`, přeověřeno 2026-07-29. Otevřené otázky z Fáze 1 (aktuální ceny
-menu del día a seznam konkrétních chiringuit) jsou vedené
+Fact-check kapitoly je `Stav: OK`, třetí kolo 2026-07-29 po doplnění trojice — 1 nález, opravený
+(neopodstatněný superlativ „nejvíc hodnocení ze všech porovnávaných podniků" u Al Freskito).
+
+Otevřené otázky z Fáze 1 (aktuální ceny menu del día, seznam chiringuit) jsou vedené
 v `../../../01-tvorba-textu/docs/open-questions-lloret-de-mar.md` a řeší se **až před vydáním**.
+
+**Žebříček se přeověřuje před každým vydáním** — restaurace zavírají častěji než hotely.

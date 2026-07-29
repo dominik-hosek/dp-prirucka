@@ -88,6 +88,17 @@
 - Typ: infografika
 - Účel: přehledně shrnout ceny a přesné časy vystoupení pro plánování dne
 
+## Co má nejlepší hodnocení
+
+### Srovnávací graf hodnocení atrakcí a pláží (Google vs. Tripadvisor)
+- Typ: infografika
+- Účel: Klíčový vizuál sekce — postavit vedle sebe známky zahrad Santa Clotilde, pláží a Water Worldu, aby byl rozdíl vidět na první pohled. Grafika musí ukázat obě platformy zvlášť, ne zprůměrovanou známku.
+
+### Porovnání ceny a hodnocení: Water World vs. zahrady Santa Clotilde
+- Typ: infografika
+- Účel: Ukázat konkrétní argument sekce — nejdražší položka průvodce má nejnižší hodnocení, zatímco výrazně levnější místo má vyšší. Pro čtenáře plánujícího rodinný rozpočet je to hlavní přínos celé sekce.
+- Ladění musí zůstat neutrální (srovnání, ne varování) — Water World se v průvodci nesmí shazovat.
+
 ## Itinerář: 3 dny v Lloretu a okolí
 
 ### Infografika: harmonogram itineráře 3 dny
