@@ -47,6 +47,8 @@ poslední odrážky.
 | All-inclusive ubytování | kolem **141 USD/noc** v průměru — **USD, ne EUR!** |
 | Water World | **37,20 EUR**/osoba (nad **1,2 m** výšky) |
 | Marineland | **23 EUR** dospělý / **16,5 EUR** dítě do 12 let / zdarma do 4 let |
+| Zahrady Santa Clotilde | **6,10 EUR** dospělý / **3,10 EUR** snížené |
+| Rozdíl nejdražší vs. nejlevnější atrakce | **šestinásobný** |
 | Fyzická SIM | cca **10 EUR** i s velkým balíčkem dat na měsíc |
 | eSIM | cca **4-12 USD** — **USD, ne EUR!** |
 | Úsporný den | cca **35-45 EUR** |

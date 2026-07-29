@@ -3,9 +3,22 @@
 Stav: OK
 
 Přeověřeno 2026-07-29 (druhé kolo). Třetí kolo **2026-07-29** po doplnění sekce „Co má nejlepší
-hodnocení" — 2 nálezy, oba opravené.
+hodnocení" — 2 nálezy, oba opravené. Čtvrté kolo **2026-07-29** — 1 nález, opravený.
 
 ## Nálezy
+
+### 0. [nepodložené tvrzení] „Za zlomek peněz v zahradách Santa Clotilde" — opraveno *(4. kolo)*
+
+Sekce srovnávala cenu Water Worldu se zahradami Santa Clotilde, ale **vstupné do zahrad nebylo
+v researchi vůbec doložené** — šlo o odhad vydávaný za srovnání. Že vyšel správně, na věci nic
+nemění: v okamžiku psaní pro něj neexistoval zdroj.
+
+Doplněno ověření z oficiálních zdrojů města (viz `research/off-the-beaten-path.md`): **6,10 EUR**
+dospělí, 3,10 EUR snížené. Text teď uvádí konkrétní číslo a poměr („zhruba šestinu") místo vágního
+„zlomku".
+
+Poučení pro další kapitoly: srovnávací formulace typu „za zlomek", „mnohonásobně dražší" jsou
+skryté číselné tvrzení. Musí mít oporu stejně jako samotná čísla.
 
 ### 1. [nepodložené tvrzení] „Nejlépe hodnocené místo Lloretu s odstupem" — opraveno
 

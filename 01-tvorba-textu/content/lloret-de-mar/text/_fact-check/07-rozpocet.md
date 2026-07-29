@@ -3,7 +3,10 @@
 Stav: OK
 
 Přeověřeno 2026-07-29 (druhé kolo, před předáním do Fáze 3). Nalezeny 2 problémy, oba opravené —
-detail níže.
+detail níže. Třetí kolo **2026-07-29** po doplnění vstupného do zahrad Santa Clotilde — bez nálezů:
+6,10 / 3,10 EUR souhlasí s `research/off-the-beaten-path.md`, srovnání „šestinásobný rozdíl" proti
+Water Worldu (37,20 EUR) sedí a odkaz na lepší hodnocení zahrad má oporu v datech ze sběru
+2026-07-29.
 
 ## Nálezy
 

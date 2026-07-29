@@ -42,6 +42,29 @@
 - Typ: fotografie
 - Účel: Přímo ilustrovat doporučený čas návštěvy a jeho vizuální přínos (méně lidí, fotogeničtější atmosféra).
 
+### Přehled vstupného a otevírací doby zahrad Santa Clotilde
+- Typ: infografika
+- Účel: Shrnout dvě praktická čísla (6,10 / 3,10 EUR) a otevírací dobu, aby si je čtenář nemusel hledat v odstavci.
+
+## Modernistický hřbitov
+
+### Wide shot aleje hrobek ve tvaru domů, v měkkém dopoledním světle
+- Typ: fotografie
+- Účel: Ukázat hlavní charakteristiku místa — že je koncipované jako "vesnice mrtvých" s ulicemi, ne jako běžný hřbitov. Bez tohohle záběru čtenář nepochopí, proč je to turistický cíl.
+
+### Detail modernistické kamenné výzdoby hrobky
+- Typ: fotografie
+- Účel: Ukázat řemeslnou a uměleckou úroveň, kvůli které se na hřbitově podíleli přední katalánští architekti.
+- **Konkrétní hrobky nepodepisovat.** Hrobka rodiny Costa i Macià od Puiga i Cadafalcha je reálná stavba — model ji nevygeneruje věrně a popisek by z vymyšlené stavby udělal doložený objekt.
+
+### Časová osa: 1891 výběr pozemku → 1901 otevření → 1902-1909 hlavní hrobky
+- Typ: infografika
+- Účel: Přehledně podat čtyři letopočty, které v textu stojí roztroušeně, a ukázat, že jde o stavbu vzniklou v jedné vlně.
+
+### Přehled otevírací doby podle sezóny (duben-říjen vs. listopad-březen)
+- Typ: infografika
+- Účel: Praktická informace ke konci sekce — dvě různá časová okna, která se snadno popletou.
+
 ## Sousední města mimo hlavní trasu
 
 ### Polocelek historického centra Blanes

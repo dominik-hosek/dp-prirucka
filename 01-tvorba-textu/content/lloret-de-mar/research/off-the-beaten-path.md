@@ -30,6 +30,44 @@ Datum sběru: 2026-07-17
   Palamós, Sant Feliu de Guíxols) — vhodné jako tip na výlet dál od hlavního turistického proudu,
   i když časově náročnější než Tossa/Girona — zdroj: xaine.com, ověřeno: 2026-07-17.
 
+## Modernistický hřbitov (Cementiri Modernista) — doplněno 2026-07-29
+
+Doplněno poté, co sběr hodnocení (viz `research/plaze-vylety-a-itinerare.md`) ukázal, že jde
+o jedno z nejlépe hodnocených míst Lloretu, které v průvodci vůbec nebylo. Na rozdíl od zbytku
+téhle kapitoly stojí data na **oficiálních městských zdrojích**, ne na blozích.
+
+- Hřbitov byl vybudován z **iniciativy a peněz „indiánských" rodin** (indianos) — místních, kteří
+  zbohatli na zámořském obchodu s Amerikou a nechali si tu postavit rodinné hrobky. Vznikl jako
+  světská alternativa k pohřbívání u kostela — zdroj: patrimoni.lloret.cat (Otevřené muzeum
+  Lloretu, oficiální), ověřeno: 2026-07-29.
+- Pozemek vybrán **1891**, architekt Joaquim Artau i Fàbregas pověřen **1892**, první kámen položen
+  **1896**, hřbitov otevřen **1901** — zdroj: lloretdemar.org a patrimoni.lloret.cat (obojí
+  oficiální), ověřeno: 2026-07-29.
+- Na hrobkách se podíleli přední katalánští modernističtí architekti a sochaři: **Josep Puig
+  i Cadafalch** (hrobka rodiny Costa i Macià, 1902), **Bonaventura Conill i Montobbio** (hypogea
+  1903–1909, žák Antoniho Gaudího), Antoni M. Gallissà, Vicenç Artigas, Ismael Smith, Eusebi Arnau
+  — zdroj: lloretdemar.org, patrimoni.lloret.cat, ověřeno: 2026-07-29.
+- Hřbitov je koncipovaný jako **„vesnice mrtvých" s ulicemi a hrobkami ve tvaru domů** — zdroj:
+  lloretdemar.org, ověřeno: 2026-07-29.
+- Je **členem Association of Significant Cemeteries in Europe (ASCE)** a součástí Evropské cesty
+  hřbitovů; **jediný takto zařazený hřbitov v provincii Girona** — zdroj: patrimoni.lloret.cat,
+  ověřeno: 2026-07-29.
+- Otevírací doba: **listopad–březen 8:00–18:00, duben–říjen 8:00–20:00, denně** — zdroj:
+  lloretdemar.org i patrimoni.lloret.cat (shodně), ověřeno: 2026-07-29.
+- Adresa: **Camí del Repòs, Carretera Blanes**, cca 200 m od St. Quirze — zdroj: lloretdemar.org,
+  ověřeno: 2026-07-29.
+- Hodnocení: Google 4,6 (129 recenzí), Tripadvisor 4,5 (351) — zdroj: viz
+  `research/plaze-vylety-a-itinerare.md`, sběr 2026-07-29.
+
+## Zahrady Santa Clotilde — vstupné a otevírací doba, doplněno 2026-07-29
+
+- Vstupné **6,10 EUR** dospělí, **3,10 EUR** snížené (senioři, studenti, karta mládeže, rodinná
+  karta, osoby se zdravotním postižením) — zdroj: lloretdemar.org (oficiální) přes souhrn
+  vyhledávání, ověřeno k létu 2026, ceny se mohou měnit.
+- Otevírací doba: denně **10:00–20:00** (duben–říjen); mimo hlavní sezónu se doba zkracuje —
+  zdroj: lloretdemar.org, patrimoni.lloret.cat, ověřeno: 2026-07-29.
+- Adresa: Passeig Jardins, s/n, 17310 Lloret de Mar.
+
 ## Insider tipy
 
 - Zátoky Cala dels Frares a Cala Forcanera jsou natolik odlehlé, že bez lodi/paddleboardu nejsou
@@ -46,3 +84,9 @@ Datum sběru: 2026-07-17
   Nedoporučuje se v textu tvrdit konkrétní trasu bez dalšího ověření.
 - Vzdálenost a doba cesty do Blanes a Sant Feliu de Guíxols z Lloretu (autobusem i autem) — doověřit
   v kombinaci s research doprava-po-okoli.md, pokud se do guide zahrnou jako konkrétní výletní tip.
+- **Vstupné na modernistický hřbitov** — oficiální městské zdroje (lloretdemar.org,
+  patrimoni.lloret.cat) žádnou cenu neuvádějí. Agregátory (trip.com, life-globe.com) tvrdí, že je
+  vstup zdarma, ale jde o slabé zdroje. **V textu proto cenu neuvádět**, jen otevírací dobu; před
+  vydáním doověřit u města (+34 972 349 573, patrimonicultural@lloret.cat).
+- **Vstupné do zahrad Santa Clotilde mimo hlavní sezónu** — doložená je cena 6,10 / 3,10 EUR
+  a otevírací doba duben–říjen. Zda a jak se liší mimo sezónu, zdroje neuvádějí.

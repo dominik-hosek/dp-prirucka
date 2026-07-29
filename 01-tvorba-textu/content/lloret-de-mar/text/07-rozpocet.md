@@ -33,6 +33,11 @@ aktuální ceny na rezervačním portálu.
 
 - Water World: 37,20 EUR/osoba (nad 1,2 m výšky).
 - Marineland: 23 EUR dospělý / 16,5 EUR dítě do 12 let / zdarma do 4 let.
+- Zahrady Santa Clotilde: 6,10 EUR dospělý / 3,10 EUR snížené (viz kapitola Off the beaten path).
+
+Rozdíl mezi první a poslední položkou je šestinásobný, přitom zahrady mají v hodnocení návštěvníků
+lepší výsledek než Water World (viz kapitola Pláže, výlety a itineráře). Když plánuješ rodinný
+rozpočet, tohle je jedno z míst, kde se dá ušetřit bez toho, aby dovolená ztratila obsah.
 
 ### SIM/eSIM
 

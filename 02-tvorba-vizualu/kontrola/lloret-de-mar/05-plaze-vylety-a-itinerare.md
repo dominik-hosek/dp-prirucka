@@ -58,6 +58,7 @@ Struktura uvnitř sekcí, která musí zůstat:
 | Zahrady Santa Clotilde — hodnocení | **4,5** na Googlu (přes **9 000** hodnocení) · **4,4** na Tripadvisoru (přes **2 500**) |
 | Sa Boadella a Santa Cristina — hodnocení | obě **4,6** na Googlu |
 | Water World — hodnocení | **4,1** na Googlu · **3,9** na Tripadvisoru |
+| Santa Clotilde — vstupné (v srovnání) | **6,10 EUR**, tedy zhruba **šestina** ceny Water Worldu |
 
 **Nejrizikovější místo: časy vystoupení v Marinelandu.** Šest časů ve dvou závorkách za sebou, ve
 stejném formátu, bez ničeho, co by je od sebe odlišilo — přesně ten typ konstrukce, na které model
@@ -81,6 +82,10 @@ Proto se tu hlídají věci, které jinde nehrozí:
 - **Věta „neznamená to, že tam nemáš jet — s dětmi je to pořád zážitek na celý den" nesmí vypadnout.**
   Je to jediná protiváha v celém odstavci. Bez ní zbude jen nejnižší známka a nejvyšší cena vedle
   sebe.
+- **Srovnání se Santa Clotilde musí nést konkrétní číslo (6,10 EUR / zhruba šestina), ne „zlomek".**
+  Původní verze říkala „za zlomek peněz" a fact-check to označil jako nepodložené — srovnávací
+  obrat je skryté číselné tvrzení. Když model číslo vypustí a vrátí se k obecnému obratu, mizí
+  přesně to, co se doplňovalo.
 - **Zahrady Santa Clotilde jsou „z velkých atrakcí ta nejlépe hodnocená", ne „nejlépe hodnocené
   místo Lloretu".** Přesně tenhle superlativ fact-check 2026-07-29 opravoval — pláže mají 4,6, tedy
   víc. Když se superlativ vrátí, kapitola si odporuje sama se sebou o dva řádky níž.

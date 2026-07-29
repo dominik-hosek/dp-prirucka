@@ -10,15 +10,33 @@ jen stav.
 
 ## 👉 Další krok
 
-**Vygenerovat kapitolu 02 (Doprava po okolí)** — postup v
-`02-tvorba-vizualu/docs/prompt-guide.md`.
+**Generovat stránky kapitol 02–08** — postup v `02-tvorba-vizualu/docs/prompt-guide.md`, kontrola
+podle listů v `02-tvorba-vizualu/kontrola/lloret-de-mar/`.
 
-Kapitola 01 je hotová (2026-07-29): 6 sekcí, text ověřený proti zdroji, bez nálezů — na tři běhy.
-Zbývá 7 kapitol (02–08), **kontrolní listy jsou připravené pro všechny**
-(`02-tvorba-vizualu/kontrola/lloret-de-mar/`).
+Text Lloretu je **uzavřený** — od 2026-07-29 se do vydání nemění. Vše potřebné je připravené:
 
-**Doporučené pořadí:** kapitolu **07 (Rozpočet) nech na konec.** Skoro každé číslo v ní se má
-doověřovat až těsně před vydáním — když ji vysázíš brzy, bude se dělat znovu.
+| Co | Stav |
+|---|---|
+| Kapitoly 01–08, fact-check `Stav: OK` | ✅ všech 8 |
+| Shot listy | ✅ všech 8, aktuální |
+| Kontrolní listy pro sazbu | ✅ 8 kapitol + obálka |
+| Vygenerované stránky | ◐ 1 z 8 (kapitola 01) + obálka |
+
+**Doporučené pořadí:**
+
+1. Začni **kapitolou 02** — je nejkratší a nejjednodušší, ověříš si na ní postup.
+2. Pak **03, 04, 05, 06, 08** v libovolném pořadí.
+3. **Kapitolu 07 (Rozpočet) nech úplně na konec.** Skoro každé číslo v ní se má doověřovat až
+   těsně před vydáním — když ji vysázíš brzy, budeš ji dělat znovu.
+
+**Nejnáročnější budou 05 a 06.** Kapitola 05 má přes 20 číselných údajů (včetně šesti časů
+vystoupení za sebou), kapitola 06 má nově dlouhou sekci o modernistickém hřbitově se čtyřmi
+letopočty a jmény katalánských architektů. U obou počítej s víc kontrolními koly.
+
+**Pozor u kapitol 03, 04 a 05:** nově obsahují jména konkrétních podniků. Pravidlo se tím obrátilo —
+dřív se hlídalo, aby žádné jméno neproniklo dovnitř, teď aby jich byla přesně ta správná sada
+a žádné navíc. A jmenované podniky se **nefotí**, ty sekce jsou čistě grafické. Detail v jejich
+kontrolních listech.
 
 **Otevřené k rozhodnutí (neblokuje generování):** podtitul obálky vyšel jako „COSTA BRAVA,
 ŠPANĚLSKO", tedy čistě místopisný, bez příslibu hodnoty pro personu. Jestli tam má být i něco jako
@@ -30,6 +48,8 @@ z 8 research souborů seskupených podle toho, co s nimi má udělat QA ve Fázi
 ✅ *Hotovo 2026-07-29: přeověření kapitol 02–08 + kontrolní listy 03–08 (viz Fáze 2 níže).*
 ✅ *Hotovo 2026-07-29: žebříčky konkrétních hotelů, restaurací a atrakcí podle recenzí v kapitolách
 03, 04 a 05 — nová metodika `01-tvorba-textu/docs/metodika-hodnoceni.md`.*
+✅ *Hotovo 2026-07-29: modernistický hřbitov doplněn do kapitoly 06 (z oficiálních městských zdrojů)
+a vstupné do zahrad Santa Clotilde do kapitol 06 a 07. Tím je text uzavřený pro Fázi 3.*
 
 ---
 
@@ -98,11 +118,13 @@ Plán počítá s pilotem na jedné destinaci — další se rozjíždějí až 
   (`01-tvorba-textu/docs/metodika-hodnoceni.md` — dvě nezávislé platformy, prahy na počet recenzí,
   povinný dodatek „nikdo si tady umístění nezaplatil"). Data v research souborech dané kapitoly.
   **Žebříčky se přeověřují před každým vydáním** — podniky zavírají a známky se mění.
-- **Otevřené otázky pro QA:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (2026-07-29).
-  Pozor, sekce 1 (ceny dopravy, ubytování, vstupné) se má doověřovat **až těsně před vydáním**, ne
-  dopředu — jinak čísla znovu zastarají. Soubor zatím **neobsahuje** nové otázky ze sběru hodnocení
-  (Google rating pro ALEGRIA Fenals Mar, Booking pro Hotel Santa Marta, hodnocení Platja de Lloret,
-  research k modernistickému hřbitovu) — ty jsou zatím jen v research souborech.
+- **Modernistický hřbitov (2026-07-29):** doplněný do kapitoly 06. Vyplynul ze sběru hodnocení jako
+  nejlépe hodnocené místo, které v průvodci chybělo. Jediná část kapitoly postavená na oficiálních
+  městských zdrojích (lloretdemar.org, patrimoni.lloret.cat), ne na blozích.
+- **Otevřené otázky pro QA:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (2026-07-29,
+  aktuální). Pozor, sekce 1 (ceny dopravy, ubytování, vstupné) se má doověřovat **až těsně před
+  vydáním**, ne dopředu — jinak čísla znovu zastarají. Nová sekce 1b (žebříčky podle recenzí) je
+  opakovaná položka pro každé vydání, ne jednorázová.
 - **Chybí:** design brief pro Lloret. Vizuální styl je společný a definovaný
   v `02-tvorba-vizualu/docs/design-brief-albanie.md` — pro Lloret stačí doplnit barevný akcent
   a fotky, až padne rozhodnutí #1.

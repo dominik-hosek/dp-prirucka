@@ -23,6 +23,7 @@ docs/
   brief-<destinace>.md             # Fáze 0 výstup – persona, cena, osnova
   open-questions-<destinace>.md    # Fáze 1 výstup – co doověřit před vydáním (čte i Projekt 3 v QA)
   style-guide.md                   # tone-of-voice a šablona kapitoly, platí napříč destinacemi
+  metodika-hodnoceni.md            # jak se vybírají jmenované podniky podle recenzí, platí napříč destinacemi
 .claude/
   agents/                      # researcher, writer, fact-checker, shot-list-creator
   skills/                      # research-topic, write-chapter
@@ -39,6 +40,9 @@ docs/
   a fact-check se pouští znovu; nechat kapitolu ve stavu "NALEZENY PROBLÉMY" znamená, že destinace
   není připravená pro Projekt 2 (a shot listy se pro ni ani nevygenerují).
 - Fact-checker běží nezávisle na Writeru — kontroluje tvrzení v textu zpět proti research datům.
+- **Konkrétní podnik se smí jmenovat jen podle `docs/metodika-hodnoceni.md`** — dvě nezávislé
+  platformy, prahy na počet recenzí, povinný dodatek v textu, že si výběr nikdo nezaplatil. Jméno
+  podniku je tvrzení jako každé jiné a prochází fact-checkem.
 - Shot-List-Creator běží nezávisle na Writeru i Fact-Checkerovi — čerpá výhradně z hotového textu
   kapitoly (ne z research souboru), aby shot list nikdy neobsahoval víc, než co se čtenář v
   kapitole skutečně dočte.

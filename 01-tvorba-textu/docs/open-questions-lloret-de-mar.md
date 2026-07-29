@@ -6,7 +6,7 @@ proklepnout — buď doověřit, nebo zkontrolovat, že je text formuluje dostat
 
 Seskupeno podle toho, co s tím má QA udělat, ne podle research souborů.
 
-Stav k 2026-07-29.
+Stav k 2026-07-29 (aktualizováno po doplnění žebříčků podle recenzí a modernistického hřbitova).
 
 ## 1. Ceny a jízdní řády — doověřit těsně před vydáním
 
@@ -27,6 +27,31 @@ a research je má jen orientačně.
   podniků.
 - **Vstupné Water World a Marineland** — mění se každoročně. Kontrolovat při každém vydání
   i aktualizaci, ne jen teď.
+- **Vstupné do zahrad Santa Clotilde** — doložených 6,10 / 3,10 EUR platí k létu 2026. Doověřit
+  spolu s ostatním vstupným.
+- **Vstupné na modernistický hřbitov** — oficiální zdroje města žádnou cenu neuvádějí, agregátory
+  tvrdí, že je zdarma. Text proto cenu neuvádí. Doověřit u města (+34 972 349 573,
+  patrimonicultural@lloret.cat) — pokud je vstup opravdu zdarma, stojí za to to do textu doplnit,
+  je to silný argument.
+- **Mimosezónní otevírací doba zahrad Santa Clotilde** — doložená je jen doba duben–říjen
+  (10:00–20:00). Text má výhradu, ale konkrétní zimní doba chybí.
+
+## 1b. Žebříčky podle recenzí — přeověřit před KAŽDÝM vydáním
+
+Kapitoly 03, 04 a 05 jmenují konkrétní hotely, restaurace a atrakce vybrané podle
+`docs/metodika-hodnoceni.md`. Data pocházejí ze sběru **2026-07-29** a jsou z podstaty pomíjivá —
+podnik může zavřít, změnit majitele nebo se mu propadne známka.
+
+- **Přeověřit celý žebříček**, ne jen namátkou. U restaurací zvlášť — zavírají častěji než hotely.
+- **Zkontrolovat, že žádný jmenovaný podnik nezavřel.** *Alva Park Costa Brava* je varovný příklad:
+  na seznamech „nejlepších hotelů" se držel i po svém trvalém zavření.
+- **Doplnit chybějící druhou platformu, nebo podnik vyřadit:**
+  - *ALEGRIA Fenals Mar* — hodnocení na Google Maps se nepodařilo dohledat. Kvůli tomu jsou ve Fenals
+    v textu jen dva hotely místo tří. Pokud se doplní, přibude třetí; pokud ne, zůstává to tak.
+  - *Hotel Santa Marta* — chybí hodnocení na Booking.com. Je to jediný doporučený hotel v klidné
+    oblasti, takže by si plné doložení zasloužil.
+- **Hodnocení hlavní pláže Platja de Lloret** — v datech chybí, takže srovnání pláží v kapitole 05
+  není úplné a text to musí přiznávat. Doplnit.
 
 ## 2. Nedoložená tvrzení — v textu držet opatrnou formulaci
 
@@ -75,6 +100,19 @@ Drobnosti, které text zpřesní, ale nic neblokují.
    bude příležitost cokoli doověřit u někoho s reálnou znalostí Lloretu, mají tyhle dvě věci
    nejlepší poměr užitku k námaze.
 4. Sekci 4 překlopit do QA checklistu (Fáze 4) jako opakovanou položku, ne jednorázovou.
+5. **Sekce 1b patří do QA checklistu taky jako opakovaná položka.** Jmenované podniky jsou největší
+   přidaná hodnota průvodce a zároveň to, co zastará nejrychleji — zavřená restaurace v placeném
+   průvodci poškodí důvěryhodnost víc než chybějící tip.
+
+## Co se mezitím uzavřelo
+
+- **Konkrétní restaurace a hotely** byly původně vedené jako „nejmenovat bez ověření z víc zdrojů".
+  Sběrem 2026-07-29 podle `docs/metodika-hodnoceni.md` se to vyřešilo — jména v kapitolách 03 a 04
+  teď oporu mají. **Chiringuita zůstávají otevřená** (viz sekce 2), pro ně se použitelná data
+  nenašla ani při tomhle sběru.
+- **Modernistický hřbitov** — objevil se jako nejlépe hodnocené místo, které v průvodci nebylo.
+  Doresearchován 2026-07-29 z oficiálních městských zdrojů a doplněn do kapitoly 06. Otevřené
+  zůstává jen vstupné (viz sekce 1).
 
 ## Poznámka k researchi
 

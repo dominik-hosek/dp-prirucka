@@ -59,8 +59,7 @@ cedule u vchodu.
 - **Water World** — **4,1 na Googlu a 3,9 na Tripadvisoru**, což je z porovnávaných míst nejnižší
   hodnocení. Zároveň jde o nejdražší položku v tomhle průvodci (37,20 EUR na osobu). Neznamená to,
   že tam nemáš jet — s dětmi je to pořád zážitek na celý den. Ale při plánování rozpočtu je dobré
-  vědět, že za tuhle cenu dostaneš hůř hodnocenou atrakci než za zlomek peněz v zahradách Santa
-  Clotilde.
+  vědět, že zahrady Santa Clotilde mají lepší hodnocení a vstupné 6,10 EUR, tedy zhruba šestinu.
 
 Porovnání vychází z veřejných hodnocení k **červenci 2026** a zahrnuje jen místa s dostatečným
 počtem recenzí. **Nikdo si tady umístění nezaplatil.** Hodnocení se v čase mění.

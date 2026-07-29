@@ -54,6 +54,15 @@ repozitáře root definice zanikne.
   (hook níže) je spíš procesní milník než záruka kvality.
 - Pomáhá dát agentovi v promptu explicitní pokyn projít kapitolu systematicky sekci po sekci —
   bez něj má tendenci prohledat jen část textu.
+- **Superlativy jsou u žebříčkových sekcí systémové riziko, ne náhoda.** Při doplňování žebříčků
+  podle recenzí (2026-07-29, kapitoly 03–05) našel fact-check pět nálezů a **čtyři z nich byly
+  neopodstatněné superlativy** vzniklé při psaní: „nejvíc hodnocení ze všech porovnávaných",
+  „nejlepší v celém Lloretu", „nejlépe hodnocené místo s odstupem". Data byla správná, závěr o nich
+  ne — vzorek nepokrýval celé město nebo měl jiný podnik lepší číslo. U každé sekce, která něco
+  řadí, kontroluj superlativy zvlášť.
+- **Srovnávací obraty jsou skryté číselné tvrzení.** „Za zlomek peněz", „mnohonásobně dražší"
+  vypadají jako stylistika, ale tvrdí poměr — a ten musí mít oporu stejně jako samotné číslo.
+  Zachyceno ve 4. kole u kapitoly 05.
 
 ## Loops
 

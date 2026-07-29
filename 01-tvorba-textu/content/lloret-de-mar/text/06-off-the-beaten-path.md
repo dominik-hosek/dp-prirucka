@@ -29,6 +29,33 @@ chceš vidět víc pobřeží, než kolik ho obejdeš z jednoho lehátka.
 Zahrady Santa Clotilde doporučujeme navštívit navečer nebo za zlatého světla — bývají v tu dobu méně
 obsazené a fotogeničtější, než přes den v plné turistické špičce.
 
+Vstupné je **6,10 EUR** pro dospělé a **3,10 EUR** snížené (senioři, studenti, karta mládeže,
+rodinná karta, držitelé průkazu ZTP). Od dubna do října je otevřeno denně 10:00–20:00, mimo sezónu
+se doba zkracuje — ceny i otevírací dobu si radši ověř před cestou.
+
+### Modernistický hřbitov
+
+Tohle je nejpřehlíženější místo v Lloretu a zároveň jedno z nejlépe hodnocených — turisté sem
+prakticky nechodí, protože slovo „hřbitov" v dovolenkovém plánu nikoho nenapadne.
+
+Není to obyčejný hřbitov. Vznikl z peněz takzvaných **indianos** — místních, kteří v 19. století
+zbohatli na zámořském obchodu s Amerikou a po návratu si nechali postavit rodinné hrobky, na kterých
+dali najevo, jak se jim vedlo. Výsledek je koncipovaný jako **vesnice mrtvých: má ulice a hrobky
+ve tvaru domů.**
+
+Podíleli se na něm přední katalánští modernisté. Hrobku rodiny Costa i Macià navrhl v roce 1902
+**Josep Puig i Cadafalch**, jeden z nejvýznamnějších architektů katalánského modernismu, a několik
+podzemních hrobek z let 1903–1909 pochází od **Bonaventury Conilla i Montobbia**, žáka Antoniho
+Gaudího. Pozemek se vybíral už v roce 1891, otevřeno bylo v roce 1901.
+
+Hřbitov je členem Association of Significant Cemeteries in Europe a součástí Evropské cesty
+hřbitovů — v celé provincii Girona je jediný, který na ní je.
+
+Prakticky: leží na Camí del Repòs u silnice na Blanes, asi 200 metrů od St. Quirze. Otevřeno je
+denně, od dubna do října 8:00–20:00, od listopadu do března 8:00–18:00. Výši vstupného oficiální
+zdroje města neuvádějí, takže s ním počítej jako s neznámou — každopádně to nebude položka, která by
+ti rozhodila rozpočet.
+
 ### Sousední města mimo hlavní trasu
 
 - **Blanes** — soused Lloretu, oficiální začátek Costa Bravy. Klidnější než Lloret, s historickým

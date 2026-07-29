@@ -2,28 +2,48 @@
 
 Stav: OK
 
-Přeověřeno 2026-07-29 (druhé kolo, před předáním do Fáze 3). Beze změny — žádné nové nálezy.
+Přeověřeno 2026-07-29 (druhé kolo). Třetí kolo **2026-07-29** po doplnění sekce „Modernistický
+hřbitov" a vstupného do zahrad Santa Clotilde — bez nálezů.
 
 ## Nálezy
 
-Žádné nálezy — text odpovídá research podkladu (`research/off-the-beaten-path.md`). Popis zátok,
-pobřežní stezky, zahrad Santa Clotilde i sousedních měst má oporu ve zdroji. Otevřená otázka k trase
-ke Cala Forcanera je v textu ponechána jako opatrná formulace ("bude potřeba se doptat na místě"), ne
-jako konkrétní návod.
+Žádné nálezy. Nová sekce o modernistickém hřbitově je jediná část kapitoly, která stojí na
+**oficiálních městských zdrojích** (lloretdemar.org, patrimoni.lloret.cat) místo na cestovatelských
+blozích — všechna tvrzení mají oporu a dva nezávislé oficiální zdroje se v datech i otevírací době
+shodují.
 
-## Poznámky (bez nálezu, ověřeno v pořádku)
+## Poznámky k nové sekci (ověřeno v pořádku)
 
-- Cala Sa Boadella cca 250 m, Cala Banys kamenitá a strmá bez písku, Cala dels Frares bez služeb —
-  souhlasí se zdrojem.
-- Cala Forcanera dostupná prakticky jen od moře (loď, paddleboard) — souhlasí; text zároveň
-  nedoporučuje žádnou konkrétní pěší trasu, což odpovídá otevřené otázce z Fáze 1.
-- Camí de Ronda jako pobřežní stezka propojující pláže a útesy mimo hlavní pláže, s navázáním na
-  trasu Cala Canyelles–Santa Cristina — souhlasí.
-- Zahrady Santa Clotilde navečer / za zlatého světla — souhlasí, a tenhle údaj je správně umístěný
-  právě sem (z kapitoly 05 byl při dřívější opravě odstraněn).
-- Blanes jako oficiální začátek Costa Bravy s rybářským přístavem, Sant Feliu de Guíxols jako
-  poměrně neznámá rybářská vesnice, Tossa de Mar cca 6 200 stálých obyvatel — souhlasí.
-- Výčet městeček mezi Rosas a Tossa de Mar souhlasí se zdrojem (Sant Feliu de Guíxols je v textu
-  vytažený zvlášť o odstavec výš, ne vynechaný).
-- Text sám doporučuje ověřit si vzdálenost a dobu cesty do Blanes a Sant Feliu de Guíxols podle
-  jízdního řádu — druhá otevřená otázka z Fáze 1 je tím ošetřená.
+- **Indianos** — lidé, kteří v 19. století zbohatli na zámořském obchodu s Amerikou a financovali
+  stavbu rodinných hrobek; hřbitov vznikl jako světská alternativa k pohřbívání u kostela ✓.
+- **„Vesnice mrtvých" s ulicemi a hrobkami ve tvaru domů** — doslovná charakteristika z oficiálního
+  zdroje, ne obrat autora ✓.
+- **Josep Puig i Cadafalch**, hrobka rodiny Costa i Macià, **1902** ✓.
+- **Bonaventura Conill i Montobbio**, podzemní hrobky **1903–1909**, žák Antoniho Gaudího ✓.
+- **Pozemek vybrán 1891, otevřeno 1901** ✓. (Zdroje uvádí i mezikroky — architekt pověřen 1892,
+  první kámen 1896 — text je vynechává, což je zjednodušení, ne neshoda.)
+- **Člen ASCE a součást Evropské cesty hřbitovů, jediný v provincii Girona** ✓.
+- **Otevírací doba** duben–říjen 8:00–20:00, listopad–březen 8:00–18:00, denně ✓ — shodně v obou
+  oficiálních zdrojích.
+- **Adresa** Camí del Repòs, silnice na Blanes, cca 200 m od St. Quirze ✓.
+- **Vstupné se v textu záměrně neuvádí.** Oficiální zdroje ho nezmiňují, agregátory (trip.com,
+  life-globe.com) tvrdí, že je zdarma, ale jsou to slabé zdroje. Text to řeší správně — říká, že
+  výši vstupného oficiální zdroje neuvádějí, a nedává číslo. Vedeno jako otevřená otázka.
+- **Tvrzení, že sem turisté prakticky nechodí**, má oporu v poměru hodnocení: 129 recenzí na Google
+  oproti 9 006 u zahrad Santa Clotilde a 9 216 u Water Worldu, při srovnatelné nebo vyšší známce.
+
+## Poznámky k vstupnému Santa Clotilde (ověřeno v pořádku)
+
+- **6,10 EUR** dospělí, **3,10 EUR** snížené (senioři, studenti, karta mládeže, rodinná karta,
+  osoby se zdravotním postižením) ✓.
+- **10:00–20:00 denně od dubna do října**, mimo sezónu se doba zkracuje ✓ — text správně dodává
+  výhradu, protože přesná mimosezónní doba doložená není.
+- Text doporučuje ověřit ceny i dobu před cestou, což odpovídá pravidlu pro proměnlivé údaje.
+
+## Poznámky k původnímu textu (beze změny, ověřeno v pořádku)
+
+- Cala Sa Boadella cca 250 m, Cala Banys, Cala dels Frares bez služeb ✓.
+- Cala Forcanera — opatrná formulace o neověřené trase zachovaná ✓.
+- Camí de Ronda a napojení na trasu Cala Canyelles–Santa Cristina ✓.
+- Blanes, Sant Feliu de Guíxols, Tossa de Mar (cca 6 200 stálých obyvatel) ✓.
+- Výčet 12 městeček mezi Rosas a Tossa de Mar beze změny ✓.
