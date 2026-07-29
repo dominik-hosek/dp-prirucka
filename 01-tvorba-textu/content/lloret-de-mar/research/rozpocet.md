@@ -21,7 +21,10 @@ Datum sběru: 2026-07-17
   jde o průměr napříč kategoriemi, konkrétní cena závisí na typu ubytování a předstihu rezervace.
 - Vstupné do Water World 37,20 EUR/osoba (nad 1,2 m výšky), Marineland 23 EUR dospělý / 16,5 EUR dítě
   do 12 let (viz research plaze-vylety-a-itinerare.md).
-- SIM/eSIM s dostatkem dat na pobyt vyjde orientačně 10-12 EUR (viz research prakticke-zaklady.md).
+- SIM/eSIM s dostatkem dat na pobyt: fyzická turistická SIM cca 10 EUR i s velkým balíčkem dat na
+  měsíc, eSIM cca 4-12 USD podle objemu dat (viz research prakticke-zaklady.md — pozor na měnu,
+  eSIM ceníky jsou v USD). Opraveno 2026-07-29: dřívější znění "10-12 EUR" slučovalo obě varianty
+  do jedné částky a převádělo USD na EUR bez opory ve zdroji.
 
 ## Insider tipy
 

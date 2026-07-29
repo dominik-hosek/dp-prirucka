@@ -10,12 +10,15 @@ jen stav.
 
 ## 👉 Další krok
 
-**Vygenerovat kapitolu 02 (Doprava po okolí)** — kontrolní list je připravený v
-`02-tvorba-vizualu/kontrola/lloret-de-mar/02-doprava-po-okoli.md`, postup v
+**Vygenerovat kapitolu 02 (Doprava po okolí)** — postup v
 `02-tvorba-vizualu/docs/prompt-guide.md`.
 
 Kapitola 01 je hotová (2026-07-29): 6 sekcí, text ověřený proti zdroji, bez nálezů — na tři běhy.
-Zbývá 6 kapitol (03–08).
+Zbývá 7 kapitol (02–08), **kontrolní listy jsou připravené pro všechny**
+(`02-tvorba-vizualu/kontrola/lloret-de-mar/`).
+
+**Doporučené pořadí:** kapitolu **07 (Rozpočet) nech na konec.** Skoro každé číslo v ní se má
+doověřovat až těsně před vydáním — když ji vysázíš brzy, bude se dělat znovu.
 
 **Otevřené k rozhodnutí (neblokuje generování):** podtitul obálky vyšel jako „COSTA BRAVA,
 ŠPANĚLSKO", tedy čistě místopisný, bez příslibu hodnoty pro personu. Jestli tam má být i něco jako
@@ -24,6 +27,8 @@ Zbývá 6 kapitol (03–08).
 ✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
 ✅ *Hotovo 2026-07-29: `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` — 18 otevřených otázek
 z 8 research souborů seskupených podle toho, co s nimi má udělat QA ve Fázi 4.*
+✅ *Hotovo 2026-07-29: přeověření kapitol 02–08 + kontrolní listy 03–08 — text Lloretu je tím
+finálně uzavřený pro Fázi 3 (viz Fáze 2 níže).*
 
 ---
 
@@ -59,7 +64,7 @@ Legenda: ✅ hotovo · ◐ rozpracováno · ⛔ blokováno · ⬜ nezačato
 | 0 | Validace destinace, persona, cena, osnova | 01 | ✅ pro Lloret i Albánii |
 | 1 | Research "deep knowledge" dat | 01 | ✅ pro Lloret (8 témat) · ✅ pro Albánii |
 | 2 | Psaní kapitol + fact-check | 01 | ✅ Lloret (8/8 `Stav: OK` a aktuální, 8/8 shot listů aktuálních) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
-| 3 | Vizuál a sazba PDF | 02 | ◐ hotová obálka a kapitola 01 Lloretu (1/8), zbývá 02–08 |
+| 3 | Vizuál a sazba PDF | 02 | ◐ hotová obálka a kapitola 01 Lloretu (1/8), zbývá 02–08 · kontrolní listy 8/8 hotové |
 | 4 | QA a finalizace produktu | 03 | ⬜ čeká na PDF z Fáze 3 |
 | 5 | Prodejní web | 03 | ⬜ |
 | 6 | Příprava PPC kampaní | 03 | ⬜ |
@@ -79,9 +84,14 @@ Plán počítá s pilotem na jedné destinaci — další se rozjíždějí až 
   plánovač", cena 199 Kč, osnova 8 kapitol.
 - **Fáze 1:** research hotový, 8 souborů, datum sběru 2026-07-17. Sekce o penězích v
   `prakticke-zaklady.md` doplněná 2026-07-28 (karty vs. hotovost, chiringuita, limity).
-- **Fáze 2:** hotovo — všech 8 kapitol má aktuální fact-check se `Stav: OK` i aktuální shot list.
-  Kapitola 01 prošla 2026-07-28 přeověřením (4 kola: neshoda měny u eSIM, ztracená opatrnost u ceny
-  autobusu z Girony, nepodložená tvrzení o placení kartou) — všechny nálezy opravené.
+- **Fáze 2:** hotovo a uzavřeno — všech 8 kapitol má aktuální fact-check se `Stav: OK` i aktuální
+  shot list. Kapitola 01 prošla 2026-07-28 přeověřením (4 kola: neshoda měny u eSIM, ztracená
+  opatrnost u ceny autobusu z Girony, nepodložená tvrzení o placení kartou) — všechny nálezy
+  opravené. Kapitoly 02–08 přeověřené 2026-07-29 druhým kolem: 6 z nich beze změny, v kapitole 07
+  (Rozpočet) 2 nálezy, oba opravené — cena autobusu z Girony bez rozptylu zdrojů (10 vs. až 23 EUR,
+  kapitola 01 ho nesla, kapitola 07 ne) a sloučení fyzické SIM s eSIM do jedné částky v EUR, ačkoli
+  eSIM ceníky jsou v USD. Druhý nález vznikl už v `research/rozpocet.md`, opraven proto i tam.
+  **Pozor: záměna EUR/USD je jediná chyba, která v projektu vznikla dvakrát nezávisle na sobě.**
 - **Otevřené otázky pro QA:** `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` (2026-07-29).
   Pozor, sekce 1 (ceny dopravy, ubytování, vstupné) se má doověřovat **až těsně před vydáním**, ne
   dopředu — jinak čísla znovu zastarají.

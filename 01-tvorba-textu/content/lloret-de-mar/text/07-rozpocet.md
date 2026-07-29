@@ -17,8 +17,9 @@ Ceny u pláže a na hlavní promenádě bývají vyšší než pár ulic dál od
 
 - Taxi v Lloretu: nástupní sazba cca 3,50 EUR + cca 1,30 EUR/km.
 - Taxi z letiště Girona do Lloretu: cca 50 EUR.
-- Autobus z letiště Girona do Lloretu: cca 10 EUR — výrazně levnější varianta (viz kapitola
-  Praktické základy).
+- Autobus z letiště Girona do Lloretu: orientačně 10 EUR. Zdroje se ale rozcházejí a objevují se
+  i částky až kolem 23 EUR podle dopravce (viz kapitola Praktické základy). I tak je to výrazně
+  levnější varianta než taxi.
 - Půjčení auta: od cca 18 EUR/den v mimosezóně (listopad, březen), v hlavní sezóně výrazně dráž.
 
 ### Ubytování
@@ -35,7 +36,11 @@ aktuální ceny na rezervačním portálu.
 
 ### SIM/eSIM
 
-Orientačně 10-12 EUR za dostatek dat na celý pobyt (viz kapitola Praktické základy).
+- Fyzická turistická SIM: cca 10 EUR i s velkým balíčkem dat na měsíc.
+- eSIM: cca 4-12 USD podle objemu dat.
+
+Ceny u eSIM se mění častěji než u klasických SIM — ověř si aktuální ceník před cestou (viz kapitola
+Praktické základy).
 
 ### Orientační denní rozpočet na osobu (mimo ubytování)
 
@@ -49,5 +54,5 @@ ověřená k létu 2026.
 
 ### Tip navíc
 
-Autobus místo taxi z letiště je jedna z nejjednodušších úspor na celé dovolené — rozdíl mezi 10 EUR
-a 50 EUR je citelný hned první den.
+Autobus místo taxi z letiště je jedna z nejjednodušších úspor na celé dovolené — rozdíl mezi
+jízdenkou v řádu jednotek eur a taxíkem kolem 50 EUR je citelný hned první den.

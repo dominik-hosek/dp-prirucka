@@ -38,9 +38,9 @@
 
 ## SIM/eSIM
 
-### Ikona SIM karty s orientační cenou dat na pobyt
+### Ikona SIM karty s orientačními cenami obou variant (fyzická SIM v EUR, eSIM v USD)
 - Typ: ikona
-- Účel: Jednoduchý vizuální symbol s cenovkou doplňující krátkou praktickou informaci o SIM kartě.
+- Účel: Jednoduchý vizuální symbol s cenovkou doplňující krátkou praktickou informaci o SIM kartě. Pozor: kapitola uvádí dvě varianty ve dvou různých měnách, vizuál je nesmí sloučit do jedné částky.
 
 ## Orientační denní rozpočet na osobu (mimo ubytování)
 
