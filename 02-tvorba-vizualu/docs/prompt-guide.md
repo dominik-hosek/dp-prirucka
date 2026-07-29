@@ -84,6 +84,17 @@ nevíme — a research říká nejmenovat konkrétní chiringuita bez ověření
 
 Když najdeš chybu v textu, **nech stránku přegenerovat**, neopravuj ji retušováním.
 
+### Pozor na opravné běhy
+
+Přegenerování kvůli jedné chybě je **nový hod kostkou pro celou stránku** — model nesází jen
+opravované místo. Ověřeno na kapitole 01: oprava zaměněné předložky sice prošla, ale ve stejné větě
+se zároveň slepilo doplňované znění do nesmyslu, takže druhý běh dopadl hůř než první.
+
+Po opravě proto projdi celý odstavec kolem opravovaného místa, ne jen to slovo. A když se stejná
+věta rozbije dvakrát po sobě, je rychlejší **zkrátit ji ve zdrojové kapitole** (a nechat znovu
+fact-checknout) než ji dokola generovat — dlouhé věty s vloženou vedlejší větou a číslem jsou to,
+na čem model klopýtá.
+
 ---
 
 ## Formát a ukládání

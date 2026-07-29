@@ -44,13 +44,37 @@ kvůli které se dělala čtyři kola kontroly.
   zdroje týkají hlavně Barcelony — ne že je Lloret bezpečný, ani že je rizikový.
 - U eSIM musí zůstat, že se ceny mění a je potřeba je ověřit těsně před cestou.
 
-## Věty, které už jednou vypadly nebo se změnily
+## Riziková věta — kontrolovat při každém běhu
 
-Ověřeno na prvním běhu (2026-07-29) — u dalšího generování kontrolovat přednostně:
+Jedna věta v sekci Peníze se rozbila ve **dvou** po sobě jdoucích bězích. Správné znění:
 
-- „podnik **ve** Španělsku kartu přijmout nemusí" — v prvním běhu vyšlo „podnik **se** Španělsku".
-- „…je tu naprosto legální **a hotovostí pořád projde víc než polovina plateb v kamenných
-  obchodech**." — zvýrazněná část v prvním běhu úplně vypadla.
+> Ve Španělsku se platí eurem. Kartou zaplatíš ve městech prakticky všude a do 50 EUR bezkontaktně
+> i bez PINu — ale nespoléhej na to úplně: podnik **ve** Španělsku kartu přijmout nemusí, cash-only
+> bar nebo obchod je tu **naprosto legální a hotovostí pořád projde víc než polovina plateb
+> v kamenných obchodech**.
+
+Historie:
+
+| Běh | Co vyšlo |
+|---|---|
+| 1 | „podnik **se** Španělsku" + celá část o polovině plateb vypadla |
+| 2 | předložka opravena, ale doplňovaná část se slepila do nesmyslu: „je tu **naprosti** plateb v kamenných obchodech" |
+
+Proč zrovna tahle: je dlouhá, má vloženou vedlejší větu a nese číselný údaj (podíl hotovostních
+plateb podle Banco de España), kvůli kterému se dělal doplňkový research.
+
+## Pravidlo pro opravy
+
+**Každé přegenerování je nový hod kostkou.** Model neopraví jen chybné místo — sází stránku znovu
+celou a může rozbít i to, co bylo v pořádku. Po opravě proto kontroluj:
+
+1. opravované místo,
+2. **celý odstavec kolem něj**,
+3. zbytek stránky proti tabulce čísel výše.
+
+Když se stejná věta rozbije dvakrát po sobě, zvaž její zkrácení ve zdrojové kapitole
+(`../../../01-tvorba-textu/content/lloret-de-mar/text/01-prakticke-zaklady.md`) — rozdělit na dvě
+kratší věty a nechat kapitolu znovu fact-checknout je spolehlivější než dokola generovat stránku.
 
 ## Fotky
 
