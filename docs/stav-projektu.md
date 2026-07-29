@@ -10,19 +10,15 @@ jen stav.
 
 ## 👉 Další krok
 
-**Vygenerovat obálku a 5 stránek kapitoly 01 Lloretu** podle promptů v
-`02-tvorba-vizualu/prompts/lloret-de-mar/`. Postup, styl blok a kontrolní seznamy jsou
-v `02-tvorba-vizualu/docs/prompt-guide.md`, prázdné šablony textových stránek
-v `02-tvorba-vizualu/prompts/_sablony-stranek.md`.
+**Dogenerovat zbytek kapitoly 01 Lloretu** (sekce SIM a internet, Rychlé shrnutí) a opravit dvě
+nalezené tiché změny textu — viz `02-tvorba-vizualu/kontrola/lloret-de-mar/01-prakticke-zaklady.md`.
+Pak projít kapitolu jako celek, teprve potom kapitola 02.
 
-Než se pojede dál, projít první kapitolu společně — když bude potřeba doladit styl nebo postup,
-je lepší předělat 5 stránek než 40.
+Postup je v `02-tvorba-vizualu/docs/prompt-guide.md`.
 
-**Nejdřív ale dvě drobnosti:**
-- Potvrdit název a podnázev produktu (návrh je v `prompts/lloret-de-mar/00-obalka.md`) — obálka se
-  generuje s ním a přegenerovávat ji kvůli změněnému podtitulku je zbytečné.
-- Ověřit si na jednom odstavci, jak si tvůj nástroj poradí s českou diakritikou — na tom stojí
-  rozdělení stránek na vizuální a textové.
+**Otevřené k rozhodnutí (neblokuje generování):** podtitul obálky vyšel jako „COSTA BRAVA,
+ŠPANĚLSKO", tedy čistě místopisný, bez příslibu hodnoty pro personu. Jestli tam má být i něco jako
+„pro ty, kdo si dovolenou plánují sami", je potřeba obálku přegenerovat — rozhodnout před vydáním.
 
 ✅ *Hotovo 2026-07-28: přeověření kapitoly 01 Lloretu (viz Fáze 2 níže).*
 ✅ *Hotovo 2026-07-29: `01-tvorba-textu/docs/open-questions-lloret-de-mar.md` — 18 otevřených otázek
@@ -62,7 +58,7 @@ Legenda: ✅ hotovo · ◐ rozpracováno · ⛔ blokováno · ⬜ nezačato
 | 0 | Validace destinace, persona, cena, osnova | 01 | ✅ pro Lloret i Albánii |
 | 1 | Research "deep knowledge" dat | 01 | ✅ pro Lloret (8 témat) · ✅ pro Albánii |
 | 2 | Psaní kapitol + fact-check | 01 | ✅ Lloret (8/8 `Stav: OK` a aktuální, 8/8 shot listů aktuálních) · ◐ Albánie (text opravený, ale fact-check nespuštěný znovu) |
-| 3 | Vizuál a sazba PDF | 02 | ◐ postup rozhodnutý, prompty pro obálku + kap. 01 Lloretu hotové, generování nezačalo |
+| 3 | Vizuál a sazba PDF | 02 | ◐ postup ověřený v praxi — hotová obálka a část kapitoly 01 Lloretu |
 | 4 | QA a finalizace produktu | 03 | ⬜ čeká na PDF z Fáze 3 |
 | 5 | Prodejní web | 03 | ⬜ |
 | 6 | Příprava PPC kampaní | 03 | ⬜ |

@@ -11,8 +11,7 @@ Celý fázový proces je popsaný v `../plan.md`. Živý stav skills/agentů pat
 > `.claude/skills/layout-guide/`, `.claude/agents/design.md`) je odstavený, zůstává jen jako
 > historie. Vizuální styl z design briefu (paleta, typografie, prvky) platí dál.
 >
-> Jak se pracuje: `docs/prompt-guide.md`. Šablony stránek: `prompts/_sablony-stranek.md`.
-> Prompty destinace: `prompts/<destinace>/`.
+> Jak se pracuje: `docs/prompt-guide.md`. Kontrolní listy kapitol: `kontrola/<destinace>/`.
 
 ## Struktura
 
@@ -20,18 +19,16 @@ Celý fázový proces je popsaný v `../plan.md`. Živý stav skills/agentů pat
 content/
   _template/assets/       # šablona – místo pro fotky/ilustrace nové destinace
   <destinace>/assets/     # fotky/ilustrace použité v PDF (research a text jsou v Projektu 1)
-prompts/
-  _sablony-stranek.md     # znovupoužitelné šablony textových stránek (T1–T4)
-  <destinace>/            # prompty po kapitolách + obálka
+kontrola/
+  <destinace>/            # kontrolní listy po kapitolách – čísla, opatrné formulace, sekce
 design/
   <destinace>/
-    sablony/              # vygenerované prázdné šablony stránek
-    pages/                # hotové vygenerované stránky – build output, negituje se
+    pages/                # hotové vygenerované stránky – ZDROJ, gituje se (nejsou reprodukovatelné)
     wireframes/           # návrhové kostry stránek (SVG) – ZDROJ, gituje se
     pdf-parts/, preview/, proof-*/   # starší Canva exporty – build output, negituje se
   inspirace/              # moodboard/reference pro grafický styl – ZDROJ, gituje se
 docs/
-  prompt-guide.md               # JAK se pracuje – styl blok, typy stránek, kontrolní seznamy
+  prompt-guide.md               # JAK se pracuje – zadání, co model umí/neumí, kontrola proti zdroji
   design-brief-<destinace>.md   # CO má vzniknout – paleta, typografie, layout (+ historie Canvy)
   brief-vizualni-proces.md      # historie: analýza variant, ze které se rozhodovalo
 .claude/                        # odstavené, popisuje starý Canva postup

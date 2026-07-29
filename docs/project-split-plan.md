@@ -34,15 +34,15 @@ skriptovaným hand-off krokem.
 Canva ani jiný sazeč se nepoužívá. Agent do generování nevstupuje — nemá k těmto nástrojům přístup,
 jeho výstupem jsou prompty a text k vložení.
 
-Klíčové pravidlo: stránky se dělí na **vizuální (V)**, kde se text generuje spolu s obrázkem, a
-**textové (T)**, kde se generuje jen prázdný rám a fact-checked text se do něj vkládá až potom.
-Důvod: obrázkové modely sázejí delší českou prózu s diakritikou nespolehlivě a text v obrázku nejde
-vyhledat ani zkopírovat. Textové stránky navíc nepotřebují prompt na každou zvlášť — používá se
-sada znovupoužitelných šablon.
+Zadání je minimální: modelu se přiloží 4 vzorové inspirace a hotový text kapitoly a nechá se, ať si
+rozvržení stránky zvolí sám. Ověřeno 2026-07-29 — vzhled i česká diakritika vycházejí spolehlivě,
+layout si model volí rozumně podle délky textu.
 
-Detail postupu, styl blok a kontrolní seznamy: `02-tvorba-vizualu/docs/prompt-guide.md`.
-Šablony: `02-tvorba-vizualu/prompts/_sablony-stranek.md`. Prompty konkrétní destinace:
-`02-tvorba-vizualu/prompts/<destinace>/`.
+**Kde je riziko:** ne v písmenkách, ale v obsahu. Model si dovolí text potichu zkrátit nebo změnit
+předložku, aniž by to bylo na stránce vidět. Proto je povinným krokem **porovnání vygenerovaného
+textu proti zdrojové kapitole** — k tomu slouží kontrolní listy v `02-tvorba-vizualu/kontrola/`.
+
+Detail postupu a kontrolní seznamy: `02-tvorba-vizualu/docs/prompt-guide.md`.
 
 Analýza, ze které se rozhodovalo (varianty A/B/C), zůstává v
 `02-tvorba-vizualu/docs/brief-vizualni-proces.md` jako historický záznam — zvolený postup je čtvrtá

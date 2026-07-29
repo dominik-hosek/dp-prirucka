@@ -99,8 +99,8 @@ Kroky:
 5. Export a technická kontrola PDF (velikost souboru, čitelnost na mobilu/tabletu, klikatelný obsah/odkazy).
 
 Automatizace:
-- 🔌 **MCP (Canva)** – generování designu/šablony průvodce a obálky přímo přes Canva MCP nástroje (`generate-design`, `create-design-from-brand-template`, `export-design`), včetně brand kitu pro konzistentní vizuál napříč budoucími destinacemi.
-- 🤖 **Skill** `/layout-guide` – naskládá hotový text a vizuály do šablony a připraví export.
+- 🙋 **Generování stránek** – stránky vyrábí člověk v Nano Banana 2 / GPT Image (viz `02-tvorba-vizualu/docs/prompt-guide.md`). Původní záměr automatizovat sazbu přes Canva MCP se neosvědčil a je odstavený; agent do generování nevstupuje, dodává text a kontrolní podklady.
+- 🙋 **Kontrola proti zdroji** – povinný krok. Model si text potichu krátí a mění, což na stránce není vidět; bez porovnání s kapitolou se to neodhalí.
 - 👥 **Agent tým** – "Design" subagent připravující požadavky na obrázky/ilustrace (prompty pro generování nebo výběr) odděleně od textového agenta.
 - 🙋 Finální vizuální schválení a licenční kontrola obrázků (autorská práva!) dělá člověk.
 

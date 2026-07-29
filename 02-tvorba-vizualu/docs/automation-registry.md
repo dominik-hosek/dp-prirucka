@@ -19,11 +19,11 @@ nemá přístup (Nano Banana 2, GPT Image; obojí předplacené člověkem). Dě
 
 | Kdo | Co dělá |
 |---|---|
-| 🤖 Agent | Připraví prompty ze shot listů a textu kapitol, udržuje styl blok, dodá přesné znění textu k vložení do šablon |
-| 🙋 Člověk | Generuje stránky, vybírá z variant, kontroluje text slovo po slovu, vkládá text do šablon, skládá PDF |
+| 🤖 Agent | Dodá zdrojový text kapitoly a kontrolní list (očekávané sekce, čísla, opatrné formulace, věty, které už jednou vypadly) |
+| 🙋 Člověk | Generuje stránky, vybírá z variant, **porovnává vygenerovaný text proti zdroji**, skládá PDF |
 
 Není tu tedy skill ani subagent, který by Fázi 3 „spustil" — výstupem agenta jsou soubory
-v `prompts/`, ne hotové stránky.
+v `kontrola/`, ne hotové stránky.
 
 ## Skills
 
@@ -54,7 +54,7 @@ Zatím žádné pro tento projekt.
 - **Vstup:** fact-checked text z Projektu 1 (`../01-tvorba-textu/content/<destinace>/text/*.md`)
   a k němu shot listy (`.../text/_shot-list/*.md`) — shot list je podklad, ze kterého se píšou
   prompty.
-- **Mezivýstup agenta:** prompty v `prompts/<destinace>/` + šablony v `prompts/_sablony-stranek.md`.
+- **Mezivýstup agenta:** kontrolní listy kapitol v `kontrola/<destinace>/`.
 - **Vygenerované stránky** (`design/<destinace>/pages/`) se **verzují**, i když jsou to obrázky —
   nejsou reprodukovatelné, stejný prompt podruhé vrátí jiný výsledek.
 - **Výstup:** finální PDF produkt (`design/<destinace>/`) — vstup pro Projekt 3 (prodej/QA).
