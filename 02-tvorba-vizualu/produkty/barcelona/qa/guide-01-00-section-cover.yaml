@@ -1,0 +1,13 @@
+{
+  "page": "guide-01-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Poměr 2:3, čitelný přesný český text bez výpustek a přidaných údajů; chráněné tokeny Praktické, Barcelona a Tahle jsou správné. Hierarchie sekční obálky, bezpečné okraje a španělský vizuální systém odpovídají.",
+  "checked_at": "2026-08-05T23:34:14+00:00",
+  "content_contract_sha256": "261a8c077a6a6fc9e7d13ef4139db18a5791730e2b9b2be2f8249deebedcd247",
+  "protected_tokens": [
+    "Praktické",
+    "Barcelona",
+    "Tahle"
+  ]
+}

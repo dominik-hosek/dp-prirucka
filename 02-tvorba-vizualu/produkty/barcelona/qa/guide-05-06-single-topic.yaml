@@ -1,0 +1,18 @@
+{
+  "page": "guide-05-06-single-topic",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Pokračování věty začíná správně malým a; oba časy, negace i alternativa MNAC jsou přesné, bez přidaného nadpisu či textu.",
+  "checked_at": "2026-08-06T02:52:31+00:00",
+  "content_contract_sha256": "e694877870e687359a04ae5e0273d53629b07b075aecd45d4107b1c2a232e011",
+  "protected_tokens": [
+    "17:30",
+    "15:00",
+    "17",
+    "30",
+    "15",
+    "00",
+    "Alternativa",
+    "MNAC v sobotu po 15:00 zdarma"
+  ]
+}

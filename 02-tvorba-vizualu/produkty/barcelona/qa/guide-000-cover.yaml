@@ -1,0 +1,11 @@
+{
+  "page": "guide-000-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Poměr 2:3, bezpečné okraje, přesný titul i podtitul s českou diakritikou; bez přidaného textu, log a ořezu. Vizuální hierarchie odpovídá cover layoutu a středomořskému systému.",
+  "checked_at": "2026-08-05T23:31:34+00:00",
+  "content_contract_sha256": "d1740e58429e04dc566d357c019166c4359b6e237c9db84692900bcba520c644",
+  "protected_tokens": [
+    "Barcelona\n\nPraktický"
+  ]
+}

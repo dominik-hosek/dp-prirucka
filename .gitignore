@@ -7,6 +7,10 @@ Thumbs.db
 *.pdf
 02-tvorba-vizualu/design/**/*.png
 02-tvorba-vizualu/design/**/*.jpg
+02-tvorba-vizualu/produkty/**/drafts/
+02-tvorba-vizualu/produkty/**/qa/rendered/
+02-tvorba-vizualu/produkty/**/dist/
+02-tvorba-vizualu/smoke-tests/
 
 # ...ale tyhle obrázky jsou ZDROJ, ne build output — gitují se:
 # - inspirace/ = moodboard pro grafický styl
@@ -19,3 +23,9 @@ Thumbs.db
 # Secrets / local config
 .env
 .env.local
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+02-tvorba-vizualu/.test-tmp/

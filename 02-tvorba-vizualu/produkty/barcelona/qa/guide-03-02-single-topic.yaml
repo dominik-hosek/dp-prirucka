@@ -1,0 +1,12 @@
+{
+  "page": "guide-03-02-single-topic",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Celá věta je přesná, čitelná a úplná; negace, opatrná formulace, jen a Eixample zachovány. Bez nežádoucího textu.",
+  "checked_at": "2026-08-06T01:39:55+00:00",
+  "content_contract_sha256": "ca9b890d80f50a7a687d8cfa70ad0253c005c1da2e9df6f8b79149340b6168f0",
+  "protected_tokens": [
+    "jen",
+    "Eixample"
+  ]
+}

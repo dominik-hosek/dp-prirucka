@@ -1,19 +1,3 @@
 {
-  "_comment": "Hooky se načítají jen z .claude/settings.json v kořeni session. Když je Claude Code spuštěný tady (řídící složka dp-prirucka), definice v 01-tvorba-textu/.claude/settings.json se NENAČTE — proto je hook Projektu 1 zaregistrovaný i tady. Skript zůstává vlastnictvím Projektu 1. Po fyzickém rozdělení na samostatné repozitáře se tento soubor zruší a platit bude jen nested definice.",
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "shell": "bash",
-            "command": "node \"$CLAUDE_PROJECT_DIR/01-tvorba-textu/.claude/hooks/fact-check-on-save.js\"",
-            "timeout": 15,
-            "statusMessage": "Kontroluji fact-check/shot-list stav Fáze 2..."
-          }
-        ]
-      }
-    ]
-  }
+  "_comment": "Hook fact-check-on-save.js byl 2026-08-06 zrušen spolu s Fact-Checker agentem, kterého volal. Sekvenci Fáze 1+2 nově drží skill /destinace-text v Projektu 1. Viz 01-tvorba-textu/docs/automation-registry.md."
 }

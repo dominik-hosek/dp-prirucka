@@ -1,0 +1,16 @@
+{
+  "page": "guide-04-00-section-cover",
+  "status": "passed",
+  "attempts": 2,
+  "notes": "Druhá varianta odstranila nepovolený štítek a dopravní prvky. Text je přesný a úplný, chráněná fráze zvýrazněna, bez dalšího textu.",
+  "checked_at": "2026-08-06T01:58:44+00:00",
+  "content_contract_sha256": "af43d545fbe99c33fa9b1c5cb5dfbfb04b7adaaf2123e53c05b60e37e268d4a4",
+  "protected_tokens": [
+    "ne",
+    "jen",
+    "Jídlo",
+    "Barceloně",
+    "Tahle",
+    "kdy a kde"
+  ]
+}

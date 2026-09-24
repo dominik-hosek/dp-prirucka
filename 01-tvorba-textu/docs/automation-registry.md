@@ -1,86 +1,115 @@
 # Registr automatizace — Projekt 1: Tvorba textu (Fáze 0+1+2)
 
-Živý přehled Skills, subagentů, hooků a loopů, které patří do tohoto projektu (výběr destinace,
-research, psaní kapitol). Celkový přehled napříč všemi 3 projekty a rozhodnutí o rozpadu je
-v `../docs/project-split-plan.md` (root) — sem patří jen detail vlastní tomuto projektu.
-
-Zdroj procesu: `../plan.md` (root, Fáze 0/1/2).
+Živý přehled Skills a subagentů tohoto projektu. Celkový přehled napříč všemi 3 projekty je
+v `../docs/project-split-plan.md` (root). Zdroj procesu: `../plan.md` (root, Fáze 0/1/2).
 
 Legenda stavu: 🟢 vytvořeno · ⚪ naplánováno (zatím neexistuje)
+
+## Přestavba 2026-08-06 — proč to vypadá jinak než dřív
+
+Původní proces (8× research + 8× psaní + fact-check + taháček ≈ 32 běhů subagentů) stál zhruba
+1,2 mil. tokenů na destinaci a **nevešel se do jednoho sezení** — sběr dat pro Krétu spadl na limitu
+po třech z osmi kapitol.
+
+První diagnóza zněla „žere to čtení webu" a **byla chybná**. Přestavěný proces vyrobil celou Krétu
+při **nula voláních webu** — a přesto stál 460 tis. tokenů, protože každý z pěti běhů vyšel na
+84–102 tis. bez ohledu na to, co dělal. Taháček přečte 17 KB textu a stojí 87 tis.
+
+Skutečný vzorec je: **cena běhu ≈ počet volání nástrojů × velikost kontextu.** Při každém volání
+nástroje se agentovi přeúčtuje celý dosavadní kontext, takže 18 volání × ~5 tis. ≈ 90 tis. Web to
+jen zhoršoval, kořen to nebyl.
+
+Páky podle síly: (1) míň běhů — každý má fixní režii ~80 tis.; (2) míň volání nástrojů v běhu —
+dávat agentovi přesné cesty, ať nehledá; (3) kratší vstupy — definice agentů se přeposílají při
+každém volání, proto jsou držené na ~2,5 KB.
+
+Nový proces: **5 běhů, ~460 tis. tokenů na destinaci** (naměřeno na Krétě 2026-08-06).
+
+| Co se změnilo | Z | Na |
+|---|---|---|
+| Běhů subagentů | ~32 | 5 |
+| Sběr dat | 8 research souborů, ~240 volání webu | 1 `fakta.md`, strop 8 hledání + 5 stránek |
+| Psaní | 8 běhů, agent s webem | 2 běhy po 4 kapitolách, agent **bez webových nástrojů** |
+| Čísla v textu | přesné hodnoty | rozptyly + odkaz na oficiální zdroj |
+| Kontrola | Fact-Checker subagent | **člověk** nad `kontrola.md` |
+| Délka kapitoly | 2,4–5,4 KB | 2–3 KB |
+
+**Co se tím vědomě obětovalo:** padla záruka „každá věta má zdroj". Nově ji má jen číselná a úřední
+část textu (vrstva A z `fakta.md`); zbytek se píše z obecné znalosti modelu (vrstva B) a jeho
+kontrola leží na člověku. Je to vědomý kompromis mezi cenou a doložitelností, ne přehlédnutí.
 
 ## Skills
 
 Umístění: `.claude/skills/<název>/SKILL.md`
 
-| Skill | Účel | Fáze | Umístění | Stav |
-|---|---|---|---|---|
-| `/validate-destination` | Research poptávky/konkurence pro výběr destinace | 0 | `.claude/skills/validate-destination/` | ⚪ |
-| `/research-topic` | Sběr dat k jednomu tématu/kapitole destinace + zdroje | 1 | `.claude/skills/research-topic/` | 🟢 |
-| `/write-chapter` | Napsání kapitoly z research databáze (ne z paměti modelu) | 2 | `.claude/skills/write-chapter/` | 🟢 |
+| Skill | Účel | Fáze | Stav |
+|---|---|---|---|
+| `/validate-destination` | Research poptávky/konkurence pro výběr destinace | 0 | ⚪ |
+| `/destinace-text` | Celý text destinace ve 4 bězích — fakta, 8 kapitol, kontrolní list, taháček | 1+2 | 🟢 |
+| `/tahacek` | Rychlotaháček do kapsy — 1stránkový destilát hotových kapitol | 2 | 🟢 |
 
 ## Subagenti
 
 Umístění: `.claude/agents/<název>.md`
 
-| Agent | Účel | Fáze | Umístění | Stav |
-|---|---|---|---|---|
-| Market Research | Prohledá web, shrne poptávku/konkurenci/mezery na trhu | 0 | `.claude/agents/market-research.md` | ⚪ |
-| Researcher (per kapitola) | Paralelní sběr dat k jedné kapitole osnovy | 1 | `.claude/agents/researcher.md` | 🟢 |
-| Writer | Píše kapitoly z research databáze | 2 | `.claude/agents/writer.md` | 🟢 |
-| Fact-Checker | Nezávisle ověřuje tvrzení v textu proti research datům | 2 | `.claude/agents/fact-checker.md` | 🟢 |
-| Shot-List-Creator | Nezávisle navrhuje shot list vizuálů k jedné hotové kapitole, jen z jejího textu | 2 | `.claude/agents/shot-list-creator.md` | 🟢 |
+| Agent | Účel | Fáze | Stav |
+|---|---|---|---|
+| Market Research | Prohledá web, shrne poptávku/konkurenci/mezery na trhu | 0 | ⚪ |
+| Fakta-Collector | JEDEN soubor tvrdých dat na celou destinaci. Tvrdý strop 8 hledání + 5 stránek. | 1 | 🟢 |
+| Chapter-Writer | Píše kapitoly z `fakta.md` a obecné znalosti. **Bez webových nástrojů.** Dávkově 4 kapitoly. | 2 | 🟢 |
+| Tahacek-Creator | Destiluje kapitoly do krátké verze na max. 1 A4. Dávkově 4 kapitoly. | 2 | 🟢 |
 
 ## Hooks
 
-Umístění: skript v `.claude/hooks/`, definice ve **dvou** `settings.json` — v `.claude/settings.json`
-tohoto projektu a zároveň v `../.claude/settings.json` (root). Důvod: Claude Code načítá hooky jen
-z kořene složky, ve které je spuštěný. Když se pracuje z řídící složky `dp-prirucka`, nested
-definice se nenačte (ověřeno testem 2026-07-28) — proto ta v rootu. Vždycky se uplatní právě jedna
-podle toho, kde je session otevřená, takže hook neběží dvakrát. Po fyzickém rozdělení na samostatné
-repozitáře root definice zanikne.
-
-| Hook | Spouští se při | Účel | Fáze | Umístění | Stav |
-|---|---|---|---|---|---|
-| Fact-check po uložení kapitoly | `PostToolUse` (Write\|Edit) na souboru v `content/*/text/*.md` | Dá Claudovi v session najevo, ať spustí Fact-Checker subagenta pro danou kapitolu, pokud pro ni ještě není aktuální fact-check | 2 | `.claude/hooks/fact-check-on-save.js` | 🟢 |
-| Shot-list po dokončení fact-checku destinace | `PostToolUse` (Write\|Edit) na souboru v `content/*/text/_fact-check/*.md` | Když mají všechny kapitoly destinace `Stav: OK` a shot-list chybí/je starší než text, dá Claudovi v session najevo, ať spustí Shot-List-Creator subagenta pro každou kapitolu destinace | 2 | `.claude/hooks/fact-check-on-save.js` (stejný skript, druhá větev) | 🟢 |
+**Žádné.** Hook `fact-check-on-save.js` byl 2026-08-06 zrušen spolu s Fact-Checker agentem, kterého
+volal. Sekvenci nově drží skill `/destinace-text`. Definice zmizely z `.claude/settings.json` tohoto
+projektu i z `../.claude/settings.json` (root).
 
 ## Známá omezení
 
-- **Fact-checker nekonverguje na jeden běh.** Ověřeno 2026-07-28 na kapitole 01 Lloretu: čtyři po
-  sobě jdoucí běhy nad prakticky stejným textem našly pokaždé jinou sadu nálezů (kolo 1 měnu u eSIM,
-  kolo 2 cenu autobusu, kolo 3 tvrzení o placení kartou, kolo 4 chybějící výhradu u slabého zdroje).
-  `Stav: OK` proto neznamená "text je čistý", jen "tenhle běh nic nenašel". Má to dva důsledky:
-  u důležité kapitoly se vyplatí pustit fact-check víckrát, a `Stav: OK` jako spouštěč shot listů
-  (hook níže) je spíš procesní milník než záruka kvality.
-- Pomáhá dát agentovi v promptu explicitní pokyn projít kapitolu systematicky sekci po sekci —
-  bez něj má tendenci prohledat jen část textu.
-- **Superlativy jsou u žebříčkových sekcí systémové riziko, ne náhoda.** Při doplňování žebříčků
-  podle recenzí (2026-07-29, kapitoly 03–05) našel fact-check pět nálezů a **čtyři z nich byly
-  neopodstatněné superlativy** vzniklé při psaní: „nejvíc hodnocení ze všech porovnávaných",
-  „nejlepší v celém Lloretu", „nejlépe hodnocené místo s odstupem". Data byla správná, závěr o nich
-  ne — vzorek nepokrýval celé město nebo měl jiný podnik lepší číslo. U každé sekce, která něco
-  řadí, kontroluj superlativy zvlášť.
+Většina vznikla za starého procesu, ale platí dál — jen je teď hlídá **člověk při kontrole**, ne
+Fact-Checker.
+
+- **Superlativy jsou u řadicích sekcí systémové riziko, ne náhoda.** Při doplňování žebříčků podle
+  recenzí (2026-07-29, Lloret) byly 4 z 5 nálezů neopodstatněné superlativy vzniklé při psaní:
+  „nejlepší v celém Lloretu", „nejlépe hodnocené s odstupem". Data byla správná, závěr o nich ne —
+  vzorek nepokrýval celé město. U každé sekce, která něco řadí, kontroluj superlativy zvlášť.
 - **Srovnávací obraty jsou skryté číselné tvrzení.** „Za zlomek peněz", „mnohonásobně dražší"
-  vypadají jako stylistika, ale tvrdí poměr — a ten musí mít oporu stejně jako samotné číslo.
-  Zachyceno ve 4. kole u kapitoly 05.
+  vypadají jako stylistika, ale tvrdí poměr. Proto je `chapter-writer` má zakázané stejně jako čísla.
+- **Záměna měn (EUR/USD) je jediná chyba, která v projektu vznikla dvakrát nezávisle na sobě** —
+  u Lloretu i u Barcelony, obakrát přes ceníky eSIM uváděné v USD. Proto `fakta-collector` nikdy
+  nepřevádí mlčky a zdroj v USD nechává v USD.
+- **Zkracování do taháčku ubírá opatrnost dřív než fakta.** Při destilaci se snadno ztratí „ověř
+  před cestou" a rozptyly cen (`od 10 €, až 23 €` → `10 €`) — a z opatrné formulace je rázem tvrdé
+  tvrzení. S přechodem na rozptyly je tohle riziko **větší, ne menší**: rozptyl je teď hlavní forma
+  ceny v textu. Kontroluj u každého taháčku zvlášť.
+- **Rozsah taháčku se nedá měřit přes `wc -m` ani `awk length`.** Oboje tady vrací bajty, ne znaky,
+  a české diakritice zabírá v UTF-8 dva bajty — délky vycházejí zhruba o třetinu vyšší (ověřeno
+  2026-07-30: `printf 'ěščř' | wc -m` vrátí 8). Měř nástrojem, který UTF-8 umí (Node
+  `[...text].length`).
+- **Dlouhé zadání pro subagenta je nejdražší chyba, kterou lze udělat.** Přešvih 2026-08-06 vznikl
+  tím, že každý research agent dostal ~600slovný nákupní seznam a odpracoval ho na 30 voláních webu
+  a 34KB souboru — proti 3–7 KB u Lloretu, kde byla zadání krátká. Strop: **120 slov na zadání.**
 
 ## Loops
 
 | Loop | Interval | Účel | Fáze | Stav |
 |---|---|---|---|---|
-| Revalidace cen/otevíracích dob | čtvrtletně | Kontrola, že vydaný obsah nezastarává (spouštěč navazuje na post-launch péči v Projektu 3, Fáze 8) | 1 / 8 | ⚪ |
-| Zpracování zbývajících kapitol | dokud nejsou všechny hotové | Postupné psaní kapitol přes `/write-chapter` | 2 | ⚪ |
+| Revalidace cen/otevíracích dob | čtvrtletně | Kontrola, že vydaný obsah nezastarává | 1 / 8 | ⚪ |
+
+Poznámka: s přechodem na rozptyly a odkazy je revalidace **výrazně méně naléhavá** — text neuvádí
+hodnoty, které by se den ode dne rozcházely se skutečností.
 
 ## Výstup tohoto projektu
 
-Fact-checked text kapitol v `content/<destinace>/text/*.md` a k nim odpovídající shot listy v
-`content/<destinace>/text/_shot-list/*.md` — oba vstup pro Projekt 2 (vizuální PDF). Shot-listy
-vznikají automaticky až poté, co jsou všechny kapitoly destinace fact-checked na `Stav: OK` (viz
-hooky výše), takže Projekt 2 je nemusí čekat ručně. Dokud jsou projekty v jednom repu, Projekt 2 na
-tuto cestu odkazuje relativně (`../01-tvorba-textu/content/<destinace>/text/`); po fyzickém
-rozdělení do samostatných repozitářů půjde o ruční/skriptovaný hand-off hotových kapitol.
+Ke každé kapitole **dvě verze textu**: dlouhá (2–3 KB) v `content/<destinace>/text/*.md` a krátká
+(rychlotaháček, max. 1 A4) v `content/<destinace>/text/_tahacek/*.md`. Obojí je vstup pro Projekt 2;
+taháček se sází jako samostatný produkt vedle příručky, ne jako její kapitola.
+
+Navíc `content/<destinace>/kontrola.md` — vstup pro QA v Projektu 3 (Fáze 4), nahradil dřívější
+`docs/open-questions-<destinace>.md`.
 
 ## Jak s tímto registrem pracovat
 
 - Než se něco z výše uvedeného skutečně vytvoří, je to jen záměr (⚪) — neexistuje žádný soubor.
-- Jakmile něco vytvořím, změním stav na 🟢 a doplním poznámku, pokud se od návrhu odchýlí.
+- Jakmile něco vznikne, změní se stav na 🟢 a doplní se poznámka, pokud se od návrhu odchýlí.

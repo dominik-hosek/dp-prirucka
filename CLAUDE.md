@@ -1,7 +1,9 @@
 # dp-prirucka
 
 Produktová řada digitálních turistických průvodců (PDF e-booky s tipy a "deep knowledge"). Každá
-destinace = samostatný prodejný produkt. Prodej přes vlastní web + Meta/Google Ads. Obsah i data
+destinace = samostatný prodejný produkt a skládá se ze dvou souborů: **příručky** (8 kapitol) a
+**rychlotaháčku do kapsy** (týchž 8 kapitol zhuštěných, 1 strana A4 na kapitolu). Co přesně
+zákazník dostává, je v `01-tvorba-textu/docs/brief-<destinace>.md`. Prodej přes vlastní web + Meta/Google Ads. Obsah i data
 od nuly.
 
 **Aktuální pilot: Lloret de Mar a okolí.** Albánie byla původní pilotní destinace, ale je

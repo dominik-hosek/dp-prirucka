@@ -1,0 +1,16 @@
+{
+  "page": "guide-06-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Nadpis i celý odstavec jsou přesné, chráněná fráze zvýrazněna, negace a uvozovky zachovány; bez nepovoleného textu.",
+  "checked_at": "2026-08-06T03:03:04+00:00",
+  "content_contract_sha256": "fdfd8b78c1e34f60c5370ba3fb4195069ecaa1eefec3e000135b071074178321",
+  "protected_tokens": [
+    "Off",
+    "Barcelona",
+    "Evropy",
+    "Tahle",
+    "kdy tam jít, aby to mělo smysl",
+    "místa mimo trasu"
+  ]
+}

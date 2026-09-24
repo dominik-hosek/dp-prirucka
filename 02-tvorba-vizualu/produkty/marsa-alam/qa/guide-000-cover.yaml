@@ -1,0 +1,11 @@
+{
+  "page": "guide-000-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Český titul i podtitul jsou přesné; poměr 2:3, bezpečné okraje, egyptská paleta a kompozice obálky prošly.",
+  "checked_at": "2026-08-26T10:29:02+00:00",
+  "content_contract_sha256": "e623f3b3d9711c68ed289b443f7493117d2fea82ad867cf6936af5bac15423ff",
+  "protected_tokens": [
+    "Marsa Alam\n\nRudé"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "page": "guide-07-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Sekční obálka má kompletní přesný text, bezpečné okraje a jednotný barcelonský vizuální systém; bez přidaného textu.",
+  "checked_at": "2026-08-06T03:33:13+00:00",
+  "content_contract_sha256": "61b0d3f4bbb5e740926cdac5a89cf08025f38c684044baae7b628a51df2fa8cb",
+  "protected_tokens": [
+    "2026",
+    "Rozpočet\n\nBarcelona",
+    "Gaudí",
+    "Tahle",
+    "Všechna",
+    "Vstupné"
+  ]
+}

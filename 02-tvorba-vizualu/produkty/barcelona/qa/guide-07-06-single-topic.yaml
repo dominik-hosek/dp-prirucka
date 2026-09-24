@@ -1,0 +1,20 @@
+{
+  "page": "guide-07-06-single-topic",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Závěrečný tip je kompletní, přesný a velmi čitelný; zvýraznění první neděle zachovává význam a stránka nemá přidaný text.",
+  "checked_at": "2026-08-06T03:59:26+00:00",
+  "content_contract_sha256": "737d400ece8706b6e7660497dc9aa6059896ac3ffcc69fdd81c8e764e632c39f",
+  "protected_tokens": [
+    "jen",
+    "Tip",
+    "Nejlevnější",
+    "Barceloně",
+    "Parc",
+    "Laberint",
+    "Bunkers",
+    "Carmel",
+    "Zaplatíš",
+    "na první neděli v měsíci"
+  ]
+}

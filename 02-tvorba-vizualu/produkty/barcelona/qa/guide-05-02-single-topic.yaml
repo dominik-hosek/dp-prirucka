@@ -1,0 +1,22 @@
+{
+  "page": "guide-05-02-single-topic",
+  "status": "passed",
+  "attempts": 2,
+  "notes": "Druhá varianta doplnila celý údaj 36 EUR se věžemi. Obě ceny, období, rok i opatrná formulace jsou přesné; bez cizího textu.",
+  "checked_at": "2026-08-06T02:33:55+00:00",
+  "content_contract_sha256": "84c83c05c6967afb72f2ee6436c3a0862a53f06353677649c547491c7c9919af",
+  "protected_tokens": [
+    "2–5 EUR",
+    "36 EUR",
+    "46,80 EUR",
+    "2–5",
+    "2026",
+    "36",
+    "46,80",
+    "Objevují",
+    "Na",
+    "Kupuj",
+    "Rozdíl",
+    "Kupuj na oficiálním webu."
+  ]
+}

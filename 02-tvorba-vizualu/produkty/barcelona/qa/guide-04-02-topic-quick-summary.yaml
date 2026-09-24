@@ -1,0 +1,29 @@
+{
+  "page": "guide-04-02-topic-quick-summary",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Čtyři jídla, sezónní poznámka i oba kontextové bloky jsou úplné a přesné; katalánské názvy a diakritika zachovány.",
+  "checked_at": "2026-08-06T02:05:33+00:00",
+  "content_contract_sha256": "4d68963491289a93a0d0b737298467ff37b77043e6cc0257675df1c5538f1a24",
+  "protected_tokens": [
+    "ne",
+    "Co",
+    "Pa",
+    "Označovaný",
+    "Escalivada",
+    "Typicky",
+    "Tarragony",
+    "Jí",
+    "Pozor",
+    "Řada",
+    "Podle",
+    "Gotické",
+    "El Born",
+    "Barcelonetě",
+    "Eixample",
+    "Pa amb tomàquet",
+    "Fideuà",
+    "Calçots",
+    "calçotada"
+  ]
+}

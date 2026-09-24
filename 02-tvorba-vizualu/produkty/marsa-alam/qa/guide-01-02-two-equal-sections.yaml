@@ -1,0 +1,26 @@
+{
+  "page": "guide-01-02-two-equal-sections",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Obsahový kontrakt včetně všech částek prošel; česká sazba, bezpečné okraje a layout 2:3 jsou v pořádku.",
+  "checked_at": "2026-08-26T10:57:47+00:00",
+  "content_contract_sha256": "dd468bb0d8a9938db8db81f020b724084041ba5779e44cb8c56ea5ed649fefd5",
+  "protected_tokens": [
+    "52",
+    "1",
+    "50–100",
+    "5",
+    "000–10",
+    "000",
+    "může",
+    "Peníze\n\nPlatí",
+    "Kurz",
+    "Výběr",
+    "Přehled",
+    "Rozpočet",
+    "Lokální",
+    "52 EGP za 1 USD",
+    "50–100 EGP",
+    "5 000–10 000 EGP"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "page": "guide-02-00-section-cover",
+  "status": "passed",
+  "attempts": 2,
+  "notes": "Druhý pokus: přesný nadpis i celý český odstavec, žádný nepovolený text; poměr 2:3, bezpečné okraje, čitelnost a sekční hierarchie odpovídají. Dekorativní prázdný štítek a ikonová legenda neobsahují text.",
+  "checked_at": "2026-08-06T00:53:52+00:00",
+  "content_contract_sha256": "d68c32243a67f89875f4690715e212c1671cf02b23bf517cce91fa265bd2a02e",
+  "protected_tokens": [
+    "Doprava",
+    "Barceloně",
+    "Jde",
+    "Mezi"
+  ]
+}

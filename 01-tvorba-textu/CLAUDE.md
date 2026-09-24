@@ -5,6 +5,16 @@ celého procesu tvorby digitálního turistického průvodce: výběr/validace d
 "deep knowledge" dat a psaní kapitol. Tento kus procesu funguje dobře a je referenční pro to, jak
 by měly fungovat i další dva projekty.
 
+**Výstupem každé kapitoly jsou vždy dvě verze textu, ne jedna:**
+
+| Verze | Kde | Co to je |
+|---|---|---|
+| **dlouhá** | `content/<destinace>/text/<kapitola>.md` | plná kapitola příručky, 2–3 KB |
+| **krátká** | `content/<destinace>/text/_tahacek/<kapitola>.md` | destilát pro rychlotaháček, max. 1 strana A4 |
+
+Krátká verze se vždy odvozuje z dlouhé, nikdy nevzniká samostatně — a nesmí obsahovat nic, co
+v dlouhé není. Kapitola se považuje za hotovou, teprve když má obě.
+
 Celý fázový proces je popsaný v `../plan.md`. Živý stav skills/agentů/hooků/loopů patřících sem je
 v `docs/automation-registry.md`.
 
@@ -15,48 +25,63 @@ content/
   _template/                   # šablona pro novou destinaci (jen research+text, assets jsou v Projektu 2)
     README.md                  # postup založení nové destinace
   <destinace>/
-    research/                  # Fáze 1 – surová strukturovaná data (fakta, tipy, zdroje, datum ověření)
-    text/                      # Fáze 2 – hotové fact-checked kapitoly (markdown)
-    text/_fact-check/          # záznamy z Fact-Checker agenta
-    text/_shot-list/           # shot listy vizuálů pro Projekt 2, z Shot-List-Creator agenta
+    fakta.md                   # Fáze 1 – JEDEN soubor tvrdých dat na celou destinaci (max. 150 řádků)
+    kontrola.md                # seznam k ruční kontrole člověkem (sekce A čísla, sekce B znalost)
+    text/                      # Fáze 2 – hotové kapitoly, 2–3 KB každá
+    text/_tahacek/             # krátká verze – rychlotaháček (1 A4 na kapitolu), z Tahacek-Creator agenta
 docs/
-  brief-<destinace>.md             # Fáze 0 výstup – persona, cena, osnova
-  open-questions-<destinace>.md    # Fáze 1 výstup – co doověřit před vydáním (čte i Projekt 3 v QA)
+  brief-<destinace>.md             # Fáze 0 výstup – persona, cena, osnova, rozsah produktu
   style-guide.md                   # tone-of-voice a šablona kapitoly, platí napříč destinacemi
   metodika-hodnoceni.md            # jak se vybírají jmenované podniky podle recenzí, platí napříč destinacemi
 .claude/
-  agents/                      # researcher, writer, fact-checker, shot-list-creator
-  skills/                      # research-topic, write-chapter
-  hooks/                       # fact-check-on-save.js – navazuje fact-check a shot-list na uložení kapitoly
+  agents/                      # fakta-collector, chapter-writer, tahacek-creator
+  skills/                      # destinace-text, tahacek
 ```
 
 ## Konvence
 
-- `content/<destinace>/research/` je zdroj pravdy pro `content/<destinace>/text/` — kapitoly se
-  píšou z dat, ne z volné paměti modelu (mitigace halucinací).
-- Každý research záznam má zdroj a datum ověření (ceny/otevírací doby se mění).
+- **Tokeny nežerou agenti ani psaní — žere je čtení webu.** Jedno načtení stránky je 5–15 tis.
+  tokenů. Celý proces je postavený tak, aby se web četl **jednou na destinaci** pod tvrdým stropem
+  (8 hledání + 5 stránek), ne jednou na kapitolu. Viz `/destinace-text`.
+- **Text stojí na dvou vrstvách a je potřeba vědět, ve které se zrovna píše.** Vrstva A jsou tvrdá
+  data (čísla, ceny, úřední informace) — ta pocházejí **výhradně z `fakta.md`**. Vrstva B je
+  stabilní znalost destinace (charakter místa, jak se rozhodovat, kulturní kontext) — ta se píše
+  z obecné znalosti modelu.
+- **Číslo, které není ve `fakta.md`, se do textu nesmí dostat v žádné podobě** — ani opsané slovy,
+  ani schované ve srovnání („dvakrát dražší", „za zlomek ceny"). Srovnávací obrat je skryté číselné
+  tvrzení.
+- **Ceny se píšou jako rozptyly s odkazem na oficiální zdroj**, ne jako přesné hodnoty. Přesná čísla
+  jsou drahá na sběr, rychle zastarají a byla zdrojem skoro všech nálezů ve fact-checku. Hodnota
+  produktu je v rozhodovacích rámcích („jestli chceš X, zvol Y a počítej se Z"), ne ve výčtu cen.
 - Nová destinace se zakládá zkopírováním `content/_template/` — postup v jeho `README.md`.
-- **Kapitola je hotová až s `Stav: OK` ve fact-checku.** Nálezy z fact-checku se opravují v textu
-  a fact-check se pouští znovu; nechat kapitolu ve stavu "NALEZENY PROBLÉMY" znamená, že destinace
-  není připravená pro Projekt 2 (a shot listy se pro ni ani nevygenerují).
-- Fact-checker běží nezávisle na Writeru — kontroluje tvrzení v textu zpět proti research datům.
+- **Kontrolu dělá člověk, ne agent.** `content/<destinace>/kontrola.md` je očíslovaný seznam
+  k proklikání, **max. 30 položek na celou destinaci** (sekce A tvrdá čísla s odkazem + sekce B
+  tvrzení z obecné znalosti, dohromady). Fact-checker agent byl zrušen 2026-08-06 — stál víc než
+  celý zbytek procesu.
+- **Když se dlouhá verze změní, krátká je tím zastaralá.** Neopravuj taháček ručně po kouskách —
+  nech ho vytvořit znovu z upravené kapitoly, jinak se obě verze rozejdou.
 - **Konkrétní podnik se smí jmenovat jen podle `docs/metodika-hodnoceni.md`** — dvě nezávislé
-  platformy, prahy na počet recenzí, povinný dodatek v textu, že si výběr nikdo nezaplatil. Jméno
-  podniku je tvrzení jako každé jiné a prochází fact-checkem.
-- Shot-List-Creator běží nezávisle na Writeru i Fact-Checkerovi — čerpá výhradně z hotového textu
-  kapitoly (ne z research souboru), aby shot list nikdy neobsahoval víc, než co se čtenář v
-  kapitole skutečně dočte.
-- Fact-check i navazující shot list se pro danou kapitolu/destinaci spouští automaticky po uložení
-  souboru (hook `.claude/hooks/fact-check-on-save.js`), ne jen na ruční vyžádání — viz
-  `docs/automation-registry.md`.
+  platformy, prahy na počet recenzí, povinný dodatek v textu, že si výběr nikdo nezaplatil. Bez
+  doložení metodikou se píšou typy a oblasti, ne jména. Dodatek musí přežít i do taháčku.
+- **Rychlotaháček je destilát kapitoly, ne druhý text.** Tahacek-Creator čerpá výhradně z hotové
+  kapitoly (ne z research souboru) a smí pouze ubírat a přeformulovávat — žádné nové číslo, jméno
+  ani místo. Strop je 1 strana A4 (limity v `.claude/agents/tahacek-creator.md`). Nejrizikovější je,
+  že se zkrácením ztratí opatrnost („ověř před cestou", rozptyly cen) nebo se zamění měna; obojí
+  se kontroluje zvlášť.
+- **Subagenty pouštěj dávkově, ne po jedné kapitole.** Chapter-Writer i Tahacek-Creator zvládnou
+  v jednom běhu 4 kapitoly. Osm samostatných spuštění zaplatí tentýž vstupní kontext osmkrát.
+- **Zadání pro subagenta drž do 120 slov.** Přešvih 2026-08-06 vznikl přesně tím, že každý agent
+  dostal ~600slovný nákupní seznam a odpracoval ho na 30 voláních webu a 34KB souboru (proti
+  3–7 KB u Lloretu). Osnovu si agent přečte v briefu sám — nevypisuj mu, co má hledat.
+- **Drobnou opravu po ruční kontrole přepiš rovnou v kapitole.** Jedna změněná hodnota nepotřebuje
+  nový běh agenta; ten by stál řádově víc než oprava sama.
 
 ## Napojení na ostatní projekty
 
-- **Výstup pro Projekt 2** (`../02-tvorba-vizualu/`): hotové kapitoly v `content/<destinace>/text/*.md`
-  a k nim odpovídající shot listy v `content/<destinace>/text/_shot-list/*.md` (vznikají automaticky,
-  jakmile jsou všechny kapitoly destinace fact-checked na `Stav: OK`). Dokud jsou projekty v jednom
-  repu, Projekt 2 na tyto cesty odkazuje relativně; text ani shot list se tu nikdy nepřepisují kvůli
-  vizuální sazbě.
-- **Výstup pro Projekt 3** (`../03-komercializace/`): `docs/open-questions-<destinace>.md` je vstup
-  pro QA checklist (Fáze 4), `docs/brief-<destinace>.md` (persona/cena) je vstup pro landing page
-  a ads.
+- **Výstup pro Projekt 2** (`../02-tvorba-vizualu/`): obě verze textu — dlouhá v
+  `content/<destinace>/text/*.md` a krátká v `content/<destinace>/text/_tahacek/*.md`. Dokud jsou
+  projekty v jednom repu, Projekt 2 na tyto cesty odkazuje relativně; ani jedna verze se tu nikdy
+  nepřepisuje kvůli sazbě.
+- **Výstup pro Projekt 3** (`../03-komercializace/`): `content/<destinace>/kontrola.md` je vstup pro
+  QA checklist (Fáze 4) — nahradil dřívější `docs/open-questions-<destinace>.md`.
+  `docs/brief-<destinace>.md` (persona/cena) je vstup pro landing page a ads.

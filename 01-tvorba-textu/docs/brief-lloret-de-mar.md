@@ -40,11 +40,25 @@ hlučný. Střední rozpočet (ne backpacker, ne luxus), pobyt 5-9 dní.
 7. Rozpočtová kalkulačka / cenová orientace
 8. Praktický checklist před odjezdem
 
+## Rozsah produktu
+
+Zákazník dostává dva soubory:
+
+1. **Příručka** — 8 kapitol podle osnovy výše, plná verze ke čtení před cestou.
+2. **Rychlotaháček do kapsy** — týchž 8 kapitol zhuštěných do frází, každá na max. 1 stranu A4.
+   Obsahuje jen to, co se rozhoduje na místě (čísla, směry, otevírací doby, rozhodovací pravidla),
+   nepřidává nic nad rámec příručky. Odvozuje se z uzavřeného textu — viz `/tahacek` v
+   `docs/automation-registry.md`.
+
+Taháček odpovídá na to, co persona reálně dělá: příručku si přečte doma, ale na zastávce v Gironě
+potřebuje jednu stránku, ne dvacet.
+
 ## Cena
 
-- **199 Kč** za PDF — stejná vstupní cena jako u pilotní destinace (Albánie), pro konzistenci napříč
-  produktovou řadou (viz `docs/style-guide.md`). Zdůvodnění hodnoty: guide dá čtenáři přesně to, co
-  weby CK neřeší — jak z balíčkové destinace vytěžit víc než jen hotel a pláž před hotelem.
+- **199 Kč** za oba soubory — stejná vstupní cena jako u pilotní destinace (Albánie), pro konzistenci
+  napříč produktovou řadou (viz `docs/style-guide.md`). Zdůvodnění hodnoty: guide dá čtenáři přesně
+  to, co weby CK neřeší — jak z balíčkové destinace vytěžit víc než jen hotel a pláž před hotelem.
+  Taháček je součást balíčku, ne samostatně prodávaný doplněk.
 
 ## Rozhodnutí
 
@@ -52,5 +66,6 @@ hlučný. Střední rozpočet (ne backpacker, ne luxus), pobyt 5-9 dní.
 - [x] Potvrzena persona
 - [x] Potvrzena cena: 199 Kč
 - [x] Potvrzena osnova
+- [x] Rozsah rozšířen o rychlotaháček do kapsy (2026-07-30)
 
 Po potvrzení pokračujeme Fází 1 (research & sběr dat) do `content/lloret-de-mar/research/`.

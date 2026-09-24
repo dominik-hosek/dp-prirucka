@@ -1,18 +1,1 @@
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "shell": "bash",
-            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/fact-check-on-save.js\"",
-            "timeout": 15,
-            "statusMessage": "Kontroluji fact-check/shot-list stav Fáze 2..."
-          }
-        ]
-      }
-    ]
-  }
-}
+{}

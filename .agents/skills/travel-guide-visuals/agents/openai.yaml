@@ -1,0 +1,7 @@
+interface:
+  display_name: "Travel Guide Visuals"
+  short_description: "Automatizace vizuálů turistických průvodců"
+  default_prompt: "Použij $travel-guide-visuals status Barcelona a vypiš stav vizuální produkce bez generování."
+
+policy:
+  allow_implicit_invocation: true

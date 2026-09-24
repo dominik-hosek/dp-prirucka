@@ -1,0 +1,19 @@
+{
+  "page": "guide-04-02-two-equal-sections",
+  "status": "passed",
+  "attempts": 3,
+  "notes": "Třetí varianta odstranila duplicitní i přidané sekce; obsah Ceny a jediné Rychlé shrnutí jsou úplné, čitelné a v mezích kontraktu.",
+  "checked_at": "2026-08-26T13:36:22+00:00",
+  "content_contract_sha256": "08ea6a2e987932e6f58f618cdfc002f1265273c8226167d1af158983f3ed22b1",
+  "protected_tokens": [
+    "ne",
+    "Ceny\n\nKonkrétní",
+    "Port Ghalib",
+    "Orientační",
+    "Rozpočet",
+    "Rychlé",
+    "Naprostá",
+    "Pij",
+    "Restaurace"
+  ]
+}

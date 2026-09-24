@@ -1,0 +1,15 @@
+{
+  "page": "guide-08-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Sekční obálka má kompletní přesný text, správnou negaci a jednotný vizuální styl; bez přidaných popisků nebo číslování.",
+  "checked_at": "2026-08-06T04:03:57+00:00",
+  "content_contract_sha256": "e7dba706e978f1dd354cbcfa96436104a344bff99d2b9ef5357e39e77c108299",
+  "protected_tokens": [
+    "jen",
+    "Checklist",
+    "Barcelona",
+    "Tahle",
+    "hned"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "page": "guide-03-01-two-equal-sections",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Všechny části k výběru ubytování, all-inclusive, dive campům, Marsa Shagra i house reefu jsou čitelné a obsahově úplné.",
+  "checked_at": "2026-08-26T11:42:12+00:00",
+  "content_contract_sha256": "fd19cdb7e2e9b7d778f408baf36bd0d69c306029e7d05d1f8ce3b540acd8bbe1",
+  "protected_tokens": [
+    "ne",
+    "může",
+    "Marsa Alam",
+    "Tahle",
+    "All-inclusive",
+    "Naprostá",
+    "Této",
+    "Jídlo",
+    "Alternativou",
+    "Marsa Shagra",
+    "Pokud",
+    "Proč",
+    "House",
+    "Kvalita",
+    "Pro",
+    "all-inclusive balíček",
+    "dive campy"
+  ]
+}

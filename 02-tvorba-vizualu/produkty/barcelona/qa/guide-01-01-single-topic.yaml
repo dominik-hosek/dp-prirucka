@@ -1,0 +1,29 @@
+{
+  "page": "guide-01-01-single-topic",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Poměr 2:3 a bezpečné okraje v pořádku. Veškerý český text i teploty 28–29 °C, 22–26 °C, 22–25 °C, 8–15 °C a 5 °C jsou čitelné a přesné; žádný údaj ani kvalifikace nechybí. Vizuál odpovídá Single topic a španělskému systému.",
+  "checked_at": "2026-08-05T23:36:55+00:00",
+  "content_contract_sha256": "deb21f43a0b59af169201073191c3af69b5255d2f99972261dfec0180f434259",
+  "protected_tokens": [
+    "28–29 °C",
+    "22–26 °C",
+    "22–25 °C",
+    "8–15 °C",
+    "5 °C",
+    "28–29",
+    "22–26",
+    "22–25",
+    "8–15",
+    "5",
+    "Kdy",
+    "Nejteplejší",
+    "Konsenzuální",
+    "Barceloně",
+    "Pokud",
+    "Nejlevnější",
+    "Leden",
+    "Nejdeštivější",
+    "květen a září"
+  ]
+}

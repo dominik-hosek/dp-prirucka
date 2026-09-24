@@ -1,0 +1,16 @@
+{
+  "page": "guide-05-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Text je přesný a úplný, chráněná fráze zvýrazněna, všechny negace zachovány; bez nepovolených popisků.",
+  "checked_at": "2026-08-06T02:23:52+00:00",
+  "content_contract_sha256": "b52c63234bf03aaba6b8e3923ac24696f320e8a00dd44e3bde9376e859639c7e",
+  "protected_tokens": [
+    "ne",
+    "Památky",
+    "Barceloně",
+    "Skoro",
+    "Kdo",
+    "podle časových slotů"
+  ]
+}

@@ -21,69 +21,75 @@ Legenda automatizace:
 
 ## Fáze 0 – Validace & strategie produktu
 
-**Cíl:** Vybrat destinaci a ověřit, že o ni je poptávka, než se investuje čas do obsahu.
+**Cíl:** Vybrat destinaci, definovat personu, cenu a osnovu 8 kapitol, než se spustí sběr dat a psaní.
 
 Kroky:
-1. Výběr kandidátů destinací (osobní zájem, sezónnost, konkurence).
-2. Analýza poptávky – vyhledávanost (Google Trends, klíčová slova), velikost cílové skupiny, sezónnost.
-3. Analýza konkurence – existující průvodce (placené i free), cenová hladina, co jim chybí (mezera na trhu = "deep knowledge" a lokální tipy, ne jen turistická obecnina).
-4. Definice cílové persony (typ cestovatele, rozpočet, styl cestování).
-5. Návrh produktové nabídky a ceny (co PDF obsahuje, proč stojí za to platit vs. free obsah na netu).
-6. Rozhodnutí: jde se do pilotu na vybranou destinaci.
+1. Výběr kandidáta destinace (poptávka u českých/slovenských turistů, konkurence existujících
+   průvodců, mezera na trhu – CK prodávají hotel a pláž, ne "deep knowledge" a rozhodovací rámce).
+2. Návrh cílové persony a ceny – u dosavadních destinací se drží konzistentní napříč řadou
+   (stejný typ cestovatele, 199 Kč), mění se jen tam, kde si to destinace vyloženě žádá.
+3. Návrh osnovy 8 kapitol – jediné místo, kde je napsané, co se má v dalších fázích sbírat a psát.
+4. Zápis do `01-tvorba-textu/docs/brief-<destinace>.md`.
+5. Rozhodnutí: jde se do přípravy textu na vybranou destinaci.
 
 Automatizace:
-- 👥 **Agent tým** – "Market Research" subagent: prohledá web (WebSearch/WebFetch) pro trendy, konkurenční produkty, ceny, recenze existujících průvodců, shrne do reportu.
-- 🤖 **Skill** `/validate-destination <destinace>` – spustí strukturovaný research (poptávka, konkurence, mezery) a vrátí shrnutí + doporučení.
-- 🔌 **MCP (Notion)** – výstupy validace ukládat rovnou do Notion databáze destinací (status: nápad → validováno → v přípravě → live).
-- 🙋 Finální rozhodnutí o destinaci a ceně dělá člověk.
+- 🙋 Celá fáze je rozhovor s člověkem, bez dedikovaného skillu. Návrh persony/ceny/osnovy vychází
+  z předchozích destinací, ale destinaci, cenu a osnovu vždy potvrzuje člověk před spuštěním Fáze 1.
 
-Výstup: krátký "brief" destinace (persona, mezera na trhu, orientační cena, rozsah obsahu) uložený v Notion/repo.
+Výstup: `docs/brief-<destinace>.md` (proč destinace, persona, cena, osnova), potvrzený člověkem.
 
 ---
 
 ## Fáze 1 – Research & sběr "deep knowledge" dat
 
-**Cíl:** Nasbírat strukturovaná, ověřená data o destinaci – místa, tipy, praktické info, lokální kontext, který běžný turistický web nemá.
+**Cíl:** Nasbírat tvrdá data (čísla, ceny, otevírací doby, úřední informace) do jednoho souboru,
+který je jediným zdrojem čísel pro psaní kapitol.
 
 Kroky:
-1. Strukturování obsahové osnovy (kapitoly: doprava, ubytování, jídlo, památky, "off the beaten path" tipy, praktické rady, rozpočet, itineráře po dnech...).
-2. Sběr faktických dat k místům (otevírací doby, ceny, GPS, dostupnost) – ideálně z API, ne jen z prózy na webu.
-3. Sběr "insider" tipů – fóra, blogy zkušených cestovatelů, lokální komunity, Reddit, cestovatelské skupiny.
-4. Ověřování aktuálnosti (ceny a otevírací doby se mění – nutná verze/datum sběru).
-5. Organizace dat do jedné strukturované databáze/souboru (zdroj pravdy pro psaní obsahu).
+1. Sběr faktických dat podle osnovy z briefu – pod tvrdým stropem hledání na webu (jednou na
+   destinaci, ne jednou na kapitolu; cena je ve čtení stránek, ne v psaní).
+2. Uložení do jednoho souboru `content/<destinace>/fakta.md`, max. ~150 řádků / 8 KB.
+3. Výběr konkrétních hotelů/restaurací/atrakcí, které smí být v textu jmenované, jen podle
+   doložené metodiky – dvě nezávislé platformy s hodnocením a prahem na počet recenzí (Google Maps
+   + Tripadvisor u restaurací a atrakcí, Google Maps + Booking.com u hotelů) – detail v
+   `01-tvorba-textu/docs/metodika-hodnoceni.md`.
 
 Automatizace:
-- 👥 **Agent tým** – paralelní "Researcher" subagenti, každý pokrývá jinou kapitolu (doprava, gastro, památky, tipy) → rychlejší sběr, méně kontextového přetížení jednoho agenta.
-- 🔌 **MCP** – napojení na datové zdroje míst (Google Places / OpenStreetMap – pokud bude MCP server k dispozici, jinak WebFetch/WebSearch jako náhrada). Toto je jediné místo, kde je smysl investovat do vlastního MCP serveru, protože se bude opakovaně používat pro každou další destinaci.
-- 🤖 **Skill** `/research-topic <destinace> <téma>` – standardizovaný postup sběru + citace zdrojů pro jedno téma.
-- 🔁 **Loop** – pravidelná revalidace cen/otevíracích dob u již vydaných průvodců (např. 1x za čtvrt roku), aby produkt nezastarával.
-- 🔌 **MCP (Notion/Google Drive)** – ukládání surových researchových dat do centrální databáze s tagy (kapitola, zdroj, datum ověření).
-- 🙋 Ověření věrohodnosti "insider" tipů (halucinace LLM jsou tu největší riziko) – nutná lidská kontrola vzorku, ideálně i někdo se skutečnou znalostí destinace.
+- 🤖 **Skill** `/destinace-text <destinace>` (první běh jeho sekvence) – agent `fakta-collector`
+  sesbírá fakta v jednom běhu pod rozpočtem (8 hledání + 5 stránek).
+- 🙋 Věrohodnost dat kontroluje člověk ručně (Fáze 2 kontrolní list) – samostatný fact-check agent
+  se ukázal dražší než zbytek procesu a byl zrušen.
 
-Výstup: strukturovaná databáze faktů a tipů s odkazy na zdroje a datem ověření.
+Výstup: `content/<destinace>/fakta.md` – jediný zdroj čísel pro Fázi 2.
 
 ---
 
 ## Fáze 2 – Tvorba obsahu (psaní)
 
-**Cíl:** Z nasbíraných dat vytvořit čtivý, hodnotný text průvodce v konzistentním tónu.
+**Cíl:** Z `fakta.md` a stabilní obecné znalosti napsat 8 kapitol ve dvou verzích (dlouhá příručka
++ krátký rychlotaháček) a připravit podklad pro ruční kontrolu.
 
 Kroky:
-1. Definice tone-of-voice a šablony kapitoly (styl, délka, struktura tipu).
-2. Psaní jednotlivých kapitol na základě databáze z Fáze 1.
-3. Tvorba praktických prvků – itineráře, checklisty, rozpočtové tabulky, mapy tras.
-4. Konzistence napříč kapitolami (styl, opakování, návaznost).
-5. Fact-check draftu proti zdrojovým datům (chytání halucinací).
-6. Jazyková korektura.
+1. Kapitoly píše agent `chapter-writer` v dávkách po 4 (dva běhy na destinaci) – bez přístupu na
+   web, čísla výhradně z `fakta.md`, hodnota textu je v rozhodovacích rámcích, ne ve výčtu faktů.
+2. Rychlotaháček (max. 1 A4 na kapitolu) destiluje z hotové kapitoly agent `tahacek-creator` –
+   nikdy nepřidává nic nového, jen ubírá a přeformulovává.
+3. Každá dávka zapisuje položky do `content/<destinace>/kontrola.md` – číslovaný seznam k ruční
+   kontrole, **max. 30 položek na celou destinaci** (sekce A tvrdá čísla s odkazem na zdroj, sekce
+   B tvrzení z obecné znalosti bez zdroje).
+4. Člověk kontrolu projde; drobné opravy se píšou rovnou do kapitoly (nový běh agenta se kvůli
+   jedné hodnotě nevyplatí). Po úpravě kapitoly se musí přegenerovat i její taháček, ne opravovat
+   ručně, jinak se obě verze rozejdou.
 
 Automatizace:
-- 🤖 **Skill** `/write-chapter <kapitola>` – píše kapitolu podle šablony a dat z databáze, ne z volné paměti modelu (mitigace halucinací).
-- 👥 **Agent tým** – oddělený "Writer" agent (tvoří text) a "Fact-Checker" agent (porovnává tvrzení v textu zpět proti zdrojovým datům z Fáze 1) – funguje jako nezávislá kontrola.
-- 🪝 **Hook** – po uložení nové/upravené kapitoly automaticky spustit fact-check subagenta a konzistenční kontrolu (terminologie, opakování).
-- 🔁 **Loop** – iterativní zpracování "zbývá napsat N kapitol" dokud nejsou všechny hotové.
-- 🙋 Finální redakční schválení tónu a kvality dělá člověk (min. spot-check, ideálně čtení celého textu před vydáním).
+- 🤖 **Skill** `/destinace-text <destinace>` – zastřešuje celou Fázi 1+2 ve 4–5 bězích (fakta →
+  kapitoly 01–04 → kapitoly 05–08 → taháček) pod kontrolou nákladů.
+- 👥 **Agent tým** – `chapter-writer` (text) a `tahacek-creator` (destilát); žádný samostatný
+  fact-checker agent.
+- 🙋 Ruční kontrolu `kontrola.md` a finální schválení tónu dělá vždy člověk.
 
-Výstup: kompletní textový obsah průvodce, fact-checked, jednotný styl.
+Výstup: 8 kapitol ve dvou verzích (`text/` + `text/_tahacek/`) a `kontrola.md` prošlý člověkem –
+destinace je tím hotová pro Fázi 3.
 
 ---
 
@@ -248,9 +254,9 @@ Automatizace:
 Odškrtávaný postup pilotu. Aktuální detailní stav a nejbližší konkrétní úkol je v
 `docs/stav-projektu.md`.
 
-1. ✅ Fáze 0: vybrat a validovat destinaci (Explore/research agent + rozhodnutí člověka).
+1. ✅ Fáze 0: vybrat destinaci a sepsat brief (rozhovor s člověkem, rozhodnutí člověka).
 2. ◐ Založit git repo (✅ hotovo) + Notion databázi pro projekt (zatím ne – repo zatím stačí).
-3. ✅ Fáze 1–2: research a psaní obsahu (agent tým + fact-check hook).
+3. ✅ Fáze 1–2: sběr faktů a psaní obsahu (`/destinace-text` + ruční kontrola `kontrola.md`).
 4. ⬜ Fáze 3–4: design + QA. *Fáze 3 je blokovaná otevřeným rozhodnutím o vizuálním procesu.*
 5. ⬜ Fáze 5: postavit minimální prodejní web s jedním produktem a měřením konverzí.
 6. ⬜ Fáze 6–7: připravit a spustit první malou PPC kampaň (testovací rozpočet).

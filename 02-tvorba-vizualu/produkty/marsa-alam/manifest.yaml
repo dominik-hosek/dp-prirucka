@@ -1,0 +1,1921 @@
+{
+  "schema_version": 1,
+  "type": "destination",
+  "destination": "Marsa Alam",
+  "destination_slug": "marsa-alam",
+  "country": "Egypt",
+  "cover": {
+    "title": "Marsa Alam",
+    "subtitle": "Rudé moře v klidném tempu"
+  },
+  "created_at": "2026-08-26T10:24:51+00:00",
+  "updated_at": "2026-08-26T14:53:03+00:00",
+  "preflight": {
+    "ok": true,
+    "errors": [],
+    "content_dir": "01-tvorba-textu/content/marsa-alam",
+    "long_count": 8,
+    "cheatsheet_count": 8,
+    "fact_check_count": 0,
+    "fact_states": {
+      "02": "HUMAN_CHECKED",
+      "06": "HUMAN_CHECKED",
+      "01": "HUMAN_CHECKED",
+      "08": "HUMAN_CHECKED",
+      "03": "HUMAN_CHECKED",
+      "07": "HUMAN_CHECKED",
+      "05": "HUMAN_CHECKED",
+      "04": "HUMAN_CHECKED"
+    },
+    "fact_check_mode": "human_checked",
+    "sources": [
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+        "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/02-vyber-oblasti-a-doprava.md",
+        "sha256": "a6d7663a1b38298f32f763b18b6100eec94f3f4af3c84d91b149f31eca4c114c"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/03-ubytovani.md",
+        "sha256": "d630a548878cc3ad41155a017e8238ce75eac73f1406e81048c8ec22fb3efe0e"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/04-jidlo-a-piti.md",
+        "sha256": "9ee1b70f6ae8fe2934bac3b425233826a1b958c5bf117994cee84f47e73bcb39"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/05-potapeni-a-snorchlovani.md",
+        "sha256": "dc47ddfb07b130476b3910261e41c89f8d5d35314556de1d004592e9a316c75d"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/06-vylety-mimo-vodu.md",
+        "sha256": "fd75606403748577db997d04ce2c9c0ac9117fe1d16f951e7ef223ac882404f0"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/07-rozpocet.md",
+        "sha256": "973ca8c692fc9cc30cd630a96fb077a1ded34d3e3f505b13ac99ffd3056dadbe"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/08-checklist-pred-odjezdem.md",
+        "sha256": "1a47d4f17fdff819c74014d3cae903423f3ec35266bb36c068f13b818683d561"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/01-prakticke-zaklady.md",
+        "sha256": "714254b9e2f047383430a091bffa72d1fb4cccbf7d8b77a4592b7872ef69e09c"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/02-vyber-oblasti-a-doprava.md",
+        "sha256": "2ea7a3ea485a983a56d3b184e41741585e4472ddea562c5cd39260ad8aaba6c6"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/03-ubytovani.md",
+        "sha256": "5eca78d80653a7604c9e9e54f961c81845417f586a67d53d7e6c23447422212f"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/04-jidlo-a-piti.md",
+        "sha256": "36420e3052ba5fb0a409122cf994ea9db97f7c668f670dd49944f453beb7ca82"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/05-potapeni-a-snorchlovani.md",
+        "sha256": "a0f7ff9b021197db5ccdc8513b1e4532424f949466d6975f119b75dfb0048b03"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/06-vylety-mimo-vodu.md",
+        "sha256": "cb8e18392fbbd72cbcbbc8bfb42193afeca618f6812485e1067aba1e3e567571"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/07-rozpocet.md",
+        "sha256": "4d89b6ce12462b70633679d0a8c0e34736311d905fe4a372859d61f990294289"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/08-checklist-pred-odjezdem.md",
+        "sha256": "79285018d2696a44ec0f97f4d65b1969f3ed50eb8b966ab57b928656e6b5f2da"
+      },
+      {
+        "path": "01-tvorba-textu/content/marsa-alam/kontrola.md",
+        "sha256": "a74f19f8ec465c8db794c606a6cea7368684fc47f87557f5b62c2378e39a976f"
+      }
+    ]
+  },
+  "config_hashes": {
+    "countries": "37774dda8ee601d40013d549d363de46ca6a713e0bcf72ad94c131adc4afcb3a",
+    "layouts": "d10a152f66d8970cfb9e5b2def3c0b4287e385c52076a50ce23ce518cfa666f6",
+    "page_prompt": "2923f43b13b658006374ec30985812824edfb50c1e6e806c0681296ae025ad35",
+    "cheatsheet_prompt": "f016ce539c6f6447180f5369014c7f452019985089514526feb9a272ff5b2bbf",
+    "destination_context": "2eab21704619f9045b5cbdc46d1867cd2a0f687dbda26bbd101eab0ed6c43ccc"
+  },
+  "approvals": {
+    "first_section": {
+      "section": "01",
+      "status": "approved",
+      "at": "2026-08-26T11:14:03+00:00",
+      "notes": "Schváleno uživatelem pro pokračování celé příručky."
+    },
+    "final": {
+      "status": "pending",
+      "at": null,
+      "notes": null
+    }
+  },
+  "page_order": [
+    "guide-000-cover",
+    "guide-01-00-section-cover",
+    "guide-01-01-two-equal-sections",
+    "guide-01-02-two-equal-sections",
+    "guide-01-03-two-equal-sections",
+    "guide-01-04-topic-quick-summary",
+    "guide-02-01-two-equal-sections",
+    "guide-02-02-comparison",
+    "guide-03-01-two-equal-sections",
+    "guide-03-02-comparison",
+    "guide-04-01-two-equal-sections",
+    "guide-04-02-two-equal-sections",
+    "guide-05-01-comparison",
+    "guide-05-02-two-equal-sections",
+    "guide-05-03-topic-quick-summary",
+    "guide-06-01-two-equal-sections",
+    "guide-06-02-two-equal-sections",
+    "guide-06-03-topic-quick-summary",
+    "guide-07-01-checklist",
+    "guide-07-02-single-topic",
+    "guide-08-01-checklist",
+    "guide-08-02-two-equal-sections",
+    "guide-08-03-checklist",
+    "cheatsheet-01",
+    "cheatsheet-02",
+    "cheatsheet-03",
+    "cheatsheet-04",
+    "cheatsheet-05",
+    "cheatsheet-06",
+    "cheatsheet-07",
+    "cheatsheet-08"
+  ],
+  "pages": [
+    {
+      "id": "guide-000-cover",
+      "kind": "guide",
+      "section": "00",
+      "order": 1,
+      "layout": "cover-page",
+      "content_contract": "# Marsa Alam\n\nRudé moře v klidném tempu",
+      "protected_tokens": [
+        "Marsa Alam\n\nRudé"
+      ],
+      "sources": [],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-000-cover.md",
+      "prompt_sha256": "8e48fd667529eee4423f2543b537332cef27e92820113375b183c24d4b7e6227",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Cover page.png",
+          "sha256": "f37d9c29243236b44e9cf1bd93d00ca59848fcddb05da170a44c02eed89a0fa1"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-000-cover.png",
+      "output_sha256": "066d1553ec733f09f3dff360a9fa1ad3e5877b1c14e1b8c88d1486a822ded4f9",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Český titul i podtitul jsou přesné; poměr 2:3, bezpečné okraje, egyptská paleta a kompozice obálky prošly."
+        ],
+        "checked_at": "2026-08-26T10:29:02+00:00"
+      },
+      "inputs_sha256": "a50910e2fd25c2709e267ac54252679a26f7af24f6ee9679c9bc87ccec6afd0d",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-01-00-section-cover",
+      "kind": "guide",
+      "section": "01",
+      "order": 2,
+      "layout": "section-cover",
+      "content_contract": "## Praktické základy\n\nMarsa Alam není destinace, kam přiletíš a řešíš to za pochodu jako v Evropě — vízum, zdravotní\nopatření i výběr termínu tu mají svá pravidla, a lepší je je znát dřív, než sedneš do letadla.",
+      "protected_tokens": [
+        "Praktické",
+        "Marsa Alam",
+        "Evropě"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+          "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-01-00-section-cover.md",
+      "prompt_sha256": "07ca5a5faa805c61102f1cf24e69e1293d66c88792d8c4a323962eb749c88b02",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Section cover.png",
+          "sha256": "eba750a33ed2bd4d0a41051e68d7a977dc175965ae85d6f8461985cf05aef968"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-01-00-section-cover.png",
+      "output_sha256": "fb7ffc39c897e57f4bf12adfc907332099f8ad273eef399b987fc9556a04691b",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Český nadpis i úvodní text odpovídají kontraktu; layout, 2:3 poměr, bezpečné okraje a egyptský vizuální systém prošly."
+        ],
+        "checked_at": "2026-08-26T10:31:35+00:00"
+      },
+      "inputs_sha256": "3d04733deb482480b2bc74274bcc60d1e9a1dc3bc73b3b9491d7d4c8334043c3",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-01-01-two-equal-sections",
+      "kind": "guide",
+      "section": "01",
+      "order": 3,
+      "layout": "two-equal-sections",
+      "content_contract": "### Vízum\n\nJako český občan potřebuješ do Egypta vízum. Máš dvě možnosti: **e-visa** vyřízenou předem online\n(zpracování trvá orientačně 3 pracovní dny, žádej klidně týden dopředu, ať máš rezervu), nebo\n**visa on arrival** přímo na letišti — platí se u přepážky banky ještě před pasovou kontrolou.\nTuristické vízum je na 30 dní a na jeden vstup. Počítej s **25–30 USD**, aktuální cenu i postup si\nověř na [visa2egypt.gov.eg](https://visa2egypt.gov.eg) — zdroje se v přesné částce rozcházejí a\nsazby se mění. Pas musí platit ještě aspoň 6 měsíců od vstupu do země a mít volnou stránku na\nvízum — bez toho tě na letišti nepustí dál.\n\n### Let a doprava na místo\n\nHlavním vstupním bodem je letiště **Marsa Alam International (RMF)**. Z Prahy tam létá přímý\ncharter SmartWings, let trvá zhruba 4,5 hodiny. Frekvence je sezónní — mimo hlavní sezónu linka\nnemusí jet vůbec, takže si rozpis ověř přímo u dopravce nebo cestovky ještě před nákupem letenky.\n\nZ letiště do resortu tě čeká smluvený transfer nebo taxi. Nejblíž je **Port Ghalib**, cesta trvá\nzhruba 15 minut a transfer vyjde na **13–25 USD** (přibližně 350–700 EGP). Severní a jižní resorty\ni dive campy u Marsa Shagra mají transfer podstatně delší — konkrétní čas i cena se liší podle\nresortu, takže si to nech potvrdit u hotelu nebo cestovky předem.",
+      "protected_tokens": [
+        "3",
+        "30",
+        "25–30",
+        "6",
+        "4,5",
+        "15",
+        "13–25",
+        "350–700",
+        "nemusí",
+        "Vízum\n\nJako",
+        "Egypta",
+        "Máš",
+        "Turistické",
+        "Počítej",
+        "Pas",
+        "Let",
+        "Hlavním",
+        "Marsa Alam International",
+        "Prahy",
+        "Frekvence",
+        "Nejblíž",
+        "Port Ghalib",
+        "Severní",
+        "Marsa Shagra",
+        "e-visa",
+        "visa on arrival",
+        "25–30 USD",
+        "Marsa Alam International (RMF)",
+        "13–25 USD"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+          "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-01-01-two-equal-sections.md",
+      "prompt_sha256": "9d3eaaf9971c376f9c60aa8a77c83603047ad1370dbd7fdc97533d943aa0d7e0",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-01-01-two-equal-sections.png",
+      "output_sha256": "521405b9f30a462856b1bd8ad63d577023e8de40c85ae5b0410599f7cf31540d",
+      "attempts": 2,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Schváleno uživatelem pro pokračování produkce."
+        ],
+        "checked_at": "2026-08-26T10:42:42+00:00"
+      },
+      "inputs_sha256": "505a90642d31d5d448b0adef1827f5d672a8fda0bbe8c24bf4363791731dab23",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-01-02-two-equal-sections",
+      "kind": "guide",
+      "section": "01",
+      "order": 4,
+      "layout": "two-equal-sections",
+      "content_contract": "### Peníze\n\nPlatí se egyptskou librou (EGP). Kurz vůči dolaru silně kolísá — orientačně se drž hodnoty kolem\n**52 EGP za 1 USD**, ale před cestou si aktuální kurz vždy dohledej, protože se může výrazně\nposunout. Výběr z bankomatu tě přijde na poplatek **50–100 EGP** za transakci a denní limit výběru\nbývá **5 000–10 000 EGP** — pokud budeš potřebovat víc hotovosti najednou, počítej s víc výběry\nnebo směnárnou. Přehled dalších cen najdeš v kapitole Rozpočet.\n\n### SIM a internet\n\nV resortech i větších dive centrech bývá wifi standardem, mimo ně signál kolísá. Lokální SIM\nkartu si nejsnáz pořídíš přímo na letišti po příletu — konkrétní ceny a datové balíčky si ověř na\nmístě, nabídky egyptských operátorů se mění.",
+      "protected_tokens": [
+        "52",
+        "1",
+        "50–100",
+        "5",
+        "000–10",
+        "000",
+        "může",
+        "Peníze\n\nPlatí",
+        "Kurz",
+        "Výběr",
+        "Přehled",
+        "Rozpočet",
+        "Lokální",
+        "52 EGP za 1 USD",
+        "50–100 EGP",
+        "5 000–10 000 EGP"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+          "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-01-02-two-equal-sections.md",
+      "prompt_sha256": "b572911cf49b2ff1ae599391c67d5d2d9b550f8acfcba3494e3d0994b73b1d38",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-01-02-two-equal-sections.png",
+      "output_sha256": "3c56348209aef6577168c1dacf35504c4336304de5d37ea55360c462a1761067",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Obsahový kontrakt včetně všech částek prošel; česká sazba, bezpečné okraje a layout 2:3 jsou v pořádku."
+        ],
+        "checked_at": "2026-08-26T10:57:47+00:00"
+      },
+      "inputs_sha256": "4be150da94750b8e939fc93287c7e9dc0b5a1594165e73f89b06c735f8d9f70d",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-01-03-two-equal-sections",
+      "kind": "guide",
+      "section": "01",
+      "order": 5,
+      "layout": "two-equal-sections",
+      "content_contract": "### Zdraví a očkování\n\nEgypt vyhlásila Světová zdravotnická organizace v roce 2024 za zemi **bez malárie** a americké CDC\nantimalarickou profylaxi nedoporučuje — přesto se vyplatí standardní opatření proti hmyzu\nnepodcenit. Z doporučených očkování se řeší běžná přeočkování, hepatitida A a B a tyfus; pokud máš\nv plánu dobrodružnější program v poušti nebo kontakt se zvířaty, zvaž i vzteklinu. Tohle je\ninformační přehled, ne lékařské doporučení — zkonzultuj to s očkovacím centrem před cestou.\n\n### Kdy jet\n\nRok se dělí na chladnější období **říjen–duben** (zhruba 20–28 °C) a horké **květen–září**.\nNejvyváženější měsíce, kdy je teplo, ale ne vrchol veder, jsou **polovina března až duben** a\n**polovina října až listopad** — hodí se jak na moře, tak na celodenní výlety do pouště. Zima\n(prosinec–únor) je naopak nejpříjemnější právě na pouštní výlety, ale na vodní aktivity už\nchladnější.",
+      "protected_tokens": [
+        "20–28 °C",
+        "2024",
+        "20–28",
+        "ne",
+        "Zdraví",
+        "Egypt",
+        "Světová",
+        "Tohle",
+        "Kdy",
+        "Rok",
+        "Nejvyváženější",
+        "Zima",
+        "bez malárie",
+        "říjen–duben",
+        "květen–září",
+        "polovina března až duben",
+        "polovina října až listopad"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+          "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-01-03-two-equal-sections.md",
+      "prompt_sha256": "e8706b42dd1f3505c751769a7d23d11153c7fbb851cb3f728931ffdbda489b3a",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-01-03-two-equal-sections.png",
+      "output_sha256": "f7dc010f720e375a374bc7bad72b0a671c9431555fdf65f410851902f3d95b64",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Obsah včetně roku 2024, teplot 20–28 °C, období a negace prošel; 2:3 layout a česká sazba v pořádku."
+        ],
+        "checked_at": "2026-08-26T11:08:52+00:00"
+      },
+      "inputs_sha256": "d9886f1701aab643d3cddc6f845b5515697502d1f8f41b50af01bd73153b1a8e",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-01-04-topic-quick-summary",
+      "kind": "guide",
+      "section": "01",
+      "order": 6,
+      "layout": "topic-quick-summary",
+      "content_contract": "### Rychlé shrnutí\n\n- Vízum (e-visa nebo on arrival), 25–30 USD, ověř aktuální cenu na visa2egypt.gov.eg.\n- Malárie v Egyptě od 2024 oficiálně není, ale běžná očkování (hepatitida A/B, tyfus) zvaž.\n- Nejvyváženější termín: polovina března–duben nebo polovina října–listopad.\n- Ceny se v Egyptě i mezi sezónami mění rychle — u dopravy i vstupních poplatků si vždy ověř\n  aktuální stav na uvedených zdrojích.",
+      "protected_tokens": [
+        "25–30",
+        "2024",
+        "Rychlé",
+        "Vízum",
+        "Malárie",
+        "Egyptě",
+        "Nejvyváženější",
+        "Ceny"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/01-prakticke-zaklady.md",
+          "sha256": "2580dfdea7167d4bab64dcbf55f75b741d632d59ada1b8a6749e325891118ed6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-01-04-topic-quick-summary.md",
+      "prompt_sha256": "7f1e1c260b25e4c46df37967d9b0a62eeafd4746cc5960e20fc2b8b996c3fba1",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Topic and Quick summary.png",
+          "sha256": "4bcd81fed4e9c9643dcb6a80e8e4ed5eaebc11ef9f6849d2d6386633cfe70fc9"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-01-04-topic-quick-summary.png",
+      "output_sha256": "1647375662f3b2d73b32fb7d5ab3509d06cff3595e0998e942ccc1380be75fef",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Obsahový kontrakt včetně víza, 25–30 USD, roku 2024, období a upozornění na proměnlivé ceny je kompletní; čitelná česká sazba a bezpečné okraje prošly."
+        ],
+        "checked_at": "2026-08-26T11:13:35+00:00"
+      },
+      "inputs_sha256": "ddfa491f3225fc88fd49e35121f915e1290986b98053a8c62abd92fd68e78175",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-02-01-two-equal-sections",
+      "kind": "guide",
+      "section": "02",
+      "order": 7,
+      "layout": "two-equal-sections",
+      "content_contract": "Marsa Alam není město s centrem, kolem kterého se rozhoduješ, kde bydlet — je to zhruba\n200kilometrový pás pobřeží s jednotlivými resorty postavenými kolem korálových útesů. Rozhodnutí,\nkteré tu nahrazuje \"kterou čtvrť/město zvolit\" z jiných destinací, je **jaký typ pobřeží a jaký\ntyp resortu** ti sedne. Tohle rozhodnutí ovlivní zážitek i cenu víc než konkrétní hotel.\n\n### Tři základní varianty\n\n**Port Ghalib** je nejblíž letišti (transfer cca 15 minut) a má vlastní marínu s restauracemi,\nobchody a nočním životem — nejbližší k tomu, co znáš z klasických přímořských letovisek. Hodí se,\npokud chceš mít večer kam zajít pěšky a nevadí ti rušnější prostředí.\n\n**Severní a jižní resorty** podél pobřeží jsou typicky klidnější, izolovanější a víc zaměřené na\npláž a moře než na večerní program. Transfer z letiště je podstatně delší než do Port Ghalib —\nkonkrétní čas se liší resort od resortu, ověř si ho u hotelu nebo cestovky před rezervací.\n\n**Dive campy u Marsa Shagra** jsou specializované na potápění a šnorchlování — jednodušší\nubytování, ale přímý přístup k house reefu a komunita lidí, kteří přijeli hlavně kvůli vodě. Víc\no rozdílu mezi all-inclusive resortem a dive campem najdeš v kapitole Ubytování.\n\n### Jak se rozhodnout\n\nPokud chceš noční život, restaurace mimo hotel a nechceš dlouhý transfer z letiště, zvol **Port\nGhalib**. Pokud ti jde hlavně o klid a pláž a nevadí ti, že večer strávíš v resortu, zvol\n**severní nebo jižní pobřeží**. Pokud je pro tebe priorita číslo jedna kvalita podmořského života\npřímo od pláže a nevadí ti jednodušší vybavenost, zvol **dive camp**. Kombinace \"chci noční život\ni výborný house reef ve stejném resortu\" tu reálně nefunguje — čím blíž centru dění, tím spíš je\nreef před hotelem zatížený provozem.",
+      "protected_tokens": [
+        "15",
+        "Marsa Alam",
+        "Rozhodnutí",
+        "Tohle",
+        "Tři",
+        "Port Ghalib",
+        "Hodí",
+        "Severní",
+        "Transfer",
+        "Dive",
+        "Marsa Shagra",
+        "Víc",
+        "Ubytování",
+        "Jak",
+        "Pokud",
+        "Port\nGhalib",
+        "Kombinace",
+        "Severní a jižní resorty",
+        "Dive campy u Marsa Shagra",
+        "severní nebo jižní pobřeží",
+        "dive camp"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/02-vyber-oblasti-a-doprava.md",
+          "sha256": "a6d7663a1b38298f32f763b18b6100eec94f3f4af3c84d91b149f31eca4c114c"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-02-01-two-equal-sections.md",
+      "prompt_sha256": "b787f9d0d4ceb78016e959b45393e801835972ce673a3d2267efdd3d3cba3c6a",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-02-01-two-equal-sections.png",
+      "output_sha256": "d989a957dd9736da0df7018b1427cf6f2cd43a8ed62ceba3a0aec649e56e5d77",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Kompletní obsah včetně 200kilometrového pásu, transferu cca 15 minut, všech tří variant i rozhodovacího pravidla prošel; kvalitní česká sazba a 2:3 layout."
+        ],
+        "checked_at": "2026-08-26T11:24:12+00:00"
+      },
+      "inputs_sha256": "682e7b0931091469fe73e6cc8467b790ba8b2042f4b1806e46a3043c435a5e84",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-02-02-comparison",
+      "kind": "guide",
+      "section": "02",
+      "order": 8,
+      "layout": "comparison",
+      "content_contract": "### Doprava po okolí\n\nMezi jednotlivými resorty podél pobřeží **nejezdí pravidelná veřejná doprava** — spoléhej na\nsoukromý transfer nebo taxi domluvené přes hotel nebo místního dopravce. Pokud plánuješ výlet do\njiné části pobřeží (jiná pláž, jiné dive centrum), počítej s tím, že si dopravu musíš zařídit\nzvlášť a předem.\n\nVýlety na moře (šnorchlování, potápění) i do pouště se typicky prodávají jako balíček včetně\nvyzvednutí přímo u hotelu — doprava je tedy součástí ceny výletu, ne položka navíc. Orientační ceny\nkonkrétních výletů najdeš v kapitolách Potápění a šnorchlování a Rozpočet.\n\nPokud uvažuješ o pronájmu auta, věz, že vzhledem k charakteru destinace (transfery a balíčky\nvýletů jsou standard) je to spíš okrajová varianta než běžná volba — než si auto půjčíš, ověř si\nu pronajímatele podmínky i to, jestli se ti to vzhledem k plánovaným výletům vůbec vyplatí.\n\n### Rychlé shrnutí\n\n- Klíčové rozhodnutí není \"které město\", ale \"jaký typ pobřeží\": Port Ghalib (noční život, blízko\n  letišti) vs. severní/jižní resorty (klid) vs. Marsa Shagra (dive camp, house reef).\n- Čím blíž centru dění, tím spíš horší house reef přímo od pláže — kombinaci obojího nečekej.\n- Mezi resorty nejezdí veřejná doprava — počítej se soukromým transferem přes hotel.",
+      "protected_tokens": [
+        "ne",
+        "Doprava",
+        "Mezi",
+        "Pokud",
+        "Výlety",
+        "Orientační",
+        "Potápění",
+        "Rozpočet",
+        "Rychlé",
+        "Klíčové",
+        "Port Ghalib",
+        "Marsa Shagra",
+        "Čím",
+        "nejezdí pravidelná veřejná doprava"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/02-vyber-oblasti-a-doprava.md",
+          "sha256": "a6d7663a1b38298f32f763b18b6100eec94f3f4af3c84d91b149f31eca4c114c"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-02-02-comparison.md",
+      "prompt_sha256": "4e9d3bb94f376162f229b7c20e490ac8f1055139ac248d4490588654bca0a0e5",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Comparison.png",
+          "sha256": "4bdc6a4b2599039582b0828b8f3f0a4554ada4c515c775dba8a6701f7136a4ca"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-02-02-comparison.png",
+      "output_sha256": "0d11bde86ee2f15cf45416c079b10d4df9fe9d710dfc731c5011b248b485efdb",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Kompletní text dopravy, včetně negace pravidelné veřejné dopravy, balíčků výletů, podmínek pronájmu a tříbodového shrnutí, prošel vizuální i obsahovou kontrolou."
+        ],
+        "checked_at": "2026-08-26T11:30:31+00:00"
+      },
+      "inputs_sha256": "b82327186261631945473e182edf655da6816f4fcf0cb770eaed054aabd80138",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-03-01-two-equal-sections",
+      "kind": "guide",
+      "section": "03",
+      "order": 9,
+      "layout": "two-equal-sections",
+      "content_contract": "V Marsa Alam se ubytování nevybírá primárně podle hvězdiček nebo polohy jako v jiných destinacích\n— rozhoduje hlavně to, co je přímo pod hladinou před hotelem. Tahle kapitola ti řekne, na co se\nptát před rezervací, ne který konkrétní hotel zvolit.\n\n### All-inclusive resort vs. dive camp\n\nNaprostá většina návštěvníků jede přes **all-inclusive balíček** cestovní kanceláře — jídlo, pití\na často i část výletů jsou v ceně, a pro rodinu nebo pár, co chce mít dovolenou vyřešenou předem,\nje to pohodlná volba. Této realitě se věnuje kapitola Jídlo a pití.\n\nAlternativou jsou **dive campy**, typické hlavně pro oblast Marsa Shagra — jednodušší ubytování\n(často bez all-inclusive konceptu), ale postavené kolem přímého přístupu k moři a komunity lidí,\nco tam jsou hlavně kvůli potápění a šnorchlování. Pokud je pro tebe voda hlavní náplní dovolené a\nnepotřebuješ hotelový komfort, dive camp ti může sedět víc než klasický resort — i za nižší cenu.\n\n### Proč se vybírá podle \"house reef\"\n\nHouse reef je korálový útes přímo u pláže hotelu, kam se dostaneš pěšky nebo pár záběry od\nbřehu — bez lodi, bez organizovaného výletu. Kvalita house reefu se mezi resorty výrazně liší:\nněkde je útes v dobrém stavu a plný ryb hned od pláže, jinde je poškozený nebo je potřeba přejít\nkus mělčiny, než se k němu dostaneš. Pro personu, co chce šnorchlovat bezpečně a bez organizování\nvýletu každý den, je tohle důležitější kritérium než hvězdičky nebo vzdálenost od letiště.",
+      "protected_tokens": [
+        "ne",
+        "může",
+        "Marsa Alam",
+        "Tahle",
+        "All-inclusive",
+        "Naprostá",
+        "Této",
+        "Jídlo",
+        "Alternativou",
+        "Marsa Shagra",
+        "Pokud",
+        "Proč",
+        "House",
+        "Kvalita",
+        "Pro",
+        "all-inclusive balíček",
+        "dive campy"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/03-ubytovani.md",
+          "sha256": "d630a548878cc3ad41155a017e8238ce75eac73f1406e81048c8ec22fb3efe0e"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-03-01-two-equal-sections.md",
+      "prompt_sha256": "440c7aed205d98dc0fc9f0f20bd307512db25618c60bc5e31f4c8caae787b047",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-03-01-two-equal-sections.png",
+      "output_sha256": "29effaf486eff48bf4979f8ba7ff8feb9d28496a8bcacb67d72384657b282860",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Všechny části k výběru ubytování, all-inclusive, dive campům, Marsa Shagra i house reefu jsou čitelné a obsahově úplné."
+        ],
+        "checked_at": "2026-08-26T11:42:12+00:00"
+      },
+      "inputs_sha256": "d1aee3ccbab3fb42c59940e9dfc957179714b4368aecd2fe983edd3e0746b5a5",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-03-02-comparison",
+      "kind": "guide",
+      "section": "03",
+      "order": 10,
+      "layout": "comparison",
+      "content_contract": "### Na co se zeptat před rezervací\n\n- Jaký je stav house reefu a jak se k němu dostaneš — pěšky po písku, přes mělčinu, nebo je nutné\n  molo/žebřík kvůli korálům až u břehu?\n- Je vstup do vody z pláže, nebo je potřeba molo/platforma (časté tam, kde je reef blízko břehu a\n  chodidly by se poškodil)?\n- Co přesně zahrnuje all-inclusive — jen jídlo a nápoje, nebo i vybavení na šnorchlování a část\n  výletů?\n- Jak daleko je resort od letiště a od případného dive centra, pokud plánuješ organizované výlety\n  (viz kapitola Výběr oblasti a doprava)?\n- Nabízí hotel vlastní dive centrum, nebo je potřeba domlouvat výlety nezávisle? Oboje má své\n  výhody — hotelové centrum je pohodlnější, nezávislé bývá levnější (viz kapitola Potápění a\n  šnorchlování).\n\n### Rychlé shrnutí\n\n- Hlavní rozhodnutí není \"kolik hvězdiček\", ale all-inclusive resort vs. dive camp a kvalita house\n  reefu.\n- Než rezervuješ, zjisti si stav útesu před hotelem a způsob vstupu do vody — ne jen fotky z\n  brožury.\n- Konkrétní ceny ubytování se v čase i podle cestovky výrazně liší — porovnávej aktuální nabídky u\n  prodejce balíčku.",
+      "protected_tokens": [
+        "jen",
+        "ne",
+        "Na",
+        "Jaký",
+        "Je",
+        "Co",
+        "Jak",
+        "Výběr",
+        "Nabízí",
+        "Oboje",
+        "Potápění",
+        "Rychlé",
+        "Hlavní",
+        "Než",
+        "Konkrétní"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/03-ubytovani.md",
+          "sha256": "d630a548878cc3ad41155a017e8238ce75eac73f1406e81048c8ec22fb3efe0e"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-03-02-comparison.md",
+      "prompt_sha256": "5b7590ed552e9ed0c60f74a48550936f76eca8166036a28a54f873c1fb9a9975",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Comparison.png",
+          "sha256": "4bdc6a4b2599039582b0828b8f3f0a4554ada4c515c775dba8a6701f7136a4ca"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-03-02-comparison.png",
+      "output_sha256": "ff8dda2c19630c857851518be67f12aac2e6df67e6da8f9a8cb3676c8db85bae",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Kontrolní otázky i celé rychlé shrnutí jsou čitelné a obsahově úplné; česká typografie, bezpečné okraje a vizuální systém prošly."
+        ],
+        "checked_at": "2026-08-26T11:45:53+00:00"
+      },
+      "inputs_sha256": "b89a98079f6dde13a96d44e305095fabc7a58f4b159bf23415c67a2e40308e81",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-04-01-two-equal-sections",
+      "kind": "guide",
+      "section": "04",
+      "order": 11,
+      "layout": "two-equal-sections",
+      "content_contract": "Na rozdíl od jiných destinací v řadě, kde si jídlo řešíš sám, tady drtivá většina návštěvníků jí\npřes all-inclusive balíček. Tahle kapitola ti řekne, co od toho čekat a kdy se vyplatí resort na\nchvíli opustit.\n\n### Realita all-inclusive\n\nAll-inclusive v Marsa Alam obvykle znamená bufetová jídla v hotelové restauraci a nápoje (včetně\nalkoholu) v rámci resortu — typicky ale jen u hotelového baru nebo restaurace, ne kdekoliv mimo\nareál. Kvalita i šíře nabídky se mezi resorty hodně liší, stejně jako to, jestli je pitná voda z\nkohoutku, nebo jen balená. Než vyrazíš, ověř si u konkrétního hotelu, co přesně balíček zahrnuje —\nbrožury cestovek bývají v tomhle bodě dost obecné.\n\nZákladní pravidlo pro pitnou vodu: v celém Egyptě se doporučuje pít **balenou vodu**, ne vodu z\nkohoutku, a to i v resortu. Vezmi to v potaz i u ledu do nápojů mimo hotel.\n\n### Kdy a jak mimo resort\n\nI když jedeš přes all-inclusive, občasný výlet na jídlo mimo hotel dává smysl hlavně v **Port\nGhalib**, kde je marína plná restaurací a je to jediná oblast, kam se z resortu dostaneš pěšky\n(viz kapitola Výběr oblasti a doprava). V ostatních částech pobřeží je restaurace mimo hotel spíš\nvýjimka než reálná možnost — buď žádná v docházkové vzdálenosti není, nebo je potřeba domluvený\ntransfer.\n\nPokud se chystáš na celodenní výlet (potápění, šnorchlování, poušť), počítej s tím, že jídlo bývá\nsoučástí balíčku výletu — u organizovaných tras to ověř předem, ať víš, jestli si máš něco vzít s\nsebou.",
+      "protected_tokens": [
+        "obvykle",
+        "jen",
+        "ne",
+        "Na",
+        "Tahle",
+        "Realita",
+        "All-inclusive",
+        "Marsa Alam",
+        "Kvalita",
+        "Než",
+        "Základní",
+        "Egyptě",
+        "Vezmi",
+        "Kdy",
+        "Port\nGhalib",
+        "Výběr",
+        "Pokud",
+        "balenou vodu"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/04-jidlo-a-piti.md",
+          "sha256": "9ee1b70f6ae8fe2934bac3b425233826a1b958c5bf117994cee84f47e73bcb39"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-04-01-two-equal-sections.md",
+      "prompt_sha256": "c1ca775e11883f66c1955f527156477b71a5e7bb5e771c684163a0ac263c5f48",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-04-01-two-equal-sections.png",
+      "output_sha256": "a9ee4ecc442cbfc94a1121d36d708c64e5edd290ee0a3aa1f65317edac3fd42b",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Kompletní obsah jídla a pití prošel: podmínky all-inclusive, balená voda, Port Ghalib i pravidla celodenního výletu jsou čitelné a fakticky zachované."
+        ],
+        "checked_at": "2026-08-26T12:15:42+00:00"
+      },
+      "inputs_sha256": "a61fa186b861649141a260046bc44dec5265802dfd426ed78aa587b94c8ce30c",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-04-02-two-equal-sections",
+      "kind": "guide",
+      "section": "04",
+      "order": 12,
+      "layout": "two-equal-sections",
+      "content_contract": "### Ceny\n\nKonkrétní ceny jídla a pití mimo resort se nám nepodařilo spolehlivě dohledat — u jednotlivých\npodniků v Port Ghalib i jinde se hodně liší a rychle se mění. Orientační ceny výletů, které jídlo\nzahrnují, najdeš v kapitole Rozpočet; cenu konkrétní restaurace nebo baru si ověř až na místě.\n\n### Rychlé shrnutí\n\n- Naprostá většina jídla je řešená přes all-inclusive — rozsah balíčku (voda, alkohol, kde přesně)\n  si ověř u hotelu předem, ne z brožury.\n- Pij výhradně balenou vodu, i v resortu.\n- Restaurace mimo hotel reálně dávají smysl hlavně v Port Ghalib — jinde počítej s transferem nebo\n  se spolehni na hotel.",
+      "protected_tokens": [
+        "ne",
+        "Ceny\n\nKonkrétní",
+        "Port Ghalib",
+        "Orientační",
+        "Rozpočet",
+        "Rychlé",
+        "Naprostá",
+        "Pij",
+        "Restaurace"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/04-jidlo-a-piti.md",
+          "sha256": "9ee1b70f6ae8fe2934bac3b425233826a1b958c5bf117994cee84f47e73bcb39"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-04-02-two-equal-sections.md",
+      "prompt_sha256": "86a5c346c29fa33aa40d532b0b22695ef0adef696503ec2618c35802cac6512f",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-04-02-two-equal-sections.png",
+      "output_sha256": "d8246f46708ed8f03badd506c10f09c3f03a7b4ca964d6bf957807f487a27422",
+      "attempts": 3,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Třetí varianta odstranila duplicitní i přidané sekce; obsah Ceny a jediné Rychlé shrnutí jsou úplné, čitelné a v mezích kontraktu."
+        ],
+        "checked_at": "2026-08-26T13:36:22+00:00"
+      },
+      "inputs_sha256": "8f63f64cbb988f23c5da99d2e5d144f43e48c4389e03b1a6aa1895fa7baed760",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-05-01-comparison",
+      "kind": "guide",
+      "section": "05",
+      "order": 13,
+      "layout": "comparison",
+      "content_contract": "Voda je hlavní důvod, proč se do Marsa Alam jezdí, ale nemusíš umět potápět, abys ji naplno zažil.\nTahle kapitola ti řekne, jak si vybrat výlet nezávisle nebo přes hotel, kam jet za čím a jak se\nu toho nezranit a nepoškodit útes, který si přijel vidět.\n\n### Přes hotel, nebo nezávisle\n\nHotel ti výlet zorganizuje pohodlně — vyzvednutí od pokoje, jazyková bariéra vyřešená, není co\nplánovat. Zaplatíš za to ale víc, protože v ceně je marže recepce navíc k marži dive centra. Lokální\ndive centrum (často to samé, které hotelu výlety dodává) bývá levnější, ale musíš si ho vybrat sám\na ověřit, že má vybavení v pořádku a skupiny nejsou přeplněné. Pokud bydlíš v dive campu u Marsa\nShagra (viz kapitola Ubytování), nezávislá varianta je tam standard, ne výjimka.\n\n### Kam za čím\n\n- **Abu Dabab** — mělčí záliv, kde se pravidelně objevují mořské želvy a dugongové. Vhodné i pro\n  šnorchlaře, co se necítí jistě na hlubší vodě.\n- **Dolphin House (Sha'ab Samadai)** — útes proslulý delfíny; oblíbený celodenní výlet lodí,\n  vhodný pro šnorchlování i pro potápěče.\n- **Elphinstone** — proslulý potápěčský reef s driftovým proudem a vyšší náročností, spíš pro\n  certifikované potápěče než začátečníky.\n\nOrientační ceny: šnorchlování Abu Dabab 48–60 USD/os., Dolphin House 55–62 USD/os., potápění\nElphinstone (2 ponory) 85–130 USD — k tomu si u Elphinstone připočti povinný poplatek mořského\nparku 15–25 USD za ponor, který bývá mimo cenu výletu. Zdroj:\n[viator.com](https://www.viator.com/en-GB/tours/Marsa-Alam/Abu-Dabbab-Beach-full-day-trip-with-turtles/d25556-295073P2),\n[redsea-scubadiving.com](https://redsea-scubadiving.com/marsa-alam-diving-prices/).",
+      "protected_tokens": [
+        "48–60",
+        "55–62",
+        "2",
+        "85–130",
+        "15–25",
+        "ne",
+        "Voda",
+        "Marsa Alam",
+        "Tahle",
+        "Přes",
+        "Hotel",
+        "Zaplatíš",
+        "Lokální",
+        "Pokud",
+        "Marsa\nShagra",
+        "Ubytování",
+        "Kam",
+        "Abu Dabab",
+        "Vhodné",
+        "Dolphin House",
+        "Sha'ab Samadai",
+        "Elphinstone",
+        "Orientační",
+        "Zdroj",
+        "Marsa-",
+        "Alam",
+        "Abu-",
+        "Dabbab-",
+        "Beach-full-day-trip-with-turtles",
+        "Dolphin House (Sha'ab Samadai)"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/05-potapeni-a-snorchlovani.md",
+          "sha256": "dc47ddfb07b130476b3910261e41c89f8d5d35314556de1d004592e9a316c75d"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-05-01-comparison.md",
+      "prompt_sha256": "dbc7f34f6adbf6ed2c32f3e6ab253a7bcb7ccb4b1cd417a63b717b7d5ad5aebb",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Comparison.png",
+          "sha256": "4bdc6a4b2599039582b0828b8f3f0a4554ada4c515c775dba8a6701f7136a4ca"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-05-01-comparison.png",
+      "output_sha256": "7c4ed9766b0b8c10c4d72c80e626d01f5fa6cf8b70897693d147900e538423f6",
+      "attempts": 3,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Schváleno uživatelem po lidském posouzení; akceptováno i s číslováním z layoutu. Obsah, ceny a plné zdroje jsou zachovány."
+        ],
+        "checked_at": "2026-08-26T14:23:14+00:00"
+      },
+      "inputs_sha256": "33d02a0fa4d7fee84e9094381b3ece814f3287bbc419ecdace20d633cf4abcbc",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-05-02-two-equal-sections",
+      "kind": "guide",
+      "section": "05",
+      "order": 14,
+      "layout": "two-equal-sections",
+      "content_contract": "### Neumíš potápět a zvažuješ kurz\n\nPokud tě voda tady chytí, OW kurz je pro nepotápěče nejrychlejší cesta k Elphinstone. Cenu kurzu se\nnepodařilo spolehlivě dohledat — liší se dive centrum od dive centra, ověř si ji přímo na místě\npřed rezervací. Standardní cestovní pojištění potápění často nekryje — než na kurz nebo ponor\nvyrazíš, ověř si u své pojišťovny, jestli máš krytí i na tohle.\n\n### Základní bezpečnost a ochrana korálů\n\nKorál je živý organismus a i lehký dotek nebo šlápnutí ho může zabít — drž si odstup, nestůj na dně\nu útesu a nedotýkej se ho, ani \"jen na chvíli\". Nekrm ani neháněj mořské živočichy, u Dolphin House\ni Abu Dabab platí zpřísněná pravidla chování kvůli ochraně zvířat — řiď se pokyny průvodce na místě.\nŠnorchluj vždy s někým, ne sám, a drž se skupiny nebo lodi, na kterou jsi navázaný.",
+      "protected_tokens": [
+        "může",
+        "jen",
+        "ne",
+        "Neumíš",
+        "Pokud",
+        "Elphinstone",
+        "Cenu",
+        "Standardní",
+        "Základní",
+        "Korál",
+        "Nekrm",
+        "Dolphin House",
+        "Abu Dabab",
+        "Šnorchluj"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/05-potapeni-a-snorchlovani.md",
+          "sha256": "dc47ddfb07b130476b3910261e41c89f8d5d35314556de1d004592e9a316c75d"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-05-02-two-equal-sections.md",
+      "prompt_sha256": "50fe7025433b2813f7d614810d029239577f7bff874d64c5c1a88aab2a1eea2c",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-05-02-two-equal-sections.png",
+      "output_sha256": "9b6ede363f633400cd5c5ec4c67b090b867a4a049fd87ec453a4e4097e5f0148",
+      "attempts": 1,
+      "qa": {
+        "status": "passed",
+        "notes": [
+          "Kompletní obsah k OW kurzu, pojištění, bezpečnosti a ochraně korálů prošel; zachovány názvy Elphinstone, Dolphin House a Abu Dabab i všechny negace."
+        ],
+        "checked_at": "2026-08-26T14:17:28+00:00"
+      },
+      "inputs_sha256": "2998e7e58b377a28ff6ab7011b97892f630d566a2bdf75a40b21d3da0a6482b0",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-05-03-topic-quick-summary",
+      "kind": "guide",
+      "section": "05",
+      "order": 15,
+      "layout": "topic-quick-summary",
+      "content_contract": "### Rychlé shrnutí\n\n- Hotel = pohodlí za vyšší cenu, nezávislé dive centrum = levnější, ale vybíráš si ho sám.\n- Abu Dabab pro klidnější šnorchlování, Dolphin House pro delfíny, Elphinstone pro zkušené potápěče.\n- Poplatek mořského parku bývá mimo cenu výletu — počítej s ním zvlášť.\n- Ceny výletů i kurzů se mění, ověř si je u dive centra nebo cestovky před rezervací.",
+      "protected_tokens": [
+        "Rychlé",
+        "Hotel",
+        "Abu Dabab",
+        "Dolphin House",
+        "Elphinstone",
+        "Poplatek",
+        "Ceny"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/05-potapeni-a-snorchlovani.md",
+          "sha256": "dc47ddfb07b130476b3910261e41c89f8d5d35314556de1d004592e9a316c75d"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-05-03-topic-quick-summary.md",
+      "prompt_sha256": "eb4c58dc34a0fa86f0576a71e1792fa609ed493a2eccd94a457dfb363ea47269",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Topic and Quick summary.png",
+          "sha256": "4bcd81fed4e9c9643dcb6a80e8e4ed5eaebc11ef9f6849d2d6386633cfe70fc9"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-05-03-topic-quick-summary.png",
+      "output_sha256": "8f7195eddb413899d4c71473e5d37aa765f8d5c54b6a0406190f4dbe8495a292",
+      "attempts": 1,
+      "qa": {
+        "status": "pending",
+        "notes": [
+          "Rozměry prošly; čeká obsahová a vizuální QA."
+        ],
+        "checked_at": "2026-08-26T14:53:03+00:00"
+      },
+      "inputs_sha256": "d5f705ff755c50d9b158c1d73ebec99851bae26967efd9c77203f54aab5ad5ce",
+      "image": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGB",
+        "format": "PNG",
+        "ratio": 0.6666666666666666,
+        "expected_ratio": 0.6666666666666666,
+        "ratio_ok": true
+      }
+    },
+    {
+      "id": "guide-06-01-two-equal-sections",
+      "kind": "guide",
+      "section": "06",
+      "order": 16,
+      "layout": "two-equal-sections",
+      "content_contract": "Marsa Alam není jen moře — poušť za resortem je druhá polovina zážitku a většina návštěvníků ji\nkvůli plážím a potápění přehlíží. Tahle kapitola ti řekne, co tam jet a co čekat, když se pár hodin\nrozhodneš strávit mimo vodu.\n\n### Wadi El Gemal\n\nNárodní park Wadi El Gemal je hlavní poušťní cíl v okolí — kombinace hor, vádí a pobřeží s vlastními\nmangrovy. Vstup pro cizince stojí orientačně 40 EGP (přepočet cca 2 EUR), pokud chceš zůstat přes\nnoc, kempování v parku vyjde na cca 200 EGP na osobu a noc. Zdroj:\n[abughosoun.org](https://www.abughosoun.org/wgnp/). Do parku se běžně jezdí jako součást\norganizovaného výletu s vyzvednutím od hotelu — samostatná doprava veřejnou dopravou tu není (viz\nkapitola Výběr oblasti a doprava).\n\n### Beduínské výlety\n\nSoučástí poušťních výletů bývá i zastávka v beduínské osadě nebo u čajového posezení — je to\nturisticky zprostředkovaný kontakt, ne autentické setkání bez přípravy, ale pořád dobrý způsob, jak\nzískat představu o životě v poušti mimo hotelový resort. Neočekávej od toho víc, než co to je: krátkou\nzastávku v rámci většího programu.",
+      "protected_tokens": [
+        "2 EUR",
+        "40",
+        "2",
+        "200",
+        "jen",
+        "ne",
+        "Marsa Alam",
+        "Tahle",
+        "Wadi El Gemal\n\nNárodní",
+        "Wadi El Gemal",
+        "Vstup",
+        "Zdroj",
+        "Do",
+        "Výběr",
+        "Beduínské",
+        "Součástí",
+        "Neočekávej"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/06-vylety-mimo-vodu.md",
+          "sha256": "fd75606403748577db997d04ce2c9c0ac9117fe1d16f951e7ef223ac882404f0"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-06-01-two-equal-sections.md",
+      "prompt_sha256": "950f7ad22fa83a399f1c496e54182179832c337c1f5508c37ebe194df3990c8f",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-06-01-two-equal-sections.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "0a8de9f3b90d0230070418de410835f040c476f8a345e1d7444387c55c28e922"
+    },
+    {
+      "id": "guide-06-02-two-equal-sections",
+      "kind": "guide",
+      "section": "06",
+      "order": 17,
+      "layout": "two-equal-sections",
+      "content_contract": "### Pouštní safari — skupinově, nebo soukromě\n\nSafari do Wadi El Gemal se prodává jako skupinový nebo soukromý výlet, cena se podle toho výrazně\nliší — orientačně 90–228 USD na osobu. Skupinový výlet je levnější, ale jsi vázaný na program a\ntempo skupiny; soukromý dává víc flexibility v tom, kde a jak dlouho se zastavíte. Zdroj:\n[viator.com](https://www.viator.com/tours/Marsa-Alam/Private-Safari-Day-Tour-To-Wadi-El-Gamal-National-Park-From-Marsa-Alam/d25556-300010P27).\n\n### Off the beaten path\n\nPokud máš čas navíc a chceš se poušti věnovat víc než jedním odpoledním výletem, zvaž vícedenní\nnebo večerní program (přespání v poušti, pozorování hvězd) místo klasického denního safari — nabídka\ni cena se ale liší podle cestovky a sezóny, takže konkrétní variantu si domluv na místě nebo přes\nhotel. Kdo chce vidět poušť jinak než z klimatizovaného mikrobusu, ať počítá s tím, že si za\nflexibilitu připlatí.",
+      "protected_tokens": [
+        "90–228",
+        "Pouštní",
+        "Safari",
+        "Wadi El Gemal",
+        "Skupinový",
+        "Zdroj",
+        "Marsa-",
+        "Alam",
+        "Private-",
+        "Safari-",
+        "Day-",
+        "Tour-",
+        "To-",
+        "Wadi-",
+        "El-",
+        "Gamal-",
+        "National-",
+        "Park-",
+        "From-",
+        "Off",
+        "Pokud",
+        "Kdo"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/06-vylety-mimo-vodu.md",
+          "sha256": "fd75606403748577db997d04ce2c9c0ac9117fe1d16f951e7ef223ac882404f0"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-06-02-two-equal-sections.md",
+      "prompt_sha256": "37aa6b582d0f405b8b05711f0b3bcd20348bf7669e86eb5571a9a95ac0a2d8df",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-06-02-two-equal-sections.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "d47aa6e759f208cf0a30205ad129ee7cfd88d6dd1de86be1a97d4f76aaae589c"
+    },
+    {
+      "id": "guide-06-03-topic-quick-summary",
+      "kind": "guide",
+      "section": "06",
+      "order": 18,
+      "layout": "topic-quick-summary",
+      "content_contract": "### Rychlé shrnutí\n\n- Wadi El Gemal je hlavní poušťní cíl — vstup i případné kempování jsou samostatné, nízké položky\n  navíc k ceně výletu.\n- Skupinové safari je levnější a méně flexibilní, soukromé dražší a flexibilnější.\n- Beduínská zastávka je turisticky zprostředkovaná, ber ji jako doplněk k výletu, ne jako hlavní bod.\n- Ceny výletů se mění podle cestovky a sezóny, ověř si je před rezervací.",
+      "protected_tokens": [
+        "ne",
+        "Rychlé",
+        "Wadi El Gemal",
+        "Skupinové",
+        "Beduínská",
+        "Ceny"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/06-vylety-mimo-vodu.md",
+          "sha256": "fd75606403748577db997d04ce2c9c0ac9117fe1d16f951e7ef223ac882404f0"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-06-03-topic-quick-summary.md",
+      "prompt_sha256": "b6a32dd813d1afa37dd55b5969efb667e47d8e5c0838371245d53a357915e2ff",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Topic and Quick summary.png",
+          "sha256": "4bcd81fed4e9c9643dcb6a80e8e4ed5eaebc11ef9f6849d2d6386633cfe70fc9"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-06-03-topic-quick-summary.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "a466543bdc980037e33013d03fb9a3a6d5cb45405bcdca9d6b3e59d5bf33ad71"
+    },
+    {
+      "id": "guide-07-01-checklist",
+      "kind": "guide",
+      "section": "07",
+      "order": 19,
+      "layout": "checklist",
+      "content_contract": "All-inclusive balíček vyřeší ubytování a jídlo, ale výlety, potápění a poušť jsou skoro vždy extra.\nTahle kapitola shrnuje orientační ceny z celého průvodce na jedno místo, ať máš před cestou\npředstavu, s kolik navíc počítat.\n\n### Přehled cen navíc k balíčku\n\n| Položka | Rozptyl | Kde v průvodci |\n|---|---|---|\n| Vízum (e-visa / on arrival) | 25–30 USD | kap. Praktické základy |\n| Transfer z letiště do Port Ghalib | 13–25 USD | kap. Praktické základy, Výběr oblasti |\n| Šnorchlování Abu Dabab (celý den) | 48–60 USD/os. | kap. Potápění a šnorchlování |\n| Šnorchlování Dolphin House (celý den) | 55–62 USD/os. | kap. Potápění a šnorchlování |\n| Potápění Elphinstone (2 ponory) | 85–130 USD | kap. Potápění a šnorchlování |\n| Poplatek mořského parku (na ponor) | 15–25 USD | kap. Potápění a šnorchlování |\n| Pouštní safari Wadi El Gemal (skup.–soukr.) | 90–228 USD/os. | kap. Výlety mimo vodu |\n| Vstup NP Wadi El Gemal | ~40 EGP (≈ 2 EUR) | kap. Výlety mimo vodu |\n| Kempování v NP (os./noc) | ~200 EGP | kap. Výlety mimo vodu |\n| Výběr z bankomatu (poplatek) | 50–100 EGP | kap. Praktické základy |\n\nZdroje jednotlivých položek jsou uvedené u příslušných kapitol — ceny jsou orientační rozptyly z\naktuálních nabídek, ne ceníky, a v Egyptě se mění rychle i s kurzem.\n\n### Jak si postavit vlastní rozpočet\n\nNejdřív si urči, co je pro tebe hlavní náplň pobytu — voda, nebo kombinace s pouští — a podle toho\nškrtej. Týden zaměřený hlavně na šnorchlování si vystačí s Abu Dabab a Dolphin House a jedním\npoušťním výletem navíc. Pokud chceš i potápět, přičti Elphinstone a poplatek parku — u vícedenního\npotápění se tahle položka násobí podle počtu ponorů, ne podle dní. Skupinové safari do pouště\nvychází výrazně levněji než soukromé; zvol soukromé jen tehdy, když ti stojí za to mít vlastní tempo.\n\nK tomu si nezapomeň přičíst hotovost na drobné výdaje mimo balíček (voda, spropitné, drobné nákupy)\na počítat s poplatkem za výběr z bankomatu, pokud si peníze budeš vybírat na místě místo směny\npředem.",
+      "protected_tokens": [
+        "2 EUR",
+        "25–30",
+        "13–25",
+        "48–60",
+        "55–62",
+        "2",
+        "85–130",
+        "15–25",
+        "90–228",
+        "40",
+        "200",
+        "50–100",
+        "ne",
+        "jen",
+        "All-inclusive",
+        "Tahle",
+        "Přehled",
+        "Položka",
+        "Rozptyl",
+        "Kde",
+        "Vízum",
+        "Praktické",
+        "Transfer",
+        "Port Ghalib",
+        "Výběr",
+        "Šnorchlování Abu Dabab",
+        "Potápění",
+        "Šnorchlování Dolphin House",
+        "Potápění Elphinstone",
+        "Poplatek",
+        "Pouštní",
+        "Wadi El Gemal",
+        "Výlety",
+        "Vstup",
+        "Kempování",
+        "Zdroje",
+        "Egyptě",
+        "Jak",
+        "Nejdřív",
+        "Týden",
+        "Abu Dabab",
+        "Dolphin House",
+        "Pokud",
+        "Elphinstone",
+        "Skupinové"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/07-rozpocet.md",
+          "sha256": "973ca8c692fc9cc30cd630a96fb077a1ded34d3e3f505b13ac99ffd3056dadbe"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-07-01-checklist.md",
+      "prompt_sha256": "710a790da1300cb5b42f3c24b600b829909bb666256faa55ca05c87d250fcb70",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Checklist.png",
+          "sha256": "7d839b96d5cb6d7c0c951f9ba150111b6549c08ad1502176f35414c2a8795ea7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-07-01-checklist.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "8c18054f16819f9087cdfd7b1999d23f2313cb813ef0cb4dd7697134d03e5b66"
+    },
+    {
+      "id": "guide-07-02-single-topic",
+      "kind": "guide",
+      "section": "07",
+      "order": 20,
+      "layout": "single-topic",
+      "content_contract": "### Rychlé shrnutí\n\n- Hlavní proměnná v rozpočtu nejsou ubytování a jídlo (ty řeší balíček), ale výlety na moře a do\n  pouště.\n- Skupinové varianty výletů jsou levnější, soukromé flexibilnější — volba je kompromis mezi cenou a\n  pohodlím.\n- Všechny ceny výše ověř před rezervací u konkrétní cestovky nebo dive centra — kurzy i nabídky se\n  v Egyptě mění rychle.",
+      "protected_tokens": [
+        "Rychlé",
+        "Hlavní",
+        "Skupinové",
+        "Všechny",
+        "Egyptě"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/07-rozpocet.md",
+          "sha256": "973ca8c692fc9cc30cd630a96fb077a1ded34d3e3f505b13ac99ffd3056dadbe"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-07-02-single-topic.md",
+      "prompt_sha256": "634232b200ed84bacef9a0dd75d96f70e808353d839f576bb8a068e5b5a2931a",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Single topic.png",
+          "sha256": "18bbeb8c9f9bc7e22112660194eed485fd5512c07192e408a3e5d75d441d31d1"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-07-02-single-topic.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "4d50fd1b4d541666b133aba1c5124ce52f0ab6095c2848978b2752008a2dd3aa"
+    },
+    {
+      "id": "guide-08-01-checklist",
+      "kind": "guide",
+      "section": "08",
+      "order": 21,
+      "layout": "checklist",
+      "content_contract": "Poslední kapitola shrnuje, co si zkontrolovat a zařídit před cestou — ne nové informace, ale\npřipomenutí toho, co už víš z předchozích kapitol, na jednom místě k odškrtání.\n\n### Doklady a vízum\n\n- Pas platný minimálně 6 měsíců od vstupu do Egypta, s volnou stránkou na vízum.\n- Vízum vyřízené — buď e-visa předem (počítej s cca 3 pracovními dny na zpracování, žádej klidně\n  týden dopředu), nebo hotovost na visa on arrival přímo na letišti. Aktuální cenu ověř na\n  [visa2egypt.gov.eg](https://visa2egypt.gov.eg) těsně před cestou (viz kapitola Praktické\n  základy).\n\n### Zdraví a pojištění\n\n- Zkontroluj doporučená očkování (hepatitida A/B, tyfus, případně vzteklina při plánu do pouště) u\n  očkovacího centra v dostatečném předstihu.\n- Pokud plánuješ potápění nebo kurz, ověř si u pojišťovny, jestli tvoje cestovní pojištění potápění\n  vůbec kryje — standardní balíčky to často nepokrývají (viz kapitola Potápění a šnorchlování).",
+      "protected_tokens": [
+        "6",
+        "3",
+        "ne",
+        "minimálně",
+        "Poslední",
+        "Doklady",
+        "Pas",
+        "Egypta",
+        "Vízum",
+        "Aktuální",
+        "Praktické",
+        "Zdraví",
+        "Zkontroluj",
+        "Pokud",
+        "Potápění"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/08-checklist-pred-odjezdem.md",
+          "sha256": "1a47d4f17fdff819c74014d3cae903423f3ec35266bb36c068f13b818683d561"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-08-01-checklist.md",
+      "prompt_sha256": "dfb104eaaa1c1cfb8292bcd487ba830541efb614093b5683d8321439c256922f",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Checklist.png",
+          "sha256": "7d839b96d5cb6d7c0c951f9ba150111b6549c08ad1502176f35414c2a8795ea7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-08-01-checklist.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "436f9a911d184c32682ec678b22bc53c262194464575e65f2c0b95d1596e2c31"
+    },
+    {
+      "id": "guide-08-02-two-equal-sections",
+      "kind": "guide",
+      "section": "08",
+      "order": 22,
+      "layout": "two-equal-sections",
+      "content_contract": "### Peníze\n\n- Vezmi si platební kartu i trochu hotovosti v USD nebo EUR na drobné výdaje a vízum on arrival,\n  pokud ho neřešíš e-visou předem.\n- Počítej s poplatkem za výběr z bankomatu a s tím, že kurz EGP silně kolísá — nevyměňuj větší\n  částku najednou bez ověření aktuálního kurzu (viz kapitola Praktické základy).\n\n### Výlety a voda\n\n- Než rezervuješ jakýkoli výlet na moře nebo do pouště, porovnej nabídku hotelu s nezávislým dive\n  centrem nebo cestovkou (viz kapitoly Potápění a šnorchlování, Výlety mimo vodu, Rozpočet).\n- Zabal reef-safe opalovací krém a vybavení na šnorchlování, pokud ho hotel nezapůjčuje — usnadní ti\n  to ochranu korálů i vlastní pohodlí.",
+      "protected_tokens": [
+        "Peníze",
+        "Vezmi",
+        "Počítej",
+        "Praktické",
+        "Výlety",
+        "Než",
+        "Potápění",
+        "Rozpočet",
+        "Zabal"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/08-checklist-pred-odjezdem.md",
+          "sha256": "1a47d4f17fdff819c74014d3cae903423f3ec35266bb36c068f13b818683d561"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-08-02-two-equal-sections.md",
+      "prompt_sha256": "f8ea6049fbe68673a6d526abc61381458bd035cf5788e2a0c8c59eed5df4a0cd",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Two equal sections.png",
+          "sha256": "5702a6ffb59066bbfcc45945360caa35b9b5820535c43f494dd7759c40badbd7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-08-02-two-equal-sections.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "7d38af7a115cf28ff6ba28810cade3fc956070088e9e54efb5e56db9907fa1e7"
+    },
+    {
+      "id": "guide-08-03-checklist",
+      "kind": "guide",
+      "section": "08",
+      "order": 23,
+      "layout": "checklist",
+      "content_contract": "### Na místě\n\n- Ověř si u hotelu, co přesně zahrnuje all-inclusive (voda, alkohol, kde přesně) — brožury cestovek\n  bývají v tomhle bodě obecné (viz kapitola Jídlo a pití).\n- Pij výhradně balenou vodu, i v resortu.\n- Naplánuj si dopředu, jestli chceš zajet do Port Ghalib na večeři mimo hotel — jinde je to spíš\n  výjimka, počítej s domluveným transferem.\n\n### Rychlé shrnutí\n\nTenhle checklist nenahrazuje předchozí kapitoly — je to jen rychlá kontrola těsně před odjezdem.\nPokud si u některého bodu nejsi jistý, vrať se do příslušné kapitoly, kde je rozhodnutí i s\nodkazem na ověření.",
+      "protected_tokens": [
+        "jen",
+        "Na",
+        "Ověř",
+        "Jídlo",
+        "Pij",
+        "Naplánuj",
+        "Port Ghalib",
+        "Rychlé",
+        "Tenhle",
+        "Pokud"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/08-checklist-pred-odjezdem.md",
+          "sha256": "1a47d4f17fdff819c74014d3cae903423f3ec35266bb36c068f13b818683d561"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/guide-08-03-checklist.md",
+      "prompt_sha256": "3d497098180f25dc764ce68b6fb2f0d3a3eddd9c6306d74060145d01343b7b71",
+      "references": [
+        {
+          "role": "REFERENCE_LAYOUT",
+          "path": "02-tvorba-vizualu/šablony/Španělsko/Checklist.png",
+          "sha256": "7d839b96d5cb6d7c0c951f9ba150111b6549c08ad1502176f35414c2a8795ea7"
+        }
+      ],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/guide/pages/guide-08-03-checklist.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "7427ed8c114ecf99afe8074ba99baa17f8ed53d537dce0ba95d4c95dc5a97c4f"
+    },
+    {
+      "id": "cheatsheet-01",
+      "kind": "cheatsheet",
+      "section": "01",
+      "order": 1,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 1 — Praktické základy\n\n## Vízum\n- E-visa (~3 dny, žádej týden dopředu) nebo visa on arrival na letišti (u přepážky banky).\n- 30 dní, 1 vstup, 25–30 USD → ověř na visa2egypt.gov.eg (zdroje se rozcházejí).\n- Pas platný min. 6 měsíců od vstupu + volná stránka na vízum.\n\n## Let a doprava na místo\n- RMF, přímý charter SmartWings z Prahy ~4,5 h, sezónní → ověř rozpis před koupí letenky.\n- Transfer do Port Ghalib: ~15 min, 13–25 USD (~350–700 EGP).\n- Severní/jižní resorty a Marsa Shagra: transfer delší, liší se → ověř u hotelu/cestovky.\n\n## Peníze\n- EGP, kurz kolísá, orientačně ~52 EGP/USD → ověř aktuální kurz před cestou.\n- Bankomat: poplatek 50–100 EGP/transakce, denní limit 5 000–10 000 EGP.\n\n## SIM a internet\n- Wifi standard v resortech/dive centrech, mimo ně signál kolísá.\n- SIM nejsnáz na letišti po příletu → ceny/balíčky ověř na místě.\n\n## Zdraví a očkování\n- Egypt od 2024 bez malárie (WHO), CDC profylaxi nedoporučuje → přesto ochrana proti hmyzu.\n- Očkování: přeočkování, hepatitida A/B, tyfus; poušť/zvířata → zvaž vzteklinu.\n- Informační přehled, ne lékařské doporučení → konzultuj s očkovacím centrem.\n\n## Kdy jet\n- Chladněji říjen–duben (~20–28 °C), horko květen–září.\n- Nejvyváženější: pol. března–duben nebo pol. října–listopad.\n- Zima (prosinec–únor): lepší na poušť, chladnější na vodu.",
+      "protected_tokens": [
+        "3 dny",
+        "4,5 h",
+        "15 min",
+        "20–28 °C",
+        "1",
+        "3",
+        "30",
+        "25–30",
+        "6",
+        "4,5",
+        "15",
+        "13–25",
+        "350–700",
+        "52",
+        "50–100",
+        "5",
+        "000–10",
+        "000",
+        "2024",
+        "20–28",
+        "ne",
+        "Rychlotaháček",
+        "Praktické",
+        "Vízum",
+        "E-visa",
+        "Pas",
+        "Let",
+        "Prahy",
+        "Transfer",
+        "Port Ghalib",
+        "Severní",
+        "Marsa Shagra",
+        "Peníze",
+        "Bankomat",
+        "Wifi",
+        "Zdraví",
+        "Egypt",
+        "Očkování",
+        "Informační",
+        "Kdy",
+        "Chladněji",
+        "Nejvyváženější",
+        "Zima"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/01-prakticke-zaklady.md",
+          "sha256": "714254b9e2f047383430a091bffa72d1fb4cccbf7d8b77a4592b7872ef69e09c"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-01.md",
+      "prompt_sha256": "a0e8db2cddf1cb83b816510d6e92e495cca5f6e5cd69711493ac9d42c0a49e95",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-01.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "e15b57d011d39f3687e500b51bd4aa5f7d1f617c025cda75c8886cb6bff0dea7"
+    },
+    {
+      "id": "cheatsheet-02",
+      "kind": "cheatsheet",
+      "section": "02",
+      "order": 2,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 2 — Výběr oblasti pobřeží a doprava po okolí\n\n## Tři základní varianty\n- Port Ghalib: nejblíž letišti (~15 min), marína s restauracemi/obchody/nočním životem.\n- Sever/jih: klidnější, izolovanější, na pláž/moře; transfer delší → ověř u hotelu/cestovky.\n- Dive campy Marsa Shagra: jednodušší ubytování, přímý house reef, komunita potápěčů.\n\n## Jak se rozhodnout\n- Noční život + restaurace + krátký transfer → Port Ghalib.\n- Klid a pláž, večer v resortu OK → sever/jih.\n- Priorita kvalitní house reef od pláže → dive camp.\n- „Noční život + top house reef\" nefunguje → blíž centru = zatíženější reef.\n\n## Doprava po okolí\n- Mezi resorty žádná veřejná doprava → jen transfer/taxi přes hotel nebo dopravce.\n- Výlet jinam po pobřeží → doprava zvlášť, domluvená předem.\n- Výlety na moře i do pouště: balíček včetně vyzvednutí u hotelu → doprava v ceně.\n- Pronájem auta okrajová varianta → ověř podmínky a jestli se vyplatí.",
+      "protected_tokens": [
+        "15 min",
+        "2",
+        "15",
+        "jen",
+        "Rychlotaháček",
+        "Výběr",
+        "Tři",
+        "Port Ghalib",
+        "Sever",
+        "Dive",
+        "Marsa Shagra",
+        "Jak",
+        "Noční",
+        "Klid",
+        "Priorita",
+        "Doprava",
+        "Mezi",
+        "Výlet",
+        "Výlety",
+        "Pronájem",
+        "Noční život + top house reef"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/02-vyber-oblasti-a-doprava.md",
+          "sha256": "2ea7a3ea485a983a56d3b184e41741585e4472ddea562c5cd39260ad8aaba6c6"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-02.md",
+      "prompt_sha256": "13b35adcb845c786c439cc058fa247447793807ad3a2ca3cddbd9e0c1cb6ca18",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-02.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "f6923d6ca5012fbec190b936a604f9071331ee8fc5506528e855ecdcd383ae3f"
+    },
+    {
+      "id": "cheatsheet-03",
+      "kind": "cheatsheet",
+      "section": "03",
+      "order": 3,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 3 — Ubytování\n\n## All-inclusive resort vs. dive camp\n- Většina jede přes all-inclusive CK → jídlo, pití, často i výlety v ceně.\n- Dive campy (Marsa Shagra): jednodušší, bez all-inclusive, přímo u moře → může vyjít levněji.\n\n## Proč se vybírá podle house reefu\n- House reef = útes u pláže hotelu, dostupný pěšky, bez lodi a organizace.\n- Kvalita se mezi resorty výrazně liší → od plného ryb po poškozený/za mělčinou.\n- Pro šnorchlování bez denní organizace důležitější než hvězdičky nebo vzdálenost od letiště.\n\n## Na co se zeptat před rezervací\n- Stav house reefu a přístup → pěšky, přes mělčinu, nebo molo/žebřík?\n- Vstup do vody z pláže, nebo přes molo/platformu?\n- All-inclusive: jen jídlo/pití, nebo i vybavení na šnorchlování a část výletů?\n- Vzdálenost od letiště a od dive centra pro plánované výlety?\n- Vlastní dive centrum hotelu (pohodlnější), nebo nezávislé výlety (levnější)?\n\nKonkrétní ceny ubytování se v čase i podle cestovky výrazně liší → porovnávej aktuální nabídky u prodejce balíčku.",
+      "protected_tokens": [
+        "3",
+        "může",
+        "jen",
+        "Rychlotaháček",
+        "Ubytování",
+        "All-inclusive",
+        "Většina",
+        "Dive",
+        "Marsa Shagra",
+        "Proč",
+        "House",
+        "Kvalita",
+        "Pro",
+        "Na",
+        "Stav",
+        "Vstup",
+        "Vzdálenost",
+        "Vlastní",
+        "Konkrétní"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/03-ubytovani.md",
+          "sha256": "5eca78d80653a7604c9e9e54f961c81845417f586a67d53d7e6c23447422212f"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-03.md",
+      "prompt_sha256": "964f621a53bfebb686f74ae240668bec44183dd57096e8975fe81c3aa4a5e07b",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-03.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "ea3fb36eea7f81e04875037c9dff3c4a1a354ea382f7cdf694c16130938af6ed"
+    },
+    {
+      "id": "cheatsheet-04",
+      "kind": "cheatsheet",
+      "section": "04",
+      "order": 4,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 4 — Jídlo a pití\n\n## Realita all-inclusive\n- All-inclusive = bufet v restauraci hotelu + nápoje (i alkohol), obvykle jen u hotelového baru.\n- Kvalita/nabídka i pitná voda z kohoutku se liší resort od resortu → ověř u hotelu, ne z brožury.\n- Pij výhradně balenou vodu, i v resortu — platí i pro led mimo hotel.\n\n## Kdy a jak mimo resort\n- Jídlo mimo hotel dává smysl hlavně v Port Ghalib → marína plná restaurací, pěšky dostupná.\n- Jinde restaurace mimo hotel spíš výjimka → žádná v docházkové vzdálenosti, nebo nutný transfer.\n- Celodenní výlet (potápění, poušť): jídlo bývá v balíčku → ověř, jestli si vzít něco s sebou.\n\n## Ceny\n- Ceny mimo resort se nepodařilo spolehlivě dohledat → hodně se liší a rychle mění.\n- Orientační ceny výletů s jídlem viz kapitola Rozpočet; cenu restaurace/baru ověř na místě.",
+      "protected_tokens": [
+        "4",
+        "obvykle",
+        "jen",
+        "ne",
+        "Rychlotaháček",
+        "Jídlo",
+        "Realita",
+        "All-inclusive",
+        "Kvalita",
+        "Pij",
+        "Kdy",
+        "Port Ghalib",
+        "Jinde",
+        "Celodenní",
+        "Ceny",
+        "Orientační",
+        "Rozpočet"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/04-jidlo-a-piti.md",
+          "sha256": "36420e3052ba5fb0a409122cf994ea9db97f7c668f670dd49944f453beb7ca82"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-04.md",
+      "prompt_sha256": "70e0f14d02168c02219a258cd14e526e52f7e08b3c9dd00088294d3ebb2d9446",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-04.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "19f7c1be56c77c612874b06d4799b5d70268e568739e7b9027c6d7e65ca1ecb5"
+    },
+    {
+      "id": "cheatsheet-05",
+      "kind": "cheatsheet",
+      "section": "05",
+      "order": 5,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 05 — Potápění a šnorchlování\n\n## Hotel vs. nezávislé\n- Hotel: pohodlí, ale dražší (marže recepce + dive centra navrch).\n- Nezávislé dive centrum: levnější, vyber sám, ověř vybavení a velikost skupiny.\n- Dive camp u Marsa Shagra → nezávislá varianta je tam standard.\n\n## Kam za čím\n- Abu Dabab — mělký záliv, želvy a dugongové, vhodné i pro nejisté šnorchlaře.\n- Dolphin House (Sha'ab Samadai) — delfíni, celodenní lodní výlet, šnorchl i potápění.\n- Elphinstone — driftový proud, náročnější, spíš pro certifikované potápěče.\n\n## Ceny (orientačně)\n- Šnorchlování Abu Dabab 48–60 USD/os. · Dolphin House 55–62 USD/os.\n- Potápění Elphinstone (2 ponory) 85–130 USD.\n- + poplatek mořského parku u Elphinstone 15–25 USD/ponor, mimo cenu výletu.\n\n## Kurz pro nepotápěče\n- OW kurz = nejrychlejší cesta k Elphinstone.\n- Cenu kurzu se nepodařilo spolehlivě dohledat — ověř přímo na místě před rezervací.\n- Standardní cestovní pojištění potápění často nekryje — ověř si to u pojišťovny předem.\n\n## Bezpečnost a korály\n- Nedotýkej se korálu, nestůj na dně u útesu — i lehký dotek ho může zabít.\n- Nekrm ani nehoň zvířata, u Dolphin House a Abu Dabab platí zpřísněná pravidla.\n- Šnorchluj vždy s někým, drž se skupiny nebo lodi.",
+      "protected_tokens": [
+        "05",
+        "48–60",
+        "55–62",
+        "2",
+        "85–130",
+        "15–25",
+        "může",
+        "Rychlotaháček",
+        "Potápění",
+        "Hotel",
+        "Nezávislé",
+        "Dive",
+        "Marsa Shagra",
+        "Kam",
+        "Abu Dabab",
+        "Dolphin House",
+        "Sha'ab Samadai",
+        "Elphinstone",
+        "Ceny",
+        "Šnorchlování Abu Dabab",
+        "Potápění Elphinstone",
+        "Kurz",
+        "Cenu",
+        "Standardní",
+        "Bezpečnost",
+        "Nedotýkej",
+        "Nekrm",
+        "Šnorchluj"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/05-potapeni-a-snorchlovani.md",
+          "sha256": "a0f7ff9b021197db5ccdc8513b1e4532424f949466d6975f119b75dfb0048b03"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-05.md",
+      "prompt_sha256": "6d8572b0620c45b1dd90478478595ce356b8c8b212beec236bf2d4735a1fdb40",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-05.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "ad00dff22467f0a85e1e57af583faa82489ee50529c0048b87f8eebd952930a9"
+    },
+    {
+      "id": "cheatsheet-06",
+      "kind": "cheatsheet",
+      "section": "06",
+      "order": 6,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 06 — Výlety mimo vodu\n\n## Wadi El Gemal (hlavní cíl)\n- Národní park: hory, vádí, pobřeží s mangrovy.\n- Vstup pro cizince ~40 EGP (≈ 2 EUR) · kempování v parku ~200 EGP/os./noc.\n- Běžně jen jako součást organizovaného výletu s vyzvednutím od hotelu, veřejná doprava tam není.\n\n## Beduínské výlety\n- Zastávka v osadě nebo na čaji — turisticky zprostředkovaná, ne autentické setkání.\n- Ber jako krátký doplněk v rámci většího programu, ne hlavní bod výletu.\n\n## Safari — skupinově, nebo soukromě\n- Cena orientačně 90–228 USD/os.\n- Skupinové levnější, ale vázané na tempo skupiny.\n- Soukromé dražší, ale flexibilní v místě a délce zastávek.\n\n## Chceš víc než odpoledne\n- Zvaž vícedenní nebo večerní program (přespání v poušti, pozorování hvězd).\n- Nabídka i cena se liší podle cestovky a sezóny — domluv na místě nebo přes hotel.",
+      "protected_tokens": [
+        "2 EUR",
+        "06",
+        "40",
+        "2",
+        "200",
+        "90–228",
+        "jen",
+        "ne",
+        "Rychlotaháček",
+        "Výlety",
+        "Wadi El Gemal",
+        "Národní",
+        "Vstup",
+        "Běžně",
+        "Beduínské",
+        "Zastávka",
+        "Ber",
+        "Safari",
+        "Cena",
+        "Skupinové",
+        "Soukromé",
+        "Chceš",
+        "Zvaž",
+        "Nabídka"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/06-vylety-mimo-vodu.md",
+          "sha256": "cb8e18392fbbd72cbcbbc8bfb42193afeca618f6812485e1067aba1e3e567571"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-06.md",
+      "prompt_sha256": "fceccaa6b0f7e846c31167f92c01c6e16cf5a2ee78818765c09b8d6ddc7ee588",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-06.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "989217e1849b628ccbedc10b0230e866e2bbaecb397e13ba3fdbc237e4dd0c17"
+    },
+    {
+      "id": "cheatsheet-07",
+      "kind": "cheatsheet",
+      "section": "07",
+      "order": 7,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 07 — Rozpočet\n\n## Ceny navíc k balíčku\n| Položka | Rozptyl |\n|---|---|\n| Vízum (e-visa / on arrival) | 25–30 USD |\n| Transfer letiště → Port Ghalib | 13–25 USD |\n| Šnorchlování Abu Dabab (den) | 48–60 USD/os. |\n| Šnorchlování Dolphin House (den) | 55–62 USD/os. |\n| Potápění Elphinstone (2 ponory) | 85–130 USD |\n| Poplatek mořského parku (na ponor) | 15–25 USD |\n| Safari Wadi El Gemal (skup.–soukr.) | 90–228 USD/os. |\n| Vstup NP Wadi El Gemal | ~40 EGP (≈ 2 EUR) |\n| Kempování v NP (os./noc) | ~200 EGP |\n| Výběr z bankomatu (poplatek) | 50–100 EGP |\n\nOrientační rozptyly z aktuálních nabídek, ne ceníky — v Egyptě se mění rychle i s kurzem.\n\n## Jak si postavit rozpočet\n- Hlavní volba: voda, nebo kombinace s pouští — podle toho škrtej.\n- Jen šnorchlování → Abu Dabab + Dolphin House + jeden poušťní výlet navíc.\n- Chceš i potápět → přičti Elphinstone a poplatek parku (násobí se podle počtu ponorů, ne dní).\n- Skupinové safari výrazně levnější než soukromé — soukromé jen když ti stojí za vlastní tempo.\n- Přičti hotovost na drobné (voda, spropitné) a poplatek za výběr z bankomatu.",
+      "protected_tokens": [
+        "2 EUR",
+        "07",
+        "25–30",
+        "13–25",
+        "48–60",
+        "55–62",
+        "2",
+        "85–130",
+        "15–25",
+        "90–228",
+        "40",
+        "200",
+        "50–100",
+        "ne",
+        "Jen",
+        "jen",
+        "Rychlotaháček",
+        "Rozpočet",
+        "Ceny",
+        "Položka",
+        "Rozptyl",
+        "Vízum",
+        "Transfer",
+        "Port Ghalib",
+        "Šnorchlování Abu Dabab",
+        "Šnorchlování Dolphin House",
+        "Potápění Elphinstone",
+        "Poplatek",
+        "Safari Wadi El Gemal",
+        "Vstup",
+        "Wadi El Gemal",
+        "Kempování",
+        "Výběr",
+        "Orientační",
+        "Egyptě",
+        "Jak",
+        "Hlavní",
+        "Abu Dabab",
+        "Dolphin House",
+        "Chceš",
+        "Elphinstone",
+        "Skupinové",
+        "Přičti"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/07-rozpocet.md",
+          "sha256": "4d89b6ce12462b70633679d0a8c0e34736311d905fe4a372859d61f990294289"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-07.md",
+      "prompt_sha256": "20005797cc96d4619c601a5acb9ee5c52cb93c4c1ada5a3a57e1f3f41b05344f",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-07.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "edce6b10ba9a9330f68178eba5fa24758dd000e039cede3e9c877c6c9ee41b51"
+    },
+    {
+      "id": "cheatsheet-08",
+      "kind": "cheatsheet",
+      "section": "08",
+      "order": 8,
+      "layout": "cheatsheet-a4",
+      "content_contract": "# Rychlotaháček 08 — Checklist před odjezdem\n\n## Doklady a vízum\n- [ ] Pas platný min. 6 měsíců od vstupu, s volnou stránkou na vízum.\n- [ ] Vízum vyřízené — e-visa (~3 prac. dny, žádej týden dopředu) nebo hotovost na visa on arrival.\n- [ ] Aktuální cenu víza ověř na visa2egypt.gov.eg těsně před cestou.\n\n## Zdraví a pojištění\n- [ ] Zkontroluj doporučená očkování (hepatitida A/B, tyfus, případně vzteklina do pouště).\n- [ ] Potápění nebo kurz → ověř u pojišťovny, jestli tě pojištění na potápění vůbec kryje.\n\n## Peníze\n- [ ] Platební karta + trocha hotovosti v USD/EUR na drobné a vízum on arrival.\n- [ ] Počítej s poplatkem za výběr z bankomatu a kolísáním kurzu EGP — neměň větší částku najednou.\n\n## Výlety a voda\n- [ ] Před rezervací výletu porovnej hotel vs. nezávislé dive centrum/cestovku.\n- [ ] Zabal reef-safe krém a vybavení na šnorchlování, pokud ho hotel nezapůjčuje.\n\n## Na místě\n- [ ] Ověř u hotelu, co přesně zahrnuje all-inclusive (voda, alkohol, kde přesně).\n- [ ] Pij výhradně balenou vodu, i v resortu.\n- [ ] Naplánuj dopředu večeři mimo hotel v Port Ghalib, počítej s domluveným transferem.",
+      "protected_tokens": [
+        "08",
+        "6",
+        "3",
+        "Rychlotaháček",
+        "Checklist",
+        "Doklady",
+        "Pas",
+        "Vízum",
+        "Aktuální",
+        "Zdraví",
+        "Zkontroluj",
+        "Potápění",
+        "Peníze",
+        "Platební",
+        "Počítej",
+        "Výlety",
+        "Před",
+        "Zabal",
+        "Na",
+        "Ověř",
+        "Pij",
+        "Naplánuj",
+        "Port Ghalib"
+      ],
+      "sources": [
+        {
+          "path": "01-tvorba-textu/content/marsa-alam/text/_tahacek/08-checklist-pred-odjezdem.md",
+          "sha256": "79285018d2696a44ec0f97f4d65b1969f3ed50eb8b966ab57b928656e6b5f2da"
+        }
+      ],
+      "prompt_file": "02-tvorba-vizualu/produkty/marsa-alam/prompts/cheatsheet-08.md",
+      "prompt_sha256": "3984d3423ef340dce78d25dcee5dd1b2cc416a76399bfe5b121d5b8a0eab92ac",
+      "references": [],
+      "output": "02-tvorba-vizualu/produkty/marsa-alam/tahacek/pages/cheatsheet-08.png",
+      "output_sha256": null,
+      "attempts": 0,
+      "qa": {
+        "status": "stale",
+        "notes": [
+          "Změnil se zdroj, prompt, konfigurace nebo reference."
+        ],
+        "checked_at": "2026-08-26T10:25:55+00:00"
+      },
+      "inputs_sha256": "b3519cb3f62c33132e4bc22c73cc5615edfa3218bcb80d194abb8225b9186940"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "page": "guide-02-02-comparison",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Kompletní text dopravy, včetně negace pravidelné veřejné dopravy, balíčků výletů, podmínek pronájmu a tříbodového shrnutí, prošel vizuální i obsahovou kontrolou.",
+  "checked_at": "2026-08-26T11:30:31+00:00",
+  "content_contract_sha256": "2f5617466136d6c76cdc9fcd69fba7854537d708ce8bb5238c63bff4d1ac649c",
+  "protected_tokens": [
+    "ne",
+    "Doprava",
+    "Mezi",
+    "Pokud",
+    "Výlety",
+    "Orientační",
+    "Potápění",
+    "Rozpočet",
+    "Rychlé",
+    "Klíčové",
+    "Port Ghalib",
+    "Marsa Shagra",
+    "Čím",
+    "nejezdí pravidelná veřejná doprava"
+  ]
+}

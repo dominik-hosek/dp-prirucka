@@ -1,0 +1,14 @@
+{
+  "page": "guide-03-00-section-cover",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Text přesný a úplný, chráněná fráze zvýrazněna, bez nežádoucích popisků; layout a bezpečné okraje v pořádku.",
+  "checked_at": "2026-08-06T01:34:45+00:00",
+  "content_contract_sha256": "02d9a7e78a2a9e5ba4246e3b3b7d6129d0cd6544b7c4eb52358cb638a123f924",
+  "protected_tokens": [
+    "Ubytování",
+    "Barceloně",
+    "Buď",
+    "kompromis mezi hlukem a časem"
+  ]
+}

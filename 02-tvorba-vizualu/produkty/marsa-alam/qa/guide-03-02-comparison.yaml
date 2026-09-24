@@ -1,0 +1,25 @@
+{
+  "page": "guide-03-02-comparison",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Kontrolní otázky i celé rychlé shrnutí jsou čitelné a obsahově úplné; česká typografie, bezpečné okraje a vizuální systém prošly.",
+  "checked_at": "2026-08-26T11:45:53+00:00",
+  "content_contract_sha256": "138586d45a3cbd7a552a415b35c4cc8f13e8b29689ba278cfef5a04135dcf2de",
+  "protected_tokens": [
+    "jen",
+    "ne",
+    "Na",
+    "Jaký",
+    "Je",
+    "Co",
+    "Jak",
+    "Výběr",
+    "Nabízí",
+    "Oboje",
+    "Potápění",
+    "Rychlé",
+    "Hlavní",
+    "Než",
+    "Konkrétní"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "page": "guide-01-03-two-equal-sections",
+  "status": "passed",
+  "attempts": 1,
+  "notes": "Obsah včetně roku 2024, teplot 20–28 °C, období a negace prošel; 2:3 layout a česká sazba v pořádku.",
+  "checked_at": "2026-08-26T11:08:52+00:00",
+  "content_contract_sha256": "3178b35fc88db6cee049915906a037452ad9c01f9f3f11494b11e463b301f364",
+  "protected_tokens": [
+    "20–28 °C",
+    "2024",
+    "20–28",
+    "ne",
+    "Zdraví",
+    "Egypt",
+    "Světová",
+    "Tohle",
+    "Kdy",
+    "Rok",
+    "Nejvyváženější",
+    "Zima",
+    "bez malárie",
+    "říjen–duben",
+    "květen–září",
+    "polovina března až duben",
+    "polovina října až listopad"
+  ]
+}
